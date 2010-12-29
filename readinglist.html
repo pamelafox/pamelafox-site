@@ -1,84 +1,10 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-  <title>pamela fox's reading list</title> 
-  <style> 
-    body {
-      background-color: #BEF56E;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
- 
-    #main {
-        width: 480px;
-        margin: 60px auto;
-        background: white;
-        padding: 10px;
-    }
-    
-    td { vertical-align : top; }
- 
-    .divider {
-      font-weight: bold;
-      background-color: #8BEA00;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      padding: 3px;
-      padding-left: 6px;
-    }
- 
-    .inner {
-      padding-left: 15px;
-    }
-    
-    a {
-      text-decoration: none;
-    }
- 
-    a:hover {
-      text-decoration: underline;
-    }
- 
-  </style> 
-  </head> 
-  <body> 
-  <script type="text/javascript"> 
- var script = document.createElement('script');
-  script.src = 'https://api.dailybooth.com/v1/users/254325/pictures.json?limit=1&callback=onDBLoad';
-  document.body.appendChild(script);
-  </script>
- <div id="main">
-  <h1>pamela fox's reading list</h1>
+{% extends "base.html" %}
+{% block title %}pamela fox's reading list {% endblock %}
+{% block header %}pamela fox's reading list {% endblock %}
+{% block content %}
   <ul>
-  <li><a href='http://www.amazon.com/gp/product/030746363X?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman</a><br>Timothy Ferriss<p><b>LOVE</b>.A series of tips on hacks for losing weight, gaining muscle, getting better sleep, etc - all based on the the author's rigorously scientific experiments and data tricking. Interesting, entertaining, and hopefully useful - I am trying some of them out now.</p>
-<li><a href='http://www.amazon.com/gp/product/0060838582?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Fast Food Nation</a><br>Eric Schlosser<p><b>LOVE</b>.A great book about the effect of modern industrialized agriculture on our food, our society, and our environment. Very interesting.</p>
-<li><a href='http://www.amazon.com/gp/product/0061707805?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Sex at Dawn: The Prehistoric Origins of Modern Sexuality</a><br>Christopher Ryan & Cacilda Jetha<p><b>LOVE</b>.Very interesting read about the history of our species, and whether monogamy is actually an intrinsic part of us (answer: it's not). Lots of stuff to think about.</p>
-<li><a href='http://www.amazon.com/gp/product/059652272X?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Programming Google App Engine</a><br>Dan Sanderson<p><b>LOVE</b>.A well written book explaining App Engine, with many chapters dedicated to an in-depth look at the datastore, one of the trickiest parts. Slightly better for Python devs than Java devs.</p>
-<li><a href='http://www.amazon.com/gp/product/0143114964?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>In Defense of Food: An Eater's Manifesto</a><br>Michael Pollan<p><b>LOVE</b>.A great read about Michael's opinion on how we should be eating today, and a look at why we are eating so badly. It will make you want to run out and eat some organic leafy vegetables immediately.</p>
-<li><a href='http://www.amazon.com/gp/product/0393324826?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Stiff: The Curious Lives of Human Cadavers</a><br>Mary Roach<p><b>LOVE</b>.A fun read about the history of human cadavers and their use in medical research, including the history of what happens to humans after they die (compost, cremation, burial, etc). Learnt a lot of fun facts from this.</p>
-<li><a href='http://www.amazon.com/gp/product/0061857807?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>My Booky Wook</a><br>Russell Brand<p><b>LIKE</b>.Both funny and insightful, it recounts his childhood and various addictions (drug, sex). It's heavy on the British lingo, which makes it both educational but also harder to read at times.</p>
-<li><a href='http://www.amazon.com/gp/product/0451223896?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Such a Pretty Fat: One Narcissist's Quest To Discover if Her Life Makes Her Ass Look Big, Or Why Pie is Not The Answer</a><br>Jen Lancaster<p><b>LIKE</b>.A light read of a woman's actual quest to lose weight. She isn't always the easiest to side with though, and she also employed some techniques that I disagree with, so I sometimes found it not as pleasant to read.</p>
-<li><a href='http://www.amazon.com/gp/product/B0027BOL4G?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Food Inc.</a><br>Karl Weber<p><b>LIKE</b>.A collection of essays from journalists & organizations on the topics addressed in the Food, Inc. documentary. The essays vary in quality - some are quite good, but others make for more rote reading. </p>
-<li><a href='http://www.amazon.com/gp/product/014311638X?tag=amazonsimilar-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1594202532'>Food Rules</a><br>Michael Pollan<p><b>LIKE</b>.A distilled version of "In Defense of Food", this lists all of his rules in short chapters & skips much of the background/technical reading. If you've already got "In Defense of Food", you'll find this one largely redundant. </p>
+  {% for book in books %}
+  <li><a href='http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20'>{{ book.title }}</a><br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
+  {% endfor %}
   </ul>
- </div>
-<script type="text/javascript"> 
- 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-964209-11']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  function onDBLoad(json) {
-   var pic = json[0];
-   document.getElementById('dailybooth').innerHTML = '<img src="' + pic.urls.medium + '">' + '<p><a href="http://dailybooth.com/pamelafox">' + pic.blurb + '</a></p>';
-  }
-</script> 
-  </body> 
-</html> 
+{% endblock %}
