@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <title>pamela fox</title> 
+  <style> 
+    body {
+      background-color: #BEF56E;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+ 
+    #main {
+        width: 480px;
+        margin: 60px auto;
+        background: white;
+        padding: 10px;
+    }
+    
+    td { vertical-align : top; }
+ 
+    .divider {
+      font-weight: bold;
+      background-color: #8BEA00;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 3px;
+      padding-left: 6px;
+    }
+ 
+    .inner {
+      padding-left: 15px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+ 
+    a:hover {
+      text-decoration: underline;
+    }
+ 
+  </style> 
+  </head> 
+  <body> 
+  <script type="text/javascript"> 
+ var script = document.createElement('script');
+  script.src = 'https://api.dailybooth.com/v1/users/254325/pictures.json?limit=1&callback=onDBLoad';
+  document.body.appendChild(script);
+  </script>
+ <div id="main">
+  <h1>pamela fox</h1>
+  <div class="divider">who i am:</div> 
+    <div class="inner">I'm a graduate from the USC Computer Science Department (BS/MS, with minors in 3d Animation + Linguistics). I'm currently living in Sydney, Australia, working on random web projects, and <a href="/readinglist">reading great books</a> in my free time. This page should help you locate me on the web. :)
+    If you want to contact me, just <a href="http://www.google.com/profiles/pamela.fox/contactme">use this form</a>.
+  </div> 
+  
+  <div class="divider">where i do stuff on the web:</div> 
+  <div class="inner">
+  <a href="http://blog.pamelafox.org">blog</a> - 
+  <a href="http://twitter.com/pamelafox">twitter</a> - 
+  <a href="http://flickr.com/photos/pamelafox">flickr</a> -
+  <a href="http://code.google.com/u/pamela.fox/">google code</a> -
+  <a href="http://github.com/pamelafox">github</a>
+  </div>
+  
+  <div class="divider">what i look like now:</div> 
+   <div class="inner" id="dailybooth">...just wait a sec while i take a pic...  
+   </div>
+ </div>
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-964209-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function onDBLoad(json) {
+   var pic = json[0];
+   document.getElementById('dailybooth').innerHTML = '<img src="' + pic.urls.medium + '">' + '<p><a href="http://dailybooth.com/pamelafox">' + pic.blurb + '</a></p>';
+  }
+</script> 
+  </body> 
+</html> 

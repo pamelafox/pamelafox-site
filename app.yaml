@@ -1,0 +1,13 @@
+application: pamelafox-site
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /readinglist
+  static_files: readinglist.html
+  upload: readinglist.html
+  
+- url: /
+  static_files: index.html
+  upload: index.html
