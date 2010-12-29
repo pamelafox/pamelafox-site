@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <title>{% block title %}pamela fox{% endblock %}</title> 
+  <style> 
+    body {
+      background-color: #BEF56E;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+ 
+    #main {
+        width: 480px;
+        margin: 60px auto;
+        background: white;
+        padding: 10px;
+    }
+    
+    td { vertical-align : top; }
+ 
+    .divider {
+      font-weight: bold;
+      background-color: #8BEA00;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 3px;
+      padding-left: 6px;
+    }
+ 
+    .inner {
+      padding-left: 15px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+ 
+    a:hover {
+      text-decoration: underline;
+    }
+ 
+  </style> 
+  </head> 
+  <body> 
+ <div id="main">
+  <h1>{% block header %}{% endblock %}</h1>
+  {% block content %}{% endblock %}
+ </div>
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-964209-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+  </body> 
+</html> 
