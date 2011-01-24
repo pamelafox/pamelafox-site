@@ -14,6 +14,8 @@ from django.utils import simplejson
     
 def getpage(filename, values={}):
   page = memcache.get(filename)
+  #memcache.delete(filename)
+  #page = None
   if page:
     return page
   else:
@@ -42,7 +44,7 @@ class ReadingList(webapp.RequestHandler):
       json = simplejson.loads(result.content)
       entries = json["feed"]["entry"]
       for entry in entries:
-        fields = ['title', 'author', 'asin', 'review', 'rating']
+        fields = ['title', 'author', 'asin', 'review', 'rating', 'thumbnail']
         book_info = {}
         for field in fields:
           if entry['gsx$' + field]:

@@ -4,7 +4,9 @@
 {% block content %}
   <ul>
   {% for book in books %}
-  <li><a href='http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20'>{{ book.title }}</a><br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
+  <li style="clear:right" id="{{ book.title|slugify }}">
+  <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20"><img src="{{ book.thumbnail }}" style="border: 0px; width:115px; float: right; margin: 5px;"></a>
+  <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20">{{ book.title }}</a><br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
   {% endfor %}
   </ul>
 {% endblock %}
