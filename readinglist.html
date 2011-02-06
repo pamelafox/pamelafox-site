@@ -1,12 +1,19 @@
 {% extends "base.html" %}
-{% block title %}pamela fox's reading list {% endblock %}
-{% block header %}pamela fox's reading list {% endblock %}
 {% block content %}
+
+  {% if filter %}
+  <p>Here are the books I've read recently that match <b>{{ filter }}</b>. <a href="/readinglist">Click to view my full reading list</a>.</p>
+  {% else %}
+  <p>Here are the books I've read recently. You can also filter by these tags:
+	{% for tag in tags %}<a href="/readinglist?q={{ tag }}">{{tag}}</a>{% if not forloop.last %}, {% endif %}{% endfor %}.
+  <p>
+  {% endif %}
   <ul>
   {% for book in books %}
   <li style="clear:right" id="{{ book.title|slugify }}">
-  <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20"><img src="{{ book.thumbnail }}" style="border: 0px; width:115px; float: right; margin: 5px;"></a>
-  <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20">{{ book.title }}</a><br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
+  <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20"><img class="thumbnail" src="{{ book.thumbnail }}"></a>
+  <span class="title"><a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20">{{ book.title }}</a></span>
+   <br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
   {% endfor %}
   </ul>
 {% endblock %}

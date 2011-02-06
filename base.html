@@ -2,7 +2,7 @@
 <html> 
 <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-  <title>{% block title %}pamela fox{% endblock %}</title> 
+  <title>{{ title }}</title> 
   <style> 
     body {
       background-color: #BEF56E;
@@ -11,10 +11,11 @@
     }
  
     #main {
-        width: 480px;
-        margin: 60px auto;
-        background: white;
-        padding: 10px;
+      width: 480px;
+      margin: 60px auto;
+      background: white;
+      padding: 10px;
+      padding-bottom: 30px;
     }
     
     td { vertical-align : top; }
@@ -39,12 +40,29 @@
     a:hover {
       text-decoration: underline;
     }
- 
+
+    li {
+      margin-top: 15px;  
+    }
+    
+    ul {
+	  -webkit-padding-start: 20px;
+    }
+
+    .thumbnail {
+      width: 115px;
+      float: right;
+      margin: 5px;
+    }
+
+    .title {
+      font-weight: bold;
+    }
   </style> 
   </head> 
   <body> 
  <div id="main">
-  <h1>{% block header %}{% endblock %}</h1>
+  <h1>{{ title }}</h1>
   {% block content %}{% endblock %}
  </div>
 <script type="text/javascript"> 
