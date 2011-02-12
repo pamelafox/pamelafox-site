@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+  <style>
+  .description, .links, .metadata {
+    margin-top: 3px;
+  }
+
+  .metadata {
+    color: #999;
+    font-size: smaller;
+  }
+
+  .links img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+
+  .thumbnail {
+    border: 1px solid #ccc;
+  }
+  </style>
+
+  <p>Here are some of the side projects I've done over the years. You might also be interested in my <a href="http://github.com/pamelafox">github</a> and <a href="http://code.google.com/u/pamela.fox/">Google Code</a> profiles.
+  <ul>
+  {% for project in projects %}
+  <li style="clear:right" id="{{ project.title|slugify }}">
+   <img  class="thumbnail" src="{{ project.thumbnail }}">
+   <span class="title"><a href="{{ project.homepage }}">{{ project.title }}</a></span>
+   <div class="description">
+   {{ project.description }}
+   </div>
+   <div class="metadata">
+   Last updated around {{ project.date }}.
+   </div>
+   <div class="links">
+   {% if project.source %}<a href="{{ project.source }}"><img src="/static/source_icon.png">Grab Source</a> {% endif %}
+   </div>
+  {% endfor %}
+  </ul>
+
+  <div style="clear:both">&nbsp;</div>
+{% endblock %}

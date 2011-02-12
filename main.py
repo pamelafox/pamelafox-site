@@ -18,6 +18,8 @@ class BaseRequestHandler(webapp.RequestHandler):
 
   def get(self):
     page = memcache.get(self.get_cachename())
+    if os.environ['SERVER_SOFTWARE'].startswith('Dev'):
+	  page = None
     if not page:
       path = os.path.join(os.path.dirname(__file__), self.get_filename())
       page = template.render(path, self.get_values())
@@ -43,16 +45,27 @@ class BaseRequestHandler(webapp.RequestHandler):
         entries = feed['entry']
       for entry in entries:
         row_info = {}
+        matches = True
         for field in fields:
-          if entry['gsx$' + field]:
-            row_info[field] = entry['gsx$' + field]['$t']
-            if field == 'tags':
-              row_tags = row_info['tags'].split(',')
-              for tag in row_tags:
-                tag = tag.strip()
-                if tag not in tags and len(tag) > 0:
-	              tags.append(tag)
-        rows.append(row_info)
+          logging.info(field)
+          if not entry['gsx$' + field]:
+            continue
+          row_info[field] = entry['gsx$' + field]['$t']
+          if field == 'tags':
+            # Check this row matches filtered tag
+            # and row_info[field].find(filter) == -1
+            if filter is not None and row_info['tags'].find(filter) == -1:
+              matches = False
+            # Add to our current tags list
+            row_tags = row_info['tags'].split(',')
+            for tag in row_tags:
+              tag = tag.strip()
+              if tag not in tags and len(tag) > 0:
+                tags.append(tag)
+        if matches:
+          logging.info('appending')
+          rows.append(row_info)
+    logging.info(rows)
     return rows, tags, filter
 
 
@@ -87,7 +100,7 @@ class ReadingList(BaseRequestHandler):
     books, tags, filter = self.get_worksheet_data('od6', fields)
     title = 'pamela fox\'s reading list'
     if filter:
-	  title += ' :: ' + filter
+      title += ' :: ' + filter
     return {'books': books, 'tags': tags, 'filter': filter, 'title': title}
     
 class Talks(BaseRequestHandler):
@@ -103,13 +116,62 @@ class Talks(BaseRequestHandler):
     talks, tags, filter = self.get_worksheet_data('od7', fields, '&orderby=column:date&reverse=true')
     title = 'pamela fox\'s talks'
     if filter:
-	  title += ' :: ' + filter
+      title += ' :: ' + filter
     return {'talks': talks, 'tags': tags, 'filter': filter, 'title': title}
 
 
+class Projects(BaseRequestHandler):
+
+  def get_filename(self):
+    return 'projects.html'
+    
+  def get_cachename(self):
+    return 'projects'
+    
+  def get_values(self):
+    fields = ['title', 'date', 'description', 'homepage', 'source', 'thumbnail']
+    projects, tags, filter = self.get_worksheet_data('od5', fields, '&orderby=column:date&reverse=true')
+    title = 'pamela fox\'s projects'
+    return {'projects': projects, 'tags': tags, 'filter': filter, 'title': title}
+
+
+class BlogPosts(BaseRequestHandler):
+
+  def get_filename(self):
+    return 'blogposts.html'
+
+  def get_cachename(self):
+    return 'blogposts'
+
+  def get_values(self):
+	import datetime as dt
+	
+	url = 'http://www.blogger.com/feeds/8501278254137514883/posts/default?max-results=150&alt=json'
+	result = urlfetch.fetch(url)
+	posts = []
+	if result.status_code == 200:
+	  json = simplejson.loads(result.content)
+	  feed = json['feed']
+	  entries = feed['entry']
+	  for entry in entries:
+	    post_info = {}
+	    post_info['title'] = entry['title']['$t']
+	    #post_info['date'] = dt.datetime.strptime(entry['published']['$t'], '%Y-%m-%dT%H:%M:%S.%f-%Z')
+	    links = entry['link']
+	    for link in links:
+		  if link['rel'] == 'alternate':
+			post_info['link'] = link['href']
+	    posts.append(post_info)
+	title = 'pamela fox\'s blog posts'
+	return {'posts': posts, 'title': title}
+
+
+    
 application = webapp.WSGIApplication(
                                      [('/', HomePage),
                                       ('/readinglist', ReadingList),
+                                      ('/projects', Projects),
+                                      ('/blogposts', BlogPosts),
                                       ('/talks', Talks)],
                                      debug=True)
 

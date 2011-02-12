@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <p>Here are the posts I've written on my <a href="http://blog.pamelafox.org">personal blog</a>.
+  </p>
+  <ul>
+  {% for post in posts %}
+  <li id="{{ post.title|slugify }}">
+   <span class="title"><a href="{{ post.link }}">{{ post.title }}</a></span>
+  {% endfor %}
+  </ul>
+
+  <div style="clear:both">&nbsp;</div>
+{% endblock %}
