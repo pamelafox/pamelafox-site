@@ -14,6 +14,7 @@
   <a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20"><img class="thumbnail" src="{{ book.thumbnail }}"></a>
   <span class="title"><a href="http://www.amazon.com/gp/product/{{ book.asin }}?tag=amazonsimilar-20">{{ book.title }}</a></span>
    <br>{{ book.author }}<p><b>{{ book.rating }}</b>. {{book.review}}</p>
+   </li>
   {% endfor %}
   </ul>
   <div style="clear:both">&nbsp;</div>
