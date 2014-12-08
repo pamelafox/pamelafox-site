@@ -78,13 +78,7 @@ class HomePage(BaseRequestHandler):
     return 'index'
 
   def get_values(self):
-    pic = {}
-    url = 'https://api.dailybooth.com/v1/users/254325/pictures.json?limit=1'
-    result = urlfetch.fetch(url)
-    if result.status_code == 200:
-      json = simplejson.loads(result.content)
-      pic = json[0]
-    return {'pic': pic, 'title': 'pamela fox'}
+    return {'title': 'pamela fox'}
 
     
 class ReadingList(BaseRequestHandler):
