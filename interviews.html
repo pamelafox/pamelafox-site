@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+  <style>
+  .description, .links, .metadata {
+    margin-top: 3px;
+  }
+
+  .metadata {
+    color: #999;
+    font-size: smaller;
+  }
+
+  .links img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+
+  .thumbnail {
+    border: 1px solid #ccc;
+  }
+  </style>
+
+  <p>
+  Here are a few interviews I've done over the years. I feel funny listing them, but, they exist, so here you go...
+  <ul>
+  {% for interview in interviews %}
+  <li>
+   <span class="title"><a href="{{ interview.url }}">{{ interview.title }}</a></span>
+  {% endfor %}
+  </ul>
+
+  <div style="clear:both">&nbsp;</div>
+{% endblock %}

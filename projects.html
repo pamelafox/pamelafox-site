@@ -24,7 +24,7 @@
   <p>Here are some of the side projects I've done over the years. You might also be interested in my <a href="http://github.com/pamelafox">github</a> and <a href="http://code.google.com/u/pamela.fox/">Google Code</a> profiles.
   <ul>
   {% for project in projects %}
-  <li style="clear:right" id="{{ project.title|slugify }}">
+  <li style="clear:right">
    <img  class="thumbnail" src="{{ project.thumbnail }}">
    <span class="title"><a href="{{ project.homepage }}">{{ project.title }}</a></span>
    <div class="description">

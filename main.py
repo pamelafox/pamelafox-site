@@ -5,25 +5,32 @@
  
 import os
 import logging
+import json
 
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp.util import run_wsgi_app
-from google.appengine.ext.webapp import template
+import jinja2
+import webapp2
+
 from google.appengine.api import memcache
 from google.appengine.api import urlfetch
-from django.utils import simplejson
+
+
+
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
   
     
-class BaseRequestHandler(webapp.RequestHandler):
+class BaseRequestHandler(webapp2.RequestHandler):
 
   def get(self):
     page = memcache.get(self.get_cachename())
     if os.environ['SERVER_SOFTWARE'].startswith('Dev'):
 	  page = None
     if not page:
-      path = os.path.join(os.path.dirname(__file__), self.get_filename())
-      page = template.render(path, self.get_values())
-      memcache.set(self.get_cachename(), page, 60*30)
+      template = JINJA_ENVIRONMENT.get_template(self.get_filename())
+      page = template.render(self.get_values())
+      memcache.set(self.get_cachename(), page, 60*1)
     self.response.out.write(page)
     
   def get_worksheet_data(self, worksheet_id, fields, extra_query=None):
@@ -38,8 +45,7 @@ class BaseRequestHandler(webapp.RequestHandler):
     rows = []
     tags = []
     if result.status_code == 200:
-      json = simplejson.loads(result.content)
-      feed = json['feed']
+      feed = json.loads(result.content)['feed']
       entries = []
       if 'entry' in feed:
         entries = feed['entry']
@@ -47,7 +53,6 @@ class BaseRequestHandler(webapp.RequestHandler):
         row_info = {}
         matches = True
         for field in fields:
-          logging.info(field)
           if not entry['gsx$' + field]:
             continue
           row_info[field] = entry['gsx$' + field]['$t']
@@ -63,9 +68,7 @@ class BaseRequestHandler(webapp.RequestHandler):
               if tag not in tags and len(tag) > 0:
                 tags.append(tag)
         if matches:
-          logging.info('appending')
           rows.append(row_info)
-    logging.info(rows)
     return rows, tags, filter
 
 
@@ -87,15 +90,10 @@ class ReadingList(BaseRequestHandler):
     return 'readinglist.html'
 
   def get_cachename(self):
-     return 'readinglist' + self.request.get('q', '')
+     return 'readinglist'
 
   def get_values(self):
-    fields = ['title', 'author', 'asin', 'review', 'rating', 'thumbnail', 'tags']
-    books, tags, filter = self.get_worksheet_data('od6', fields)
-    title = 'pamela fox\'s reading list'
-    if filter:
-      title += ' :: ' + filter
-    return {'books': books, 'tags': tags, 'filter': filter, 'title': title}
+    return {'title': 'pamela fox\'s reading list'}
     
 class Talks(BaseRequestHandler):
 
@@ -129,6 +127,20 @@ class Projects(BaseRequestHandler):
     return {'projects': projects, 'tags': tags, 'filter': filter, 'title': title}
 
 
+class Interviews(BaseRequestHandler):
+
+  def get_filename(self):
+    return 'interviews.html'
+    
+  def get_cachename(self):
+    return 'interviews'
+    
+  def get_values(self):
+    fields = ['title', 'url']
+    interviews, tags, filter = self.get_worksheet_data('4', fields, '')
+    title = 'pamela fox\'s interviews'
+    return {'interviews': interviews, 'title': title}
+
 class BlogPosts(BaseRequestHandler):
 
   def get_filename(self):
@@ -144,8 +156,7 @@ class BlogPosts(BaseRequestHandler):
 	result = urlfetch.fetch(url)
 	posts = []
 	if result.status_code == 200:
-	  json = simplejson.loads(result.content)
-	  feed = json['feed']
+	  feed = json.loads(result.content)['feed']
 	  entries = feed['entry']
 	  for entry in entries:
 	    post_info = {}
@@ -161,16 +172,11 @@ class BlogPosts(BaseRequestHandler):
 
 
     
-application = webapp.WSGIApplication(
-                                     [('/', HomePage),
-                                      ('/readinglist', ReadingList),
-                                      ('/projects', Projects),
-                                      ('/blogposts', BlogPosts),
-                                      ('/talks', Talks)],
-                                     debug=True)
+app = webapp2.WSGIApplication([('/', HomePage),
+                               ('/readinglist', ReadingList),
+                               ('/projects', Projects),
+                               ('/interviews', Interviews),
+                               ('/blogposts', BlogPosts),
+                               ('/talks', Talks)],
+                               debug=True)
 
-def main():
-  run_wsgi_app(application)
-
-if __name__ == "__main__":
-  main()

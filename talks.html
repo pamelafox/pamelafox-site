@@ -23,14 +23,14 @@
   <p>Here are the talks I've given that match <b>{{ filter }}</b>. <a href="/talks">Click to view all my talks</a>.</p>
   {% else %}
   <p>Here are all the talks I've given over the years. You can also filter by these tags:
-	{% for tag in tags %}<a href="/talks?q={{ tag }}">{{tag}}</a>{% if not forloop.last %}, {% endif %}{% endfor %}.
+	{% for tag in tags %}<a href="/talks?q={{ tag }}">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
   <p>
   {% endif %}
   <p><em>Please note that many of the talks are outdated now, since web technology moves fast.</em></p>
 
   <ul>
   {% for talk in talks %}
-  <li style="clear:right" id="{{ talk.title|slugify }}">
+  <li style="clear:right">
    <img  class="thumbnail" src="{{ talk.thumbnail }}">
    <span class="title"><a href="{{ talk.slides }}">{{ talk.title }}</a></span>
    <div class="description">

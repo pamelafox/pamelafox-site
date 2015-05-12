@@ -4,7 +4,7 @@
   </p>
   <ul>
   {% for post in posts %}
-  <li id="{{ post.title|slugify }}">
+  <li>
    <span class="title"><a href="{{ post.link }}">{{ post.title }}</a></span>
   {% endfor %}
   </ul>
