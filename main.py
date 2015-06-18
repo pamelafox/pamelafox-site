@@ -151,8 +151,10 @@ class BlogPosts(BaseRequestHandler):
 
   def get_values(self):
 	import datetime as dt
-	
+        tag = self.request.get('tag')
 	url = 'http://www.blogger.com/feeds/8501278254137514883/posts/default?max-results=150&alt=json'
+        if tag:
+          url += '&category=%s' % (tag)
 	result = urlfetch.fetch(url)
 	posts = []
 	if result.status_code == 200:
@@ -168,7 +170,8 @@ class BlogPosts(BaseRequestHandler):
 			post_info['link'] = link['href']
 	    posts.append(post_info)
 	title = 'pamela fox\'s blog posts'
-	return {'posts': posts, 'title': title}
+        tags = ['socialanxiety', 'developerexperience', 'apis', 'javascript', 'python', 'appengine', 'css', 'jquery', 'bootstrap', 'backbone', 'performance', 'phonegap', 'girldevelopit', 'coursera', 'khanacademy', 'google','eatdifferent'] 
+	return {'tags': tags, 'posts': posts, 'title': title}
 
 
     
