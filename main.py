@@ -147,7 +147,7 @@ class BlogPosts(BaseRequestHandler):
     return 'blogposts.html'
 
   def get_cachename(self):
-    return 'blogposts'
+    return 'blogposts' + self.request.get('tag', '')
 
   def get_values(self):
 	import datetime as dt
