@@ -21,11 +21,11 @@
   }
   </style>
 
-  <p>Here are some of the side projects I've done over the years. You might also be interested in my <a href="http://github.com/pamelafox">github</a> and <a href="http://code.google.com/u/pamela.fox/">Google Code</a> profiles.
+  <p>I love doing side projects, but alas, most of them are now dead/defunct/out of order/in a better place. You can browse through this list to get an idea for the projects I made in the past, and hey, maybe even some of them will still be working. 
   <ul>
   {% for project in projects %}
   <li style="clear:right">
-   <img  class="thumbnail" src="{{ project.thumbnail }}">
+   {% if project.thumbnail %}<img  class="thumbnail" src="{{ project.thumbnail }}">{% endif %}
    <span class="title"><a href="{{ project.homepage }}">{{ project.title }}</a></span>
    <div class="description">
    {{ project.description }}
