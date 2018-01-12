@@ -1,5 +1,3 @@
-application: pamelafox-site-highrep
-version: 3
 runtime: python27
 threadsafe: true
 api_version: 1
