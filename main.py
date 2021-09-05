@@ -33,8 +33,8 @@ class BaseRequestHandler(webapp2.RequestHandler):
       memcache.set(self.get_cachename(), page, 60*1)
     self.response.out.write(page)
     
-  def get_worksheet_data(self, worksheet_id, fields, extra_query=None):
-    url = 'https://spreadsheets.google.com/feeds/list/0Ah0xU81penP1dFNLWk5YMW41dkcwa1JNQXk3YUJoOXc/' + worksheet_id + '/public/values?sq=include%3Dyes&alt=json'
+  def get_worksheet_data(self, worksheet_id, fields=[], extra_query=None):
+    url = 'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/' + worksheet_id + '?key=AIzaSyAToi2-HUAZLiCgzilfXahbDeW0_XP2mtA'
     if extra_query:
       url += extra_query
     filter = None
@@ -45,30 +45,13 @@ class BaseRequestHandler(webapp2.RequestHandler):
     rows = []
     tags = []
     if result.status_code == 200:
-      feed = json.loads(result.content)['feed']
-      entries = []
-      if 'entry' in feed:
-        entries = feed['entry']
-      for entry in entries:
+      entries = json.loads(result.content)['values']
+      headers = entries[0] 
+      for entry in entries[1:]:
         row_info = {}
-        matches = True
-        for field in fields:
-          if not entry['gsx$' + field]:
-            continue
-          row_info[field] = entry['gsx$' + field]['$t']
-          if field == 'tags':
-            # Check this row matches filtered tag
-            # and row_info[field].find(filter) == -1
-            if filter is not None and row_info['tags'].find(filter) == -1:
-              matches = False
-            # Add to our current tags list
-            row_tags = row_info['tags'].split(',')
-            for tag in row_tags:
-              tag = tag.strip()
-              if tag not in tags and len(tag) > 0:
-                tags.append(tag)
-        if matches:
-          rows.append(row_info)
+        for ind, header in enumerate(headers):
+          row_info[header] = entry[ind]
+        rows.append(row_info)
     return rows, tags, filter
 
 
@@ -105,7 +88,7 @@ class Talks(BaseRequestHandler):
 
   def get_values(self):
     fields = ['title', 'date', 'description', 'thumbnail', 'slides', 'video', 'tags', 'location']
-    talks, tags, filter = self.get_worksheet_data('od7', fields, '&orderby=column:date&reverse=true')
+    talks, tags, filter = self.get_worksheet_data('Talks')
     title = 'pamela fox\'s talks'
     if filter:
       title += ' :: ' + filter
@@ -122,7 +105,7 @@ class Projects(BaseRequestHandler):
     
   def get_values(self):
     fields = ['title', 'date', 'description', 'homepage', 'source', 'thumbnail']
-    projects, tags, filter = self.get_worksheet_data('od5', fields, '&orderby=column:date&reverse=true')
+    projects, tags, filter = self.get_worksheet_data('Projects', fields, '&orderby=column:date&reverse=true')
     title = 'pamela fox\'s projects'
     return {'projects': projects, 'tags': tags, 'filter': filter, 'title': title}
 
@@ -137,7 +120,7 @@ class Interviews(BaseRequestHandler):
     
   def get_values(self):
     fields = ['title', 'url']
-    interviews, tags, filter = self.get_worksheet_data('4', fields, '')
+    interviews, tags, filter = self.get_worksheet_data('Interviews', fields, '')
     title = 'pamela fox\'s interviews'
     return {'interviews': interviews, 'title': title}
 
