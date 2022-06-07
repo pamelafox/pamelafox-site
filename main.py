@@ -13,6 +13,7 @@ import webapp2
 from google.appengine.api import memcache
 from google.appengine.api import urlfetch
 
+import secrets
 
 
 JINJA_ENVIRONMENT = jinja2.Environment(
@@ -34,7 +35,7 @@ class BaseRequestHandler(webapp2.RequestHandler):
     self.response.out.write(page)
     
   def get_worksheet_data(self, worksheet_id, fields=[]):
-    url = 'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/' + worksheet_id + '?key=AIzaSyAToi2-HUAZLiCgzilfXahbDeW0_XP2mtA'
+    url = 'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/' + worksheet_id + '?key=' + secrets.GOOGLE_API_KEY
     filter = None
     if self.request.get('q'):
       filter = self.request.get('q')
