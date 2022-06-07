@@ -33,10 +33,8 @@ class BaseRequestHandler(webapp2.RequestHandler):
       memcache.set(self.get_cachename(), page, 60*1)
     self.response.out.write(page)
     
-  def get_worksheet_data(self, worksheet_id, fields=[], extra_query=None):
+  def get_worksheet_data(self, worksheet_id, fields=[]):
     url = 'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/' + worksheet_id + '?key=AIzaSyAToi2-HUAZLiCgzilfXahbDeW0_XP2mtA'
-    if extra_query:
-      url += extra_query
     filter = None
     if self.request.get('q'):
       filter = self.request.get('q')
@@ -105,7 +103,7 @@ class Projects(BaseRequestHandler):
     
   def get_values(self):
     fields = ['title', 'date', 'description', 'homepage', 'source', 'thumbnail']
-    projects, tags, filter = self.get_worksheet_data('Projects', fields, '&orderby=column:date&reverse=true')
+    projects, tags, filter = self.get_worksheet_data('Projects', fields)
     title = 'pamela fox\'s projects'
     return {'projects': projects, 'tags': tags, 'filter': filter, 'title': title}
 
@@ -120,7 +118,7 @@ class Interviews(BaseRequestHandler):
     
   def get_values(self):
     fields = ['title', 'url']
-    interviews, tags, filter = self.get_worksheet_data('Interviews', fields, '')
+    interviews, tags, filter = self.get_worksheet_data('Interviews', fields)
     title = 'pamela fox\'s interviews'
     return {'interviews': interviews, 'title': title}
 
