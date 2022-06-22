@@ -1,2 +1,3 @@
 *.pyc
-secrets.py
+app_secrets.py
+env/
