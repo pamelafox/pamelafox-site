@@ -1,16 +1,8 @@
-runtime: python27
-threadsafe: true
-api_version: 1
-
-libraries:
-- name: webapp2
-  version: latest
-- name: jinja2
-  version: latest
+runtime: python39
 
 handlers:
 - url: /static
   static_dir: static
 
 - url: /.*
-  script: main.app
+  script: auto
