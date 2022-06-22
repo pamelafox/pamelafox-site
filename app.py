@@ -1,17 +1,16 @@
 import os
-import logging
 import json
 import urllib.request
 
 import jinja2
 from flask import Flask, render_template, request
 
-import app_secrets
-
 app = Flask(__name__)
- 
+GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
+
 def get_worksheet_data(worksheet_id, fields=[], filter=None):
-  url = f'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/{worksheet_id}?key={app_secrets.GOOGLE_API_KEY}'
+  
+  url = f'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/{worksheet_id}?key={GOOGLE_API_KEY}'
   rows = []
   tags = []
   if filter:
