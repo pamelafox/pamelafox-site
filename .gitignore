@@ -2,3 +2,4 @@
 app_secrets.py
 env/
 venv/
+.coverage
