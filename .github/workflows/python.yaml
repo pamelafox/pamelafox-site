@@ -29,4 +29,4 @@ jobs:
           options: "--check --verbose"
       - name: Run unit tests
         run: |
-          python -m pytest tests 
+          python -m pytest 
