@@ -1,15 +1,14 @@
 import os
 import json
 import urllib.request
+from functools import wraps
 
-import jinja2
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 
 app = Flask(__name__)
 GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
 
 def get_worksheet_data(worksheet_id, fields=[], filter=None):
-  
   url = f'https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/{worksheet_id}?key={GOOGLE_API_KEY}'
   rows = []
   tags = []
@@ -26,17 +25,33 @@ def get_worksheet_data(worksheet_id, fields=[], filter=None):
       rows.append(row_info)
   return rows, tags, filter
 
+def cache_control(minutes=10):
+    """Returns a Flask decorator that sets Cache-Control header. """
+    def decorator(func):
+        @wraps(func)
+        def decorated_func(*args, **kwargs):
+            r = func(*args, **kwargs)
+            rsp = make_response(r, 200)
+            rsp.headers.add('Cache-Control', 'public,max-age=%d' % int(3600 * 60 * minutes))
+            return rsp
+        return decorated_func
+    return decorator
+
+
 @app.route('/')
+@cache_control(20)
 def home_page():
   values = {'title': 'pamela fox'}
   return render_template('index.html', **values)
     
 @app.route('/readinglist')
+@cache_control(60)
 def readinginglist():
   values = {'title': 'pamela fox\'s reading list'}
   return render_template('readinglist.html', **values)
 
 @app.route('/talks')
+@cache_control(10)
 def talks():
   fields = ['title', 'date', 'description', 'thumbnail', 'slides', 'video', 'tags', 'location']
   talks, tags, filter = get_worksheet_data('Talks')
@@ -47,6 +62,7 @@ def talks():
   return render_template('talks.html', **values) 
 
 @app.route('/projects') 
+@cache_control(10)
 def projects():
     fields = ['title', 'date', 'description', 'homepage', 'source', 'thumbnail']
     projects, tags, filter = get_worksheet_data('Projects', fields)
@@ -55,6 +71,7 @@ def projects():
     return render_template('projects.html', **values)
 
 @app.route('/interviews')
+@cache_control(10)
 def interviews():
   fields = ['title', 'url']
   interviews, tags, filter = get_worksheet_data('Interviews', fields)
@@ -63,6 +80,7 @@ def interviews():
   return render_template('interviews.html', **values)
 
 @app.route('/blogposts')
+@cache_control(15)
 def blogposts():
   import datetime as dt
   tag = request.args.get('tag', None)
