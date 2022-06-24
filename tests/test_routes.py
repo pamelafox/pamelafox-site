@@ -15,6 +15,7 @@ def fake_worksheet_data(monkeypatch):
     monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
     monkeypatch.setattr(src, "get_worksheet_data", lambda _: [])
 
+
 def test_homepage(client):
     response = client.get("/")
     assert response.status_code == 200
@@ -28,21 +29,21 @@ def test_homepage_cache(client):
 
 
 def test_projects(client, fake_worksheet_data):
-        response = client.get("/projects")
-        assert response.status_code == 200
-        assert b"projects" in response.data
+    response = client.get("/projects")
+    assert response.status_code == 200
+    assert b"projects" in response.data
 
 
 def test_talks(client, fake_worksheet_data):
-        response = client.get("/talks")
-        assert response.status_code == 200
-        assert b"talks" in response.data
+    response = client.get("/talks")
+    assert response.status_code == 200
+    assert b"talks" in response.data
 
 
 def test_interviews(client, fake_worksheet_data):
-        response = client.get("/interviews")
-        assert response.status_code == 200
-        assert b"interviews" in response.data
+    response = client.get("/interviews")
+    assert response.status_code == 200
+    assert b"interviews" in response.data
 
 
 def test_readinglist(client):
