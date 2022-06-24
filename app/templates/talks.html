@@ -19,13 +19,7 @@
   }
   </style>
 
-  {% if filter %}
-  <p>Here are the talks I've given that match <b>{{ filter }}</b>. <a href="/talks">Click to view all my talks</a>.</p>
-  {% else %}
-  <p>Here are all the talks I've given over the years. You can also filter by these tags:
-	{% for tag in tags %}<a href="/talks?q={{ tag }}">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
-  <p>
-  {% endif %}
+  <p>Here are all the talks I've given over the years.<p>
   <p><em>Please note that many of the talks are outdated now, since web technology moves fast.</em></p>
 
   <ul>
