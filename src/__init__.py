@@ -37,29 +37,25 @@ def talks():
         "tags",
         "location",
     ]
-    talks, tags, filter = get_worksheet_data("Talks")
+    talks = get_worksheet_data("Talks")
     title = "pamela fox's talks"
-    if filter:
-        title += " :: " + filter
-    values = {"talks": talks, "tags": tags, "filter": filter, "title": title}
+    values = {"talks": talks, "title": title}
     return render_template("talks.html", **values)
 
 
 @app.route("/projects")
 @cache_control(10)
 def projects():
-    fields = ["title", "date", "description", "homepage", "source", "thumbnail"]
-    projects, tags, filter = get_worksheet_data("Projects", fields)
+    projects = get_worksheet_data("Projects")
     title = "pamela fox's projects"
-    values = {"projects": projects, "tags": tags, "filter": filter, "title": title}
+    values = {"projects": projects, "title": title}
     return render_template("projects.html", **values)
 
 
 @app.route("/interviews")
 @cache_control(10)
 def interviews():
-    fields = ["title", "url"]
-    interviews, tags, filter = get_worksheet_data("Interviews", fields)
+    interviews = get_worksheet_data("Interviews")
     title = "pamela fox's interviews"
     values = {"interviews": interviews, "title": title}
     return render_template("interviews.html", **values)

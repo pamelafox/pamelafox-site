@@ -9,7 +9,8 @@ testpaths = [
 ]
 
 [tool.coverage.paths]
-source = ["app"]
+source = ["src"]
 
 [tool.coverage.report]
 show_missing = true
+fail_under = 100

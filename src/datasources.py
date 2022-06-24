@@ -3,13 +3,10 @@ import json
 import urllib.request
 
 
-def get_worksheet_data(worksheet_id, fields=[], filter=None):
-    GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
+def get_worksheet_data(worksheet_id):
+    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "NoKeyFound")
     url = f"https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/{worksheet_id}?key={GOOGLE_API_KEY}"
     rows = []
-    tags = []
-    if filter:
-        url += f"&q={filter}"
     with urllib.request.urlopen(url) as result:
         if result.status == 200:
             entries = json.loads(result.read())["values"]
@@ -19,7 +16,7 @@ def get_worksheet_data(worksheet_id, fields=[], filter=None):
             for ind, header in enumerate(headers):
                 row_info[header] = entry[ind]
             rows.append(row_info)
-    return rows, tags, filter
+    return rows
 
 
 def get_blogger_data(tag=None):
