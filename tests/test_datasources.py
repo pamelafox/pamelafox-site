@@ -3,7 +3,7 @@ import io
 import urllib.request
 import unittest.mock
 
-from app.datasources import get_worksheet_data, get_blogger_data
+from src.datasources import get_worksheet_data, get_blogger_data
 
 
 def test_get_worksheet_data():

@@ -2,19 +2,18 @@ import unittest.mock
 
 import pytest
 
-from app import app
-from app import datasources
+import src
 
 
 @pytest.fixture()
 def client():
-    return app.test_client()
+    return src.app.test_client()
 
 
 @pytest.fixture()
-def fake_worksheet_data():
-    return unittest.mock.patch.object(datasources, "get_worksheet_data", return_value=[])
-
+def fake_worksheet_data(monkeypatch):
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+    monkeypatch.setattr(src, "get_worksheet_data", lambda _: [])
 
 def test_homepage(client):
     response = client.get("/")
@@ -29,21 +28,18 @@ def test_homepage_cache(client):
 
 
 def test_projects(client, fake_worksheet_data):
-    with fake_worksheet_data:
         response = client.get("/projects")
         assert response.status_code == 200
         assert b"projects" in response.data
 
 
 def test_talks(client, fake_worksheet_data):
-    with fake_worksheet_data:
         response = client.get("/talks")
         assert response.status_code == 200
         assert b"talks" in response.data
 
 
 def test_interviews(client, fake_worksheet_data):
-    with fake_worksheet_data:
         response = client.get("/interviews")
         assert response.status_code == 200
         assert b"interviews" in response.data
@@ -56,7 +52,7 @@ def test_readinglist(client):
 
 
 def test_blogposts(client):
-    with unittest.mock.patch("app.get_blogger_data") as mocked:
+    with unittest.mock.patch("src.get_blogger_data") as mocked:
         mocked.return_value = [], [], None
         response = client.get("/blogposts")
         assert response.status_code == 200
@@ -64,7 +60,7 @@ def test_blogposts(client):
 
 
 def test_blogposts_tag(client):
-    with unittest.mock.patch("app.get_blogger_data") as mocked:
+    with unittest.mock.patch("src.get_blogger_data") as mocked:
         mocked.return_value = [], [], "a11y"
         response = client.get("/blogposts?tag=a11y")
         assert mocked.call_args.args[0] == "a11y"
