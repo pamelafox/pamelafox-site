@@ -53,7 +53,7 @@ def test_readinglist(client):
 
 
 def test_blogposts(client):
-    with unittest.mock.patch("src.get_blogger_data") as mocked:
+    with unittest.mock.patch("src.get_blogger_data", autospec=True) as mocked:
         mocked.return_value = [], [], None
         response = client.get("/blogposts")
         assert response.status_code == 200
