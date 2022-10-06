@@ -14,12 +14,6 @@ param originUrl string = 'pamelafox-site-container-app.redwater-9982941d.eastus2
 ])
 param CDNSku string = 'Standard_Microsoft'
 
-@description('Name of the custom domain')
-param domainName string = 'pamelafox-org'
-
-@description('Url of the custom domain')
-param domainUrl string = 'www.pamelafox.org'
-
 @description('Name of the container registry')
 param containerRegistryName string = 'pamelascontainerstore'
 
@@ -99,17 +93,13 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2022-05-01-preview' = {
         name: 'origin1'
         properties: {
           hostName: originUrl
+          originHostHeader: originUrl
+          priority: 1
+          weight: 1000
+          enabled: true
         }
       }
     ]
-  }
-}
-
-resource domain 'Microsoft.Cdn/profiles/endpoints/customdomains@2022-05-01-preview' = {
-  parent: endpoint
-  name: domainName
-  properties: {
-    hostName: domainUrl
   }
 }
 
