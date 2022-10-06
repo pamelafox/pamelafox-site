@@ -18,7 +18,7 @@ param CDNSku string = 'Standard_Microsoft'
 param domainName string = 'pamelafox-org'
 
 @description('Url of the custom domain')
-param domainUrl string = 'test.pamelafox.org'
+param domainUrl string = 'www.pamelafox.org'
 
 @description('Name of the container registry')
 param containerRegistryName string = 'pamelascontainerstore'
@@ -114,14 +114,36 @@ resource domain 'Microsoft.Cdn/profiles/endpoints/customdomains@2022-05-01-previ
 }
 
 
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
+  name: 'workspace-pamelafoxsitegroupf8uf'
+  location: '${location}2'
+  properties: {
+    sku: {
+      name: 'pergb2018'
+    }
+    retentionInDays: 30
+    features: {
+      enableLogAccessUsingOnlyResourcePermissions: true
+    }
+    workspaceCapping: {
+      dailyQuotaGb: -1
+    }
+    publicNetworkAccessForIngestion: 'Enabled'
+    publicNetworkAccessForQuery: 'Enabled'
+  }
+}
+
+
+
 resource containerEnv 'Microsoft.App/managedEnvironments@2022-03-01' = {
-  name: '${name}-containerenv'
+  name: '${name}-container-env'
   location: '${location}2'
   properties: {
     appLogsConfiguration: {
       destination: 'log-analytics'
       logAnalyticsConfiguration: {
-        customerId: 'cd434675-1e3b-4a1a-bbd4-fb2f3064d7b2'
+        customerId: logAnalyticsWorkspace.properties.customerId
+        sharedKey: logAnalyticsWorkspace.listKeys().primarySharedKey
       }
     }
     zoneRedundant: false
@@ -170,11 +192,11 @@ resource containerRegistry 'Microsoft.ContainerRegistry/registries@2022-02-01-pr
   }
 }
 
-var containerAppName = '${name}-containerapp'
+var containerAppName = '${name}-container-app'
 
 resource containerApp 'Microsoft.App/containerapps@2022-03-01' = {
   name: containerAppName
-  location: location
+  location: '${location}2'
   identity: {
     type: 'None'
   }
@@ -234,24 +256,4 @@ resource containerApp 'Microsoft.App/containerapps@2022-03-01' = {
       }
     }
   }
-}
-
-var resourceToken = toLower(uniqueString(subscription().id, name, location))
-var tags = {
-  'azd-env-name': name
-}
-
-resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
-  name: 'log-${resourceToken}'
-  location: location
-  tags: tags
-  properties: any({
-    retentionInDays: 30
-    features: {
-      searchVersion: 1
-    }
-    sku: {
-      name: 'PerGB2018'
-    }
-  })
 }
