@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.9.13
+FROM python:3.10.8
 
 WORKDIR /code
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 5000
 
-ENTRYPOINT ["gunicorn", "-c", "gunicorn_config.py", "app:app"]
+ENTRYPOINT ["gunicorn", "-c", "gunicorn_config.py", "--workers", "1", "app:app"]
