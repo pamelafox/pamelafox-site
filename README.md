@@ -1,6 +1,24 @@
 # pamelafox-site
 A personal homepage.
 
+## Local development
+
+This website is designed to be run inside a Docker contain, though the Flask app can also be run normally.
+
+Build a Docker image:
+
+```console
+docker build --tag pamelafox-site .
+```
+
+Run the container:
+
+```console
+docker run -d -p 5000:5000 pamelafox-site
+```
+
+Then open the website at localhost:5000.
+
 ## Deployment instructions
 
 This repository can be deployed as a container app on Microsoft Azure.
