@@ -3,3 +3,8 @@ app_secrets.py
 env/
 venv/
 .coverage
+node_modules/
+.azure/
+.venv/
+.env
+src/build/
