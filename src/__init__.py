@@ -1,16 +1,13 @@
-import os
-import json
-import urllib.request
-
 from flask import Flask, make_response, render_template, request
 
-from .datasources import get_worksheet_data, get_blogger_data
+from .datasources import get_blogger_data, get_worksheet_data
 
 app = Flask(__name__)
 
+
 def render_html_template(filename, **context):
     resp = make_response(render_template(filename, **context))
-    resp.headers['Content-type'] = 'text/html; charset=utf-8'
+    resp.headers["Content-type"] = "text/html; charset=utf-8"
     return resp
 
 
@@ -28,16 +25,6 @@ def readinginglist():
 
 @app.route("/talks.html")
 def talks():
-    fields = [
-        "title",
-        "date",
-        "description",
-        "thumbnail",
-        "slides",
-        "video",
-        "tags",
-        "location",
-    ]
     talks = get_worksheet_data("Talks")
     title = "pamela fox's talks"
     values = {"talks": talks, "title": title}

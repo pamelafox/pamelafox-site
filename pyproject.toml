@@ -1,6 +1,11 @@
+[tool.ruff]
+select = ["E", "F", "I", "UP"]
+target-version = "py311"
+line-length = 127
+
 [tool.black]
-line-length = 100
-target-version = ['py39']
+target-version =  ["py311"]
+line-length = 127
 
 [tool.pytest.ini_options]
 addopts = "-ra --cov"
@@ -8,10 +13,4 @@ testpaths = [
     "tests"
 ]
 pythonpath = ['.']
-
-[tool.coverage.paths]
-source = ["src"]
-
-[tool.coverage.report]
-show_missing = true
-fail_under = 100
+env_files = ['.env']

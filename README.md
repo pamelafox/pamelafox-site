@@ -3,18 +3,17 @@ A personal homepage.
 
 ## Local development
 
-This website is designed to be run inside a Docker contain, though the Flask app can also be run normally.
 
-Build a Docker image:
-
-```console
-docker build --tag pamelafox-site .
+```shell
+pip install -r requirements-dev.txt
 ```
 
-Run the container:
+```shell
+pre-commit install
+```
 
-```console
-docker run -d -p 5000:5000 pamelafox-site
+```shell
+flask run
 ```
 
 Then open the website at localhost:5000.
@@ -44,4 +43,4 @@ export SWA_REPO_URL='https://github.com/pamelafox/pamelafox-site'
 export SWA_REPO_BRANCH='master'
 az group create -g $RESOURCE_GROUP -l $RESOURCE_GROUP_LOCATION
 
-az deployment group create --resource-group $RESOURCE_GROUP --template-file infra/main.bicep --parameters swaName=$SWA_NAME swaRepositoryToken=$SWA_REPO_TOKEN swaRepositoryUrl=$SWA_REPO_URL swaRepositoryBranch=$SWA_REPO_BRANCH -c 
+az deployment group create --resource-group $RESOURCE_GROUP --template-file infra/main.bicep --parameters swaName=$SWA_NAME swaRepositoryToken=$SWA_REPO_TOKEN swaRepositoryUrl=$SWA_REPO_URL swaRepositoryBranch=$SWA_REPO_BRANCH -c
