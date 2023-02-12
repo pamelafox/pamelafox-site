@@ -32,6 +32,9 @@ jobs:
           output_location: "src/build" # Built app content directory - optional
           app_build_command: "python3 freeze.py" # Custom build command for app content - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          PYTHON_VERSION: "3.11"
+          POST_BUILD_COMMAND: "python3 freeze.py"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
