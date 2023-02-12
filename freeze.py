@@ -4,4 +4,5 @@ from src import app
 freezer = Freezer(app)
 
 if __name__ == '__main__':
+    print("Freezing...")
     freezer.freeze()
