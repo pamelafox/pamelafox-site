@@ -35,3 +35,13 @@ az deployment group create \
 
 The custom domain should be mapped manually after deployment.
 
+
+export RESOURCE_GROUP='pamelafox-swa-rg'
+export RESOURCE_GROUP_LOCATION='eastus2'
+export SWA_REPO_TOKEN=''
+export SWA_NAME='pamelafox-swa-app'
+export SWA_REPO_URL='https://github.com/pamelafox/pamelafox-site'
+export SWA_REPO_BRANCH='master'
+az group create -g $RESOURCE_GROUP -l $RESOURCE_GROUP_LOCATION
+
+az deployment group create --resource-group $RESOURCE_GROUP --template-file infra/main.bicep --parameters swaName=$SWA_NAME swaRepositoryToken=$SWA_REPO_TOKEN swaRepositoryUrl=$SWA_REPO_URL swaRepositoryBranch=$SWA_REPO_BRANCH -c 
