@@ -22,32 +22,26 @@ def test_homepage(client):
     assert b"I am a human" in response.data
 
 
-def test_homepage_cache(client):
-    response = client.get("/")
-    assert "Cache-Control" in response.headers
-    assert "max-age=4320000" in response.headers["Cache-Control"]
-
-
 def test_projects(client, fake_worksheet_data):
-    response = client.get("/projects")
+    response = client.get("/projects.html")
     assert response.status_code == 200
     assert b"projects" in response.data
 
 
 def test_talks(client, fake_worksheet_data):
-    response = client.get("/talks")
+    response = client.get("/talks.html")
     assert response.status_code == 200
     assert b"talks" in response.data
 
 
 def test_interviews(client, fake_worksheet_data):
-    response = client.get("/interviews")
+    response = client.get("/interviews.html")
     assert response.status_code == 200
     assert b"interviews" in response.data
 
 
 def test_readinglist(client):
-    response = client.get("/readinglist")
+    response = client.get("/readinglist.html")
     assert response.status_code == 200
     assert b"booklist" in response.data
 
@@ -55,7 +49,7 @@ def test_readinglist(client):
 def test_blogposts(client):
     with unittest.mock.patch("src.get_blogger_data", autospec=True) as mocked:
         mocked.return_value = [], [], None
-        response = client.get("/blogposts")
+        response = client.get("/blogposts.html")
         assert response.status_code == 200
         assert b"blog posts" in response.data
 
@@ -63,7 +57,7 @@ def test_blogposts(client):
 def test_blogposts_tag(client):
     with unittest.mock.patch("src.get_blogger_data") as mocked:
         mocked.return_value = [], [], "a11y"
-        response = client.get("/blogposts?tag=a11y")
+        response = client.get("/blogposts.html?tag=a11y")
         assert mocked.call_args.args[0] == "a11y"
         assert response.status_code == 200
         assert b"blog posts" in response.data

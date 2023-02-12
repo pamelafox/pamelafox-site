@@ -27,4 +27,4 @@ jobs:
           options: "--check --verbose"
       - name: Run unit tests
         run: |
-          pytest
+          python3 -m pytest
