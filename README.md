@@ -13,7 +13,7 @@ pre-commit install
 ```
 
 ```shell
-flask run
+flask --debug run
 ```
 
 Then open the website at localhost:5000.

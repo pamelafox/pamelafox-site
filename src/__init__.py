@@ -12,7 +12,7 @@ def home_page():
 
 
 @app.route("/readinglist/")
-def readinginglist():
+def readinglist():
     values = {"title": "pamela fox's reading list"}
     return render_template("readinglist.html", **values)
 
