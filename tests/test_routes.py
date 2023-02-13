@@ -23,25 +23,25 @@ def test_homepage(client):
 
 
 def test_projects(client, fake_worksheet_data):
-    response = client.get("/projects.html")
+    response = client.get("/projects/")
     assert response.status_code == 200
     assert b"projects" in response.data
 
 
 def test_talks(client, fake_worksheet_data):
-    response = client.get("/talks.html")
+    response = client.get("/talks/")
     assert response.status_code == 200
     assert b"talks" in response.data
 
 
 def test_interviews(client, fake_worksheet_data):
-    response = client.get("/interviews.html")
+    response = client.get("/interviews/")
     assert response.status_code == 200
     assert b"interviews" in response.data
 
 
 def test_readinglist(client):
-    response = client.get("/readinglist.html")
+    response = client.get("/readinglist/")
     assert response.status_code == 200
     assert b"booklist" in response.data
 
@@ -49,7 +49,7 @@ def test_readinglist(client):
 def test_blogposts(client):
     with unittest.mock.patch("src.get_blogger_data", autospec=True) as mocked:
         mocked.return_value = [], [], None
-        response = client.get("/blogposts.html")
+        response = client.get("/blogposts/")
         assert response.status_code == 200
         assert b"blog posts" in response.data
 
@@ -57,7 +57,7 @@ def test_blogposts(client):
 def test_blogposts_tag(client):
     with unittest.mock.patch("src.get_blogger_data") as mocked:
         mocked.return_value = [], [], "a11y"
-        response = client.get("/blogposts.html?tag=a11y")
+        response = client.get("/blogposts/a11y.html")
         assert mocked.call_args.args[0] == "a11y"
         assert response.status_code == 200
         assert b"blog posts" in response.data
