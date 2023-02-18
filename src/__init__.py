@@ -1,8 +1,16 @@
+import json
+import os
+
 from flask import Flask, render_template
 
 from .datasources import get_blogger_data, get_worksheet_data
 
 app = Flask(__name__)
+
+
+def load_json_file(filename):
+    file = open(os.path.join(app.root_path, "data", filename))
+    return json.load(file)
 
 
 @app.route("/")
@@ -19,7 +27,7 @@ def readinglist():
 
 @app.route("/talks/")
 def talks():
-    talks = get_worksheet_data("Talks")
+    talks = load_json_file("talks.json")
     title = "pamela fox's talks"
     values = {"talks": talks, "title": title}
     return render_template("talks.html", **values)
