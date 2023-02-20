@@ -1,113 +1,31 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>{{ title }}</title>
-  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
-  <style> 
-    body {
-      background: url('static/glitter-background.gif') top center fixed #d69eeb;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
- 
-    #wrapper {
-		 width: 650px;
-	      margin: 60px auto;
-    }
-
-    #main {
-      width: 480px;
-      background: white;
-      padding: 10px;
-      padding-bottom: 5px;
-    }
-    
-    #sidenav {
-	  float: right;  
-	  width: 140px;
-	  background-color: white;
-    }
-
-	#sidenav ul
-	{
-	  margin: 0;
-	  padding: 0;
-	}
-
-	#sidenav ul li
-	{
-	  list-style-type: none;
-	  display: inline;
-	}
-
-	#sidenav li a
-	{
-	  display: block;
-	  padding: 5px 10px;
-	  color: black;
-	  text-decoration: none;
-	  border-bottom: 4px solid #BEF56E;
-	  font-weight: bold;
-	}
-
-	#sidenav li a:hover {
-	  background:#8BEA00;
-    }
-
-
-    td { vertical-align : top; }
- 
-    .divider {
-      font-weight: bold;
-      background-color: #8BEA00;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      padding: 3px;
-      padding-left: 6px;
-    }
- 
-    .inner {
-      padding-left: 15px;
-    }
-    
-    li {
-      margin-top: 15px;  
-    }
-    
-    ul {
-	  -webkit-padding-start: 20px;
-    }
-
-    .thumbnail {
-      width: 115px;
-      float: right;
-      margin: 5px;
-    }
-
-    .title {
-      font-weight: bold;
-    }
-  </style> 
-  </head> 
-  <body> 
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <style>
+</style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css" />
+  </head>
+  <body>
 
 <div id="wrapper">
 	<div id="sidenav">
-           <ul>
-             <li><a href="/">home</a></li>
-	     <li><a href="/blogposts">blog posts</a></li>
-	     <li><a href="/projects">projects</a></li>
-	     <li><a href="/talks">talks</a></li>
-	     <li><a href="/interviews">interviews</a></li>
-	     <li><a href="/readinglist">reading list</a></li>
+      <ul>
+       <li><a href="/">home</a></li>
+	     <li><a href="{{ url_for('blogposts') }}">blog posts</a></li>
+	     <li><a href="{{ url_for('projects') }}">projects</a></li>
+	     <li><a href="{{ url_for('talks') }}">talks</a></li>
+	     <li><a href="{{ url_for('interviews') }}">interviews</a></li>
+	     <li><a href="{{ url_for('readinglist') }}">reading list</a></li>
 	    </ul>
 	 </div>
  <div id="main">
   <h1>{{ title }}</h1>
   {% block content %}{% endblock %}
  </div>
-	
+
 </div>
-  </body> 
-</html> 
+  </body>
+</html>

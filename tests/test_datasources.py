@@ -1,9 +1,9 @@
-import json
 import io
-import urllib.request
+import json
 import unittest.mock
+import urllib.request
 
-from src.datasources import get_worksheet_data, get_blogger_data
+from src.datasources import get_blogger_data, get_worksheet_data
 
 
 def test_get_worksheet_data():
@@ -45,9 +45,7 @@ fake_blogger_data = {
         "category": [{"term": "khanacademy"}, {"term": "eatdifferent"}, {"term": "musicvideo"}],
         "entry": [
             {
-                "id": {
-                    "$t": "tag:blogger.com,1999:blog-8501278254137514883.post-7028526666522021237"
-                },
+                "id": {"$t": "tag:blogger.com,1999:blog-8501278254137514883.post-7028526666522021237"},
                 "published": {"$t": "2022-06-07T15:26:00.005-07:00"},
                 "updated": {"$t": "2022-06-07T15:30:18.333-07:00"},
                 "title": {"type": "text", "$t": "How accessibility helps a nursing mother"},
@@ -83,7 +81,7 @@ def test_get_blogger_data():
             }
         ]
         assert tags == ["khanacademy", "eatdifferent", "musicvideo"]
-        assert tag == None
+        assert tag is None
 
 
 def test_get_blogger_data_with_tag():

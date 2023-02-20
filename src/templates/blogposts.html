@@ -2,7 +2,7 @@
 {% block content %}
   <p>Here are the posts I've written on my <a href="http://blog.pamelafox.org">personal blog</a>.
   You can also filter by these tags:
-  {% for tag in tags %}<a href="/blogposts?tag={{ tag }}">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
+  {% for tag in tags %}<a href="{{ url_for('blogposts', tag=tag) }}">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
   <p>
   <ul>
   {% for post in posts %}
