@@ -3,42 +3,7 @@ import json
 import unittest.mock
 import urllib.request
 
-from src.datasources import get_blogger_data, get_worksheet_data
-
-
-def test_get_worksheet_data():
-    fake_data = {
-        "range": "Projects!A1:T102",
-        "majorDimension": "ROWS",
-        "values": [
-            ["title", "description", "homepage", "source", "date", "thumbnail", "include"],
-            [
-                "Dis This",
-                "An online tool to disassemble Python code.",
-                "http://www.dis-this.com/",
-                "https://github.com/pamelafox/dis-this",
-                "6/14/2022",
-                "https://i.imgur.com/FrhRJ3k.png",
-                "yes",
-            ],
-        ],
-    }
-    data = io.StringIO(json.dumps(fake_data))
-    data.status = 200
-    with unittest.mock.patch.object(urllib.request, "urlopen", return_value=data):
-        rows = get_worksheet_data("Talks")
-        assert rows == [
-            {
-                "title": "Dis This",
-                "description": "An online tool to disassemble Python code.",
-                "homepage": "http://www.dis-this.com/",
-                "source": "https://github.com/pamelafox/dis-this",
-                "date": "6/14/2022",
-                "thumbnail": "https://i.imgur.com/FrhRJ3k.png",
-                "include": "yes",
-            }
-        ]
-
+from src.datasources import get_blogger_data
 
 fake_blogger_data = {
     "feed": {

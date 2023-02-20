@@ -1,0 +1,254 @@
+[
+  {
+    "title": "Translation Telephone",
+    "description": "A fun online version of the classic \"Telephone\" game - pass a message through 20 random languages and see what comes out. Note: May be NSFW.",
+    "homepage": "https://www.translationtelephone.com/",
+    "source": "https://github.com/pamelafox/translation-telephone",
+    "date": 44761,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_translationtelephone.png",
+    "include": "yes"
+  },
+  {
+    "title": "QuizCards",
+    "description": "A series of Chrome extensions that test your knowledge of geography and foreign languages. ",
+    "homepage": "https://chrome.google.com/webstore/detail/quizcards-german/lhjipgfbpbjcmndmdhjhpoeapdadfhmk?hl=en",
+    "source": "https://github.com/pamelafox/chrome-cards",
+    "date": 44757,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_quizcards.png",
+    "include": "yes"
+  },
+  {
+    "title": "Google Font Previewer",
+    "description": "A Chrome extension for previewing Google Fonts on a webpage - a quick way to pick a font for your next site.",
+    "homepage": "https://chrome.google.com/extensions/detail/engndlnldodigdjamndkplafgmkkencc/",
+    "source": "http://pamelafox-samplecode.googlecode.com/svn/trunk/fontchanger/",
+    "date": 44749,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_fontpreviewer.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Dis This",
+    "description": "An online tool to disassemble Python code.",
+    "homepage": "http://www.dis-this.com/",
+    "source": "https://github.com/pamelafox/dis-this",
+    "date": 44726,
+    "thumbnail": "https://i.imgur.com/FrhRJ3k.png",
+    "include": "yes"
+  },
+  {
+    "title": "YouTube Unhooked",
+    "description": "A Chrome extension which hides parts of Youtube that are unneeded/addictive: recommendations, related videos, comments.",
+    "homepage": "https://chrome.google.com/webstore/detail/fkhfakakdbjcdipdgnbfngaljiecclaf/",
+    "source": "https://github.com/pamelafox/youtube-feed-hider",
+    "date": 44719,
+    "thumbnail": "https://lh3.googleusercontent.com/VPk9z7RidTMZpXr_KdnPbkwXT_PTd3o_8-1lZsfnwRO4dpHVyyAhkzAUn1yya-mr6FdMfduFbf81hR3AMqBHwQX-IQ=w640-h400-e365-rj-sc0x00ffffff",
+    "include": "yes"
+  },
+  {
+    "title": "lscache",
+    "description": "A JS library for storing data in localStorage via a memcache-like API.",
+    "homepage": null,
+    "source": "https://github.com/pamelafox/lscache",
+    "date": 44705,
+    "thumbnail": "https://i.imgur.com/NbEhG5T.png",
+    "include": "yes"
+  },
+  {
+    "title": "Recursion Visualizer",
+    "description": "An online tool to visualize the call graph of Python functions (especially those with multiple recursion).",
+    "homepage": "https://www.recursionvisualizer.com/",
+    "source": "https://github.com/pamelafox/recursive-visualizations",
+    "date": 44640,
+    "thumbnail": "https://pbs.twimg.com/media/FTLbZhdVUAAzAsn?format=jpg&name=medium",
+    "include": "yes"
+  },
+  {
+    "title": "DateNight",
+    "description": "An activity book for couples.",
+    "homepage": "https://medium.com/@pamelafox/datenight-an-activity-book-for-couples-c519bf939cbe",
+    "source": null,
+    "date": 43165,
+    "thumbnail": "https://cdn-images-1.medium.com/max/1760/1*8kaf4wUuZaoi-ParuD-74Q.png",
+    "include": "yes"
+  },
+  {
+    "title": "Self-Compassion Meditation",
+    "description": "A recording of my favorite type of guided meditation, uploaded to Youtube with a flickering candle background.",
+    "homepage": "https://www.youtube.com/watch?v=P1i1oNftry0",
+    "source": null,
+    "date": 43124,
+    "thumbnail": "https://i.ytimg.com/vi/P1i1oNftry0/1.jpg?time=1516837631233",
+    "include": "yes"
+  },
+  {
+    "title": "Project Icebreak",
+    "description": "Tools and tips for event organizers and attendees to make networking easier. Inspired by my \"No, Really, I'm Shy!\" talk.",
+    "homepage": "http://projecticebreak.com/",
+    "source": "https://github.com/pamelafox/projecticebreak",
+    "date": 42592,
+    "thumbnail": "http://projecticebreak.com/images/illustration_organizer.png",
+    "include": "yes"
+  },
+  {
+    "title": "Teaching Materials",
+    "description": "A collection of CC-licensed web development teaching materials (slides & exercises). Includes HTML, CSS, JS, and related topics.",
+    "homepage": "http://teaching-materials.org/",
+    "source": "https://github.com/pamelafox/teaching-materials",
+    "date": 42430,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_teachingmaterials.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "The Girl and the Flamingo",
+    "description": "My partner made up a bedtime story for me; I illustrated it and turned it into a children's book. (A pricey one since it's self-published!)",
+    "homepage": "https://www.amazon.com/Girl-Flamingo-Jacob-Lyles/dp/1367561744/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1484078875&sr=1-1&keywords=girl+and+the+flamingo+jacob+lyles&linkCode=ll1&tag=amazonsimilar-20&linkId=56f6e3e3e308ebb211866858c9d20e88",
+    "source": null,
+    "date": 42363,
+    "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51bkLkVzUwL._SY419_BO1,204,203,200_.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "DIY Art History",
+    "description": "6 lessons that teach art history in a DIY way, which I taught to a mixed ages classroom (K-6).",
+    "homepage": "https://www.pinterest.com/pamelasusanfox/diy-art-history-lesson-plans/",
+    "source": null,
+    "date": 42283,
+    "thumbnail": "http://1.bp.blogspot.com/-WG2Q0425hqc/VqGkMILQ7mI/AAAAAAAAKIk/a6MztqkAPSw/s320/diyarthistory_contemporary.png",
+    "include": "yes"
+  },
+  {
+    "title": "Let Them Have Light",
+    "description": "Our Burning Man art project - a gumball machine that served up thousands of LED rings to help light burners in the desert.",
+    "homepage": "https://www.indiegogo.com/projects/let-them-have-light-led#/",
+    "source": null,
+    "date": 42248,
+    "thumbnail": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_240,w_320/v1470163768/hqd45fft6eren6jwg41u.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Developer Support Handbook",
+    "description": "A handbook of suggestions for how to support API developers through documentation, issue tracking, forum support, and more. Based on my experience on the Maps & Wave APIs.",
+    "homepage": "http://pamelafox.github.io/developer-support-handbook/",
+    "source": "https://github.com/pamelafox/developer-support-handbook",
+    "date": 42044,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_handbook.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "EatDifferent",
+    "description": "(DEAD) A nutrition tracking tool for people that want to change their eating habits for the better. Includes a web, email, and mobile interface.",
+    "homepage": null,
+    "source": null,
+    "date": 41061,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_eatdifferent.png",
+    "include": "yes"
+  },
+  {
+    "title": "5lide",
+    "description": "(DEAD) A web app for writing slides in HTML, and viewing them as HTML5 slide decks (with variable themes). Imports limited formats.",
+    "homepage": null,
+    "source": "https://github.com/pamelafox/5lide",
+    "date": 41049,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_5lide.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "SpeakerMeter",
+    "description": "(DEAD) A way for speakers to get feedback from audience members. A project from StartupBus 2011.",
+    "homepage": null,
+    "source": null,
+    "date": 40675,
+    "thumbnail": null,
+    "include": "no"
+  },
+  {
+    "title": "Similarity Web",
+    "description": "(OUT OF ORDER) A way to visualize the web of books similar to a particular book. ",
+    "homepage": null,
+    "source": "https://github.com/pamelafox/similarityweb",
+    "date": 40621,
+    "thumbnail": null,
+    "include": "yes"
+  },
+  {
+    "title": "Primal/Paleo Recipes",
+    "description": "(DEAD) A portal for searching recipes, seeing the latest recipe blog posts + tweets, and browsing a manually compiled list of Primal/Paleo recipes.",
+    "homepage": null,
+    "source": "https://github.com/pamelafox/primalpaleorecipes",
+    "date": 40599,
+    "thumbnail": null,
+    "include": "no"
+  },
+  {
+    "title": "RageTube",
+    "description": "(DEAD) A way to watch Rage playlists online, by parsing them and pulling the videos off Youtube.",
+    "homepage": null,
+    "source": "https://github.com/pamelafox/ragetube",
+    "date": 40588,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_ragetube.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Montage Maker",
+    "description": "(DEAD)A simple web app for loading photos from Flickr, Picasa, or somewhere else on the web, and then transforming them into a montage.",
+    "homepage": null,
+    "source": "http://montage-maker.googlecode.com/svn/trunk/",
+    "date": 40493,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_montagemaker.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Europopped Map",
+    "description": "(DEAD) A map mashup that plots the music videos featured on the Europopped blog, for easy per-country trashy music browsing.",
+    "homepage": null,
+    "source": "http://pamelafox-samplecode.googlecode.com/svn/trunk/europopped/",
+    "date": 40424,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_europopped.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Google Spreadsheets Flash Cards",
+    "description": "(DEAD) A gadget for making flash cards out of a column in your Google spreadsheet.",
+    "homepage": "http://blog.pamelafox.org/2009/05/google-spreadsheets-apis-interactive.html",
+    "source": "http://pamelafox-samplecode.googlecode.com/svn/trunk/flashcards/",
+    "date": 40393,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_flashcards.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Google Spreadsheets Converter",
+    "description": "(DEAD) A gadget for converting the values in your Google spreadsheet into XML, JSON, or SQL statements.",
+    "homepage": "http://blog.pamelafox.org/2009/05/how-to-convert-google-spreadsheet-into.html",
+    "source": "http://pamelafox-samplecode.googlecode.com/svn/trunk/spreadsheetsconverter/",
+    "date": 40153,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_spreadsheetsconverter.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "PhotoMunchers",
+    "description": "(OUT OF ORDER) A game inspired by the classic \"Number Munchers\" game - you must munch photos matching a given tag before the Troggle eats you!",
+    "homepage": null,
+    "source": "http://photomunchers.googlecode.com/svn/trunk/",
+    "date": 39653,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_photomunchers.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Profane Game",
+    "description": "(DEAD) A game where you must prove your worth by cursing as many times in 60 seconds as possible. Ready, set, *&^&%(&(!",
+    "homepage": null,
+    "source": "http://imagine-it.org/google/profanegame.xml",
+    "date": 39106,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_profanegame.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "WordHunter Xtreme",
+    "description": "(DEAD) Boggle, with a twist. After you correctly find a word, it will tell you the definition, from either UrbanDictionary or the normal dictionary. Great for learning. :)",
+    "homepage": null,
+    "source": "http://pamelafox-samplecode.googlecode.com/svn/trunk/wordhunterxtreme/",
+    "date": 39072,
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_wordhunter.jpg",
+    "include": "yes"
+  }
+]

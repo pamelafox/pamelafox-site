@@ -1,8 +1,16 @@
+import json
+import os
+
 from flask import Flask, render_template
 
-from .datasources import get_blogger_data, get_worksheet_data
+from .datasources import get_blogger_data
 
 app = Flask(__name__)
+
+
+def load_json_file(filename):
+    file = open(os.path.join(app.root_path, "data", filename))
+    return json.load(file)
 
 
 @app.route("/")
@@ -19,7 +27,7 @@ def readinglist():
 
 @app.route("/talks/")
 def talks():
-    talks = get_worksheet_data("Talks")
+    talks = load_json_file("talks.json")
     title = "pamela fox's talks"
     values = {"talks": talks, "title": title}
     return render_template("talks.html", **values)
@@ -27,7 +35,7 @@ def talks():
 
 @app.route("/projects/")
 def projects():
-    projects = get_worksheet_data("Projects")
+    projects = load_json_file("projects.json")
     title = "pamela fox's projects"
     values = {"projects": projects, "title": title}
     return render_template("projects.html", **values)
@@ -35,7 +43,7 @@ def projects():
 
 @app.route("/interviews/")
 def interviews():
-    interviews = get_worksheet_data("Interviews")
+    interviews = load_json_file("interviews.json")
     title = "pamela fox's interviews"
     values = {"interviews": interviews, "title": title}
     return render_template("interviews.html", **values)

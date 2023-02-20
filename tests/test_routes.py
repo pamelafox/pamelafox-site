@@ -10,31 +10,25 @@ def client():
     return src.app.test_client()
 
 
-@pytest.fixture()
-def fake_worksheet_data(monkeypatch):
-    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
-    monkeypatch.setattr(src, "get_worksheet_data", lambda _: [])
-
-
 def test_homepage(client):
     response = client.get("/")
     assert response.status_code == 200
     assert b"I am a human" in response.data
 
 
-def test_projects(client, fake_worksheet_data):
+def test_projects(client):
     response = client.get("/projects/")
     assert response.status_code == 200
     assert b"projects" in response.data
 
 
-def test_talks(client, fake_worksheet_data):
+def test_talks(client):
     response = client.get("/talks/")
     assert response.status_code == 200
     assert b"talks" in response.data
 
 
-def test_interviews(client, fake_worksheet_data):
+def test_interviews(client):
     response = client.get("/interviews/")
     assert response.status_code == 200
     assert b"interviews" in response.data

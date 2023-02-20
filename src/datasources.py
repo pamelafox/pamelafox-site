@@ -1,22 +1,5 @@
 import json
-import os
 import urllib.request
-
-
-def get_worksheet_data(worksheet_id):
-    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "NoKeyFound")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/1ppywkX1g_0ynTIs6qQvCMzsandxLqMUHFDR0SQyjvtA/values/{worksheet_id}?key={GOOGLE_API_KEY}"  # noqa
-    rows = []
-    with urllib.request.urlopen(url) as result:
-        if result.status == 200:
-            entries = json.loads(result.read())["values"]
-        headers = entries[0]
-        for entry in entries[1:]:
-            row_info = {}
-            for ind, header in enumerate(headers):
-                row_info[header] = entry[ind]
-            rows.append(row_info)
-    return rows
 
 
 def get_blogger_data(tag=None):
