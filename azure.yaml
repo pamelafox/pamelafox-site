@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: pamelafox-site
+hooks:
+  predeploy:
+    run: ./src/deploy.sh
+    interactive: true
+services:
+  web:
+    project: ./src
+    dist: flaskapp/build
+    language: python
+    host: staticwebapp

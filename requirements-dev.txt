@@ -1,4 +1,4 @@
--r requirements.txt
+-r src/requirements.txt
 pytest
 flake8
 coverage

@@ -7,12 +7,6 @@
     },
     "location": {
       "value": "${AZURE_LOCATION}"
-    },
-    "principalId": {
-      "value": "${AZURE_PRINCIPAL_ID}"
-    },
-    "useAPIM": {
-      "value": "${USE_APIM=false}"
     }
   }
 }

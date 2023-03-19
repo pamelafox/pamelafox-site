@@ -3,7 +3,7 @@ import json
 import unittest.mock
 import urllib.request
 
-from src.datasources import get_blogger_data
+from flaskapp.datasources import get_blogger_data
 
 fake_blogger_data = {
     "feed": {
