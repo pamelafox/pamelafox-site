@@ -7,4 +7,4 @@ node_modules/
 .azure/
 .venv/
 .env
-src/build/
+src/flaskapp/build/

@@ -2,12 +2,12 @@ import unittest.mock
 
 import pytest
 
-import src
+from flaskapp import app
 
 
 @pytest.fixture()
 def client():
-    return src.app.test_client()
+    return app.test_client()
 
 
 def test_homepage(client):
@@ -41,7 +41,7 @@ def test_readinglist(client):
 
 
 def test_blogposts(client):
-    with unittest.mock.patch("src.get_blogger_data", autospec=True) as mocked:
+    with unittest.mock.patch("flaskapp.get_blogger_data", autospec=True) as mocked:
         mocked.return_value = [], [], None
         response = client.get("/blogposts/")
         assert response.status_code == 200
@@ -49,7 +49,7 @@ def test_blogposts(client):
 
 
 def test_blogposts_tag(client):
-    with unittest.mock.patch("src.get_blogger_data") as mocked:
+    with unittest.mock.patch("flaskapp.get_blogger_data") as mocked:
         mocked.return_value = [], [], "a11y"
         response = client.get("/blogposts/a11y.html")
         assert mocked.call_args.args[0] == "a11y"

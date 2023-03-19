@@ -20,27 +20,34 @@ Then open the website at localhost:5000.
 
 ## Deployment instructions
 
-This repository can be deployed as a container app on Microsoft Azure.
+This project is designed for deployment on Azure Static Web Apps.
 
-After creating a resource group, it can be deployed from the bicep file:
+Steps for deployment:
 
+1. Sign up for a [free Azure account](https://azure.microsoft.com/free/)
+2. Install the [Azure Developer CLI](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd). (If you opened this repository in a Dev Container, that part will be done for you.)
+3. Provision and deploy all the resources:
+
+    ```shell
+    azd up
+    ```
+
+    It will prompt you to login and to provide a name (like "mysite") and location. Then it will provision the resources in your account and deploy the latest code.
+
+4. When `azd` has finished deploying, you'll see an endpoint URI in the command output. Visit that URI to see the website.
+
+5. When you've made any changes to the app code, you can just run:
+
+    ```shell
+    azd deploy
+    ```
+
+## CI/CD pipeline
+
+This project includes a Github workflow for deploying the resources to Azure
+on every push to main. That workflow requires several Azure-related authentication secrets
+to be stored as Github action secrets. To set that up, run:
+
+```shell
+azd pipeline config
 ```
-az deployment group create \
-    --resource-group pamelafox-site-group \
-    --template-file azure_cdn.bicep \
-    --parameters googleApiKey=<SECRET> \
-    -c
-```
-
-The custom domain should be mapped manually after deployment.
-
-
-export RESOURCE_GROUP='pamelafox-swa-rg'
-export RESOURCE_GROUP_LOCATION='eastus2'
-export SWA_REPO_TOKEN=''
-export SWA_NAME='pamelafox-swa-app'
-export SWA_REPO_URL='https://github.com/pamelafox/pamelafox-site'
-export SWA_REPO_BRANCH='master'
-az group create -g $RESOURCE_GROUP -l $RESOURCE_GROUP_LOCATION
-
-az deployment group create --resource-group $RESOURCE_GROUP --template-file infra/main.bicep --parameters swaName=$SWA_NAME swaRepositoryToken=$SWA_REPO_TOKEN swaRepositoryUrl=$SWA_REPO_URL swaRepositoryBranch=$SWA_REPO_BRANCH -c

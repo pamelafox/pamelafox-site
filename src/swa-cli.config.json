@@ -3,10 +3,9 @@
   "configurations": {
     "pamelafox-site": {
       "appLocation": ".",
-      "outputLocation": "src/build",
+      "outputLocation": "build",
       "appBuildCommand": "python3 freeze.py",
-      "appName": "pamelafox-site",
-      "resourceGroup": "pamelafox-site-rg"
+      "appName": "pamelafox-site"
     }
   }
 }

@@ -1,3 +1,0 @@
-Flask
-Frozen-Flask
-python-dotenv
