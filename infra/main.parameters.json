@@ -3,10 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "environmentName": {
-      "value": "${AZURE_ENV_NAME}"
+      "value": "pamelafox-swa"
     },
     "location": {
-      "value": "${AZURE_LOCATION}"
+      "value": "centralus"
+    },
+    "domainName": {
+      "value": "www.pamelafox.org"
     }
   }
 }

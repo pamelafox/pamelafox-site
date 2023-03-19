@@ -9,6 +9,8 @@ param environmentName string
 @description('Primary location for all resources')
 param location string
 
+param domainName string = ''
+
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
 var tags = { 'azd-env-name': environmentName }
 
@@ -27,6 +29,7 @@ module web 'swa.bicep' = {
     name: '${environmentName}${resourceToken}-swa'
     location: location
     tags: union(tags, { 'azd-service-name': 'web' })
+    domainName: domainName
   }
 }
 
