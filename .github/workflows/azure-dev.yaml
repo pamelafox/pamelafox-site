@@ -26,8 +26,7 @@ jobs:
 
       - name: Install build dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r src/requirements.txt
+          python3 -m pip install -r src/requirements.txt
 
       - name: Log in with Azure (Federated Credentials)
         if: ${{ env.AZURE_CLIENT_ID != '' }}
