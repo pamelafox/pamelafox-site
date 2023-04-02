@@ -1,5 +1,17 @@
 [
   {
+    "title": "1-click deploys of Python web apps to Azure",
+    "date": 45255,
+    "description": "A talk on using Bicep (infrastructure-as-code) and the Azure Developer CLI to deploy Python web apps.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/iac-deploys/screenshot_azdgallery.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/iac-deploys/",
+    "video": null,
+    "tags": "python",
+    "location": "Python Web Conf (virtual)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Containerizing Python Web Apps Workshop",
     "date": 45255,
     "description": "A workshop about containerizing Python apps (using Flask as an example), running the Docker containers locally, and deploying them to Azure Container Apps.",

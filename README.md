@@ -13,7 +13,7 @@ pre-commit install
 ```
 
 ```shell
-flask --debug run
+flask --debug --app src/app:app run --port 50505
 ```
 
 Then open the website at localhost:5000.

@@ -7,6 +7,10 @@
       "IMAGE": "python:3.11"
     }
   },
+  "forwardPorts": [
+    5000,
+    50505
+  ],
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "16",
