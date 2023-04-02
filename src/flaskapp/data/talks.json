@@ -13,7 +13,7 @@
   },
   {
     "title": "Containerizing Python Web Apps Workshop",
-    "date": 45255,
+    "date": "11/25/2023",
     "description": "A workshop about containerizing Python apps (using Flask as an example), running the Docker containers locally, and deploying them to Azure Container Apps.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/containers-workshop/flaskdb_container.png",
     "slides": "https://pamelafox.github.io/my-py-talks/containers-workshop/",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Python HTTP APIs Workshop",
-    "date": 44945,
+    "date": "1/19/2023",
     "description": "A workshop about making HTTP APIs in Python, with either Flask or FastAPI, running them locally, and then deploying them to Azure.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/http-apis-workshop/fastapi_diagram.png",
     "slides": "https://pamelafox.github.io/my-py-talks/http-apis-workshop/",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Using PostgreSQL inside VS Code Dev Containers & GitHub Codespaces",
-    "date": 44939,
+    "date": "1/13/2023",
     "description": "A livestream about using Dev Containers inside VS Code and Github Codespaces to develop Python apps.",
     "thumbnail": "https://i.ytimg.com/vi/JTHTWp9DIZQ/hqdefault.jpg",
     "slides": null,
@@ -49,7 +49,7 @@
   },
   {
     "title": "Python Web Apps Workshop",
-    "date": 44937,
+    "date": "1/11/2023",
     "description": "A workshop about making web apps in Python (via http/Flask/Django) and hosting them on Azure",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/web-apps-workshop/djangodb.drawio.png",
     "slides": "https://pamelafox.github.io/my-py-talks/web-apps-workshop",
@@ -61,7 +61,7 @@
   },
   {
     "title": "Turning a Regression Model into an HTTP API",
-    "date": 44866,
+    "date": "11/1/2022",
     "description": "A talk about building a regression model from StackOverflow developer survey data using scikit-learn, and then turning that into a FastAPI HTTP API and deploying the API to Azure.",
     "thumbnail": "https://pamelafox.github.io/regression-model-azure-demo/notebook/function_api.png",
     "slides": "https://pamelafox.github.io/regression-model-azure-demo/notebook/#/13",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Python Web Apps",
-    "date": 44859,
+    "date": "10/25/2022",
     "description": "A lecture about making web apps in Python (via http/Flask/Django) and hosting them on Azure",
     "thumbnail": "https://pbs.twimg.com/media/Ff7ZfWMUAAErkdm?format=jpg&name=medium",
     "slides": "https://pamelafox.github.io/my-py-talks/web-apps/index.html",
@@ -85,7 +85,7 @@
   },
   {
     "title": "The benefits of HTML slides for programming classes",
-    "date": 44640,
+    "date": "3/20/2022",
     "description": "A lightning talk about why I prefer using HTML-based slides (Reveal.JS) when teaching programming classes.",
     "thumbnail": "https://i9.ytimg.com/vi/KiuBtzUviiQ/mq2.jpg?sqp=CKDPxpQG&rs=AOn4CLAmb3IpJ7sQb4mrPeHfVG3TaxQcsQ",
     "slides": "https://pamelafox.github.io/html-slides-for-programming/",
@@ -97,7 +97,7 @@
   },
   {
     "title": "Education for All",
-    "date": 44053,
+    "date": "8/10/2020",
     "description": "A talk for an education focused hackathon about how educational materials can be brought online in an accessible, scalable, and inclusive manner.",
     "thumbnail": "https://files.speakerdeck.com/presentations/7712408da4dd43d68f6651ab91248317/preview_slide_0.jpg?17453324",
     "slides": "https://speakerdeck.com/pamelafox/education-for-all",
@@ -109,7 +109,7 @@
   },
   {
     "title": "CS+Social Good: Education",
-    "date": 44028,
+    "date": "7/16/2020",
     "description": "A talk for BayCSC about how computer science can be used in education. Includes discussion and projects.",
     "thumbnail": "https://files.speakerdeck.com/presentations/d404bc189fac429394ad4d4ec7f27145/preview_slide_0.jpg?653236",
     "slides": "https://docs.google.com/presentation/d/1CEftTyfE205GvHmuAiKymaD4ahlU3PzMgJsMr2QtoqU/edit#slide=id.g8d801bdac8_0_703",
@@ -121,7 +121,7 @@
   },
   {
     "title": "Khan Academy AP CSP",
-    "date": 43901,
+    "date": "3/11/2020",
     "description": "A short talk for AP CSP teachers and providers about updates to the Khan Academy AP CSP offering for 2020-2021.",
     "thumbnail": "https://cdn.kastatic.org/images/khan-logo-dark-background-2.png",
     "slides": "https://docs.google.com/presentation/d/19wnI-zqT6TaxFeCJpF7fxr0k_6CQeFxBi2npkaVeTw4/edit#slide=id.p",
@@ -133,7 +133,7 @@
   },
   {
     "title": "Coding Everywhere",
-    "date": 43174,
+    "date": "3/15/2018",
     "description": "A talk for Berkeley CTE about the many ways I've used coding, across school, college, career, and side projects.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/4acc7510c43b4bd594004ad389c299f7/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/coding-everywhere",
@@ -145,7 +145,7 @@
   },
   {
     "title": "Cultivating Empathetic Joy",
-    "date": 43019,
+    "date": "10/11/2017",
     "description": "A workshop about Empathetic Joy and how to train it, based on the Buddhist Immeasurable.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/49b0446a6d2b4dfc94f37cee39b39879/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/cultivating-empathetic-joy-an-antidote-to-jealousy-and-judgment",
@@ -157,7 +157,7 @@
   },
   {
     "title": "JS Freakin' Everywhere",
-    "date": 42984,
+    "date": "9/6/2017",
     "description": "A talk on how Woebot is built on a full JS stack - for the backend, \"CMS\", NLP, and more.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/970edc396f074827816624d03e623ae3/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/js-freakin-everywhere-a-chatbot-powered-by-aws-plus-nodejs",
@@ -169,7 +169,7 @@
   },
   {
     "title": "Pamela Fox: Learner, Creator, Teacher",
-    "date": 42829,
+    "date": "4/4/2017",
     "description": "A talk presented to a room full of Melbourne middle school girls, about my life story and jobs in the tech industry.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/2662844442d9400aac1acb75792f000b/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/pamela-fox-learner-creator-teacher",
@@ -181,7 +181,7 @@
   },
   {
     "title": "Massive Online Learning Challenges",
-    "date": 42435,
+    "date": "3/6/2016",
     "description": "A panel about putting on a \"MOLC\" (like Hour of Code), measuring its impact, and avoiding pitfalls. I talked about Summer of Scripting, a Khan Academy MOLC.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/78b7290ab65e404480244bf1b0beea94/thumb_slide_5.jpg",
     "slides": "https://speakerdeck.com/pamelafox/massive-online-learning-challenges",
@@ -193,7 +193,7 @@
   },
   {
     "title": "Making Computing Fun Again",
-    "date": 42431,
+    "date": "3/2/2016",
     "description": "A panel talk about how Khan Academy shows students the passion, beauty, joy, and awe of computing.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/3ece39f4705d4da8b5a78b70cc833ff4/thumb_slide_4.jpg",
     "slides": "https://speakerdeck.com/pamelafox/making-computing-fun-again-passion-beauty-joy-and-awe-on-khan-academy",
@@ -205,7 +205,7 @@
   },
   {
     "title": "Pamela Fox: My Story",
-    "date": 42094,
+    "date": "3/31/2015",
     "description": "A talk presented to a room full of Melbourne high school girls who were visiting Silicon Valley and learning about STEM.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/08797c0dd94144dbae5963c401179085/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/pamela-fox-my-story",
@@ -217,8 +217,8 @@
   },
   {
     "title": "Programming is awesome",
-    "date": 42086,
-    "description": "A keynote to a bunch of high schoolers about why I think programming is awesome, and what they might get out of it.",
+    "date": "3/23/2015",
+    "description": "A keynote to high schoolers about why I think programming is awesome, and what they might get out of it.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/c05d0e8d81a74426814a24e3b30f18ef/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/programming-is-awesome",
     "video": null,
@@ -229,7 +229,7 @@
   },
   {
     "title": "Why I love programming (and teaching it)",
-    "date": 42021,
+    "date": "1/17/2015",
     "description": "A talk about how I got into programming, what I discovered I love about it, and what I love about teaching it at Khan Academy.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/6cde55b080b10132893e3a3c50a759cf/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/why-i-love-programming-and-why-i-teach-it",
@@ -241,7 +241,7 @@
   },
   {
     "title": "Innovaci\u00f3n en Educaci\u00f3n Secundaria",
-    "date": 41965,
+    "date": "11/22/2014",
     "description": "A spanish-language talk about Khan Academy and how online education can change the classroom.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/6dda2650545e01321b05524ec95472fc/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/innovacion-en-educacion-secundaria",
@@ -253,7 +253,7 @@
   },
   {
     "title": "Teaching Programming Online",
-    "date": 41965,
+    "date": "11/22/2014",
     "description": "A tech talk about how we teach programming on KA, going into the HTML5/JS that powers the frontend and Python that powers the backend.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/556816905461013209045e1a992306c0/thumb_slide_9.jpg",
     "slides": "https://speakerdeck.com/pamelafox/teaching-programming-online-codemotion",
@@ -265,7 +265,7 @@
   },
   {
     "title": "Hack On!",
-    "date": 41951,
+    "date": "11/8/2014",
     "description": "Tips for students about to embark on a hackathon, from prototyping to committing to pitching.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/5c9571c04921013242bd4e743bb86014/thumb_slide_42.jpg",
     "slides": "https://speakerdeck.com/pamelafox/hacksc-the-how-and-why-of-hacking-at-a-hackathon",
@@ -277,7 +277,7 @@
   },
   {
     "title": "Creating Interactive Learning Experiences at Khan Academy",
-    "date": 41897,
+    "date": "9/15/2014",
     "description": "A talk and live demo of the real-time editing environment we created for Khan Academy, including examples of the crazy stuff we have to do to make it work.",
     "thumbnail": "https://ka-perseus-images.s3.amazonaws.com/829cbe09a536f59139c07425a75b2d51a4cbc424.png",
     "slides": "https://github.com/Khan/live-editor/tree/master/demos/slides-at-scale",
@@ -289,7 +289,7 @@
   },
   {
     "title": "Look Ma, No Image Requests",
-    "date": 41815,
+    "date": "6/25/2014",
     "description": "A discussion of 5 ways that we reduced image requests on our landing page, and the aftermath 4 months later.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/cd6f7d70deef013161b50a09b621514c/thumb_slide_6.jpg",
     "slides": "https://speakerdeck.com/pamelafox/look-ma-no-image-requests",
@@ -301,7 +301,7 @@
   },
   {
     "title": "Lowering the Barrier to Learning Programming",
-    "date": 41815,
+    "date": "6/25/2014",
     "description": "A talk about why we need more K-12ers learning CS/programming, and the ways which we can all lower their barriers.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/d9503ff0dedf0131704e3ab8e5aea04a/thumb_slide_1.jpg",
     "slides": "https://speakerdeck.com/pamelafox/lowering-the-barrier-to-learning-programming-no-notes",
@@ -313,7 +313,7 @@
   },
   {
     "title": "Technical Interviews Make Me Cry",
-    "date": 41811,
+    "date": "6/21/2014",
     "description": "An Ignite talk about how I broke down during a technical interview, and what I think we should change.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/7cb0baf0dd5801315be4761d16f0720c/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/ignite-technical-interviews-make-me-cry",
@@ -325,7 +325,7 @@
   },
   {
     "title": "Khan Academy Programming",
-    "date": 41810,
+    "date": "6/20/2014",
     "description": "An overview for high school CS teachers of the Khan Academy computer programming community and culture.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/89ce2960daf00131a69c42d341a7ea58/thumb_slide_2.jpg",
     "slides": "https://speakerdeck.com/pamelafox/khan-academy-programming-curriculum-for-cshs",
@@ -337,7 +337,7 @@
   },
   {
     "title": "Reading, Writing, Arithmetic... JavaScript?",
-    "date": 41710,
+    "date": "3/12/2014",
     "description": "A talk about what it might mean if everyone learnt JS as a kid-- and an investigation into how early that could be taught.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/068024c08c35013176a32aa5bb8c7ef3/thumb_slide_0.jpg",
     "slides": "https://speakerdeck.com/pamelafox/reading-writing-arithmetic-dot-dot-dot-javascript",
@@ -349,7 +349,7 @@
   },
   {
     "title": "Making JS More Learnable",
-    "date": 41610,
+    "date": "12/2/2013",
     "description": "A discussion about what parts of JS are hard to learn and how we can make it easier to learn, like via better debugging tools and error messages.",
     "thumbnail": "https://speakerd.s3.amazonaws.com/presentations/0becef903d7e01316a2b2237ad47601e/thumb_slide_1.jpg",
     "slides": "https://speakerdeck.com/pamelafox/making-js-more-learnable",
@@ -361,7 +361,7 @@
   },
   {
     "title": "Teach the World To Code",
-    "date": 41596,
+    "date": "11/18/2013",
     "description": "A talk about why we need more developers and the non-traditional ways that we are creating more developers.",
     "thumbnail": "http://dl.dropbox.com/u/10998095/Screenshots/uqfbna7-82h2.png",
     "slides": "http://teach-world-code-2013.appspot.com/",
@@ -373,7 +373,7 @@
   },
   {
     "title": "Developer Experience",
-    "date": 41571,
+    "date": "10/24/2013",
     "description": "A talk about what developer experience is and how to make it not suck.",
     "thumbnail": "http://cdn.slidesharecdn.com/developerexperience-110713173758-phpapp01-thumbnail-2",
     "slides": "https://speakerdeck.com/pamelafox/developer-experience",
