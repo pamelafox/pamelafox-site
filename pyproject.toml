@@ -14,4 +14,4 @@ testpaths = [
     "tests"
 ]
 pythonpath = ['src']
-env_files = ['.env']
+live_server_scope = "function"

@@ -6,3 +6,7 @@ pytest-cov
 ruff
 pre-commit
 black
+playwright
+pytest-playwright
+pytest-flask
+axe-core-python
