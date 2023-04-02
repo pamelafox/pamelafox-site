@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>{{ title }}</title>
@@ -11,7 +11,7 @@
   <body>
 
 <div id="wrapper">
-	<div id="sidenav">
+	<nav id="sidenav">
       <ul>
        <li><a href="/">home</a></li>
 	     <li><a href="{{ url_for('blogposts') }}">blog posts</a></li>
@@ -20,11 +20,11 @@
 	     <li><a href="{{ url_for('interviews') }}">interviews</a></li>
 	     <li><a href="{{ url_for('readinglist') }}">reading list</a></li>
 	    </ul>
-	 </div>
- <div id="main">
+    </nav>
+ <main id="main" role="main">
   <h1>{{ title }}</h1>
   {% block content %}{% endblock %}
- </div>
+ </main>
 
 </div>
   </body>
