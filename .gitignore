@@ -9,3 +9,5 @@ node_modules/
 .env
 src/flaskapp/build/
 .DS_Store
+src/tests/axe_results.json
+src/tests/axe_results.sarif
