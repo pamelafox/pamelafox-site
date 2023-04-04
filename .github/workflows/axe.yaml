@@ -1,4 +1,4 @@
-name: Python checks
+name: Axe analysis
 
 on: [push, pull_request]
 
@@ -21,3 +21,12 @@ jobs:
         run: python -m playwright install --with-deps
       - name: Run your tests
         run: python3 -m pytest src/tests/axe_analysis.py
+      # npm install
+      - name: Install npm dependency
+        run: npm install axe-sarif-converter
+      - name: Run sarif converter
+        run: npx axe-sarif-converter --input-files src/tests/axe_results.json --output-file src/tests/axe_results.sarif
+      - name: Upload alerts to Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: src/tests/axe_results.sarif
