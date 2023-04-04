@@ -11,3 +11,4 @@ src/flaskapp/build/
 .DS_Store
 src/tests/axe_results.json
 src/tests/axe_results.sarif
+src/tests/results/*.json

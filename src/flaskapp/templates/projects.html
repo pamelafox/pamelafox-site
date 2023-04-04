@@ -5,7 +5,7 @@
   <ul>
   {% for project in projects %}
   <li style="clear:right">
-   {% if project.thumbnail %}<img  class="thumbnail" src="{{ project.thumbnail }}">{% endif %}
+   {% if project.thumbnail %}<img  class="thumbnail" src="{{ project.thumbnail }}" alt="Screenshot of {{project.title}}">{% endif %}
    <span class="title"><a href="{{ project.homepage }}">{{ project.title }}</a></span>
    <div class="description">
    {{ project.description }}
@@ -14,7 +14,7 @@
    Last updated around {{ project.date }}.
    </div>
    <div class="links">
-   {% if project.source %}<a href="{{ project.source }}"><img src="/static/source_icon.png">Grab Source</a> {% endif %}
+   {% if project.source %}<a href="{{ project.source }}"><img src="/static/source_icon.png" alt="">Grab Source</a> {% endif %}
    </div>
   {% endfor %}
   </ul>
