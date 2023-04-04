@@ -29,6 +29,7 @@ jobs:
         run: |
           npx axe-sarif-converter --input-files src/tests/axe_results.json --output-file src/tests/axe_results.sarif
           sed -i 's#http://localhost:[0-9]\+/projects/#src/flaskapp/__init__.py#g' src/tests/axe_results.sarif
+          sed -i 's/"snippet"/"startLine":1,"startColumn":1,"endLine":1,"endColumn":1,"snippet"/g' src/tests/axe_results.sarif
           cat src/tests/axe_results.sarif
       - name: Upload alerts to Security tab
         if: success() || steps.test.conclusion == 'failure'
