@@ -24,17 +24,3 @@ jobs:
       - name: Run your tests
         id: test
         run: python3 -m pytest src/tests/axe_analysis.py
-      - name: Run sarif converter
-        if: success() || steps.test.conclusion == 'failure'
-        run: |
-          output_file="src/tests/axe_results.sarif"
-          input_files=$(echo "$(ls -p src/tests/results | grep -v / | sed 's/.*/src\/tests\/results\/& /g' | tr -d '\n')")
-          npx axe-sarif-converter --input-files $input_files --output-file $output_file
-          sed -i 's#http://localhost:[0-9]\+/#src/flaskapp/__init__.py#g' $output_file
-          sed -i 's/"snippet"/"startLine":1,"startColumn":1,"endColumn":1,"snippet"/g' $output_file
-          cat $output_file
-      - name: Upload alerts to Security tab
-        if: success() || steps.test.conclusion == 'failure'
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: src/tests/axe_results.sarif

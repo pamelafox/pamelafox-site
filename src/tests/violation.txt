@@ -1,7 +1,0 @@
-Rule Violated:
-$id - $description
-    URL: $helpUrl
-    Impact Level: $impact
-    Tags: $tags
-    Elements Affected:
-    $elements
