@@ -11,7 +11,8 @@ def test_a11y(app, live_server, page: Page):
     axe = Axe()
     violations_count = 0
     violations_reports = ""
-    for route in ["home_page", "projects"]:
+    # TODO: Scan all URLs based on url_map or sitemap?
+    for route in ["home_page", "projects", "talks", "interviews"]:
         page.goto(url_for(route, _external=True))
         results = axe.run(page, {"resultTypes": ["violations"]})
         # Track violations for report at the end

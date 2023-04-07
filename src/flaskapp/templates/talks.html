@@ -6,7 +6,7 @@
   <ul>
   {% for talk in talks %}
   <li style="clear:right">
-   <img  class="thumbnail" src="{{ talk.thumbnail }}">
+   <img class="thumbnail" src="{{ talk.thumbnail }}" alt="Thumbnail image for talk titled {{ talk.title }}">
    <span class="title"><a href="{{ talk.slides }}">{{ talk.title }}</a></span>
    <div class="description">
    {{ talk.description }}
@@ -15,7 +15,7 @@
    Given {{ talk.date }} at {{ talk.location }}.
    </div>
    <div class="links">
-   {% if talk.video %}<a href="{{ talk.video }}"><img src="/static/video_icon.png">Watch Video</a> {% endif %}
+   {% if talk.video %}<a href="{{ talk.video }}"><img src="/static/video_icon.png" alt="">Watch Video</a> {% endif %}
    </div>
   {% endfor %}
   </ul>
