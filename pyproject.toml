@@ -9,9 +9,9 @@ target-version =  ["py311"]
 line-length = 127
 
 [tool.pytest.ini_options]
-addopts = "-ra --cov"
+addopts = "-ra"
 testpaths = [
     "tests"
 ]
 pythonpath = ['src']
-env_files = ['.env']
+live_server_scope = "function"

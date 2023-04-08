@@ -8,3 +8,4 @@ node_modules/
 .venv/
 .env
 src/flaskapp/build/
+.DS_Store

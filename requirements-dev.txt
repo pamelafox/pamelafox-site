@@ -6,3 +6,8 @@ pytest-cov
 ruff
 pre-commit
 black
+playwright
+pytest-playwright
+pytest-flask
+axe-core-python
+git+https://github.com/pamelafox/axe-core-python.git@add
