@@ -24,9 +24,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install build dependencies
-        run: |
-          python3 -m pip install -r src/requirements.txt
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
 
       - name: Log in with Azure (Federated Credentials)
         if: ${{ env.AZURE_CLIENT_ID != '' }}
