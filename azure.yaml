@@ -9,5 +9,5 @@ services:
     host: staticwebapp
     hooks:
       prepackage:
-      run: ./deploy.sh
-      interactive: true
+        run: ./deploy.sh
+        interactive: true
