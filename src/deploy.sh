@@ -1,6 +1,11 @@
 #!/bin/sh
 python3 freeze.py
-FILE="flaskapp/build/talks/index.html"
-echo "*** File - $FILE contents ***"
-head -n 40 $FILE
-exit 0
+
+echo 'Creating python virtual environment "scripts/.venv"'
+python -m venv scripts/.venv
+
+echo 'Installing dependencies from "requirements.txt" into virtual environment'
+./scripts/.venv/bin/python -m pip install -r requirements.txt
+
+echo 'Running "prepdocs.py"'
+./scripts/.venv/bin/python ./freeze.py
