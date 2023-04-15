@@ -14,7 +14,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/azure-dev-cli-apps:latest
+      # using daily until latest in mcr is updated on next azd release
+      image: azdevcliextacr.azurecr.io/azure-dev:daily
+      # image: mcr.microsoft.com/azure-dev-cli-apps:latest
     env:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
