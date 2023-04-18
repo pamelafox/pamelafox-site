@@ -1,4 +1,16 @@
 [
+    {
+    "title": "Deploying PostgreSQL servers to Azure with Bicep",
+    "date": "2023-04-18T05:00:00.000Z",
+    "description": "A talk on using Bicep (infrastructure-as-code) to deploy PostgreSQL servers.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/postgres-bicep/cartoon_deploying.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/postgres-bicep/",
+    "video": null,
+    "tags": "python",
+    "location": "CitusCon (virtual)",
+    "cospeakers": null,
+    "include": "yes"
+  },
   {
     "title": "1-click deploys of Python web apps to Azure",
     "date": "2023-03-15T05:00:00.000Z",
