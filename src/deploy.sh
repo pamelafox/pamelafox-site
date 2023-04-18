@@ -1,5 +1,4 @@
 #!/bin/sh
-python3 freeze.py
 
 echo 'Creating python virtual environment "scripts/.venv"'
 python3 -m venv scripts/.venv
