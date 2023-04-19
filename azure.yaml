@@ -4,7 +4,7 @@ name: pamelafox-site
 services:
   web:
     project: ./src
-    dist: ../swa-package
+    dist: flaskapp/build
     language: python
     host: staticwebapp
     hooks:

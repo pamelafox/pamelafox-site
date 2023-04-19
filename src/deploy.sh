@@ -8,5 +8,3 @@ echo 'Installing dependencies from "requirements.txt" into virtual environment'
 
 echo 'Running "Build static web app"'
 npx -y @azure/static-web-apps-cli@1.0.6 build
-
-mv flaskapp/build ../swa-package
