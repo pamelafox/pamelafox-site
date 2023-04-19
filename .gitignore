@@ -8,5 +8,4 @@ node_modules/
 .venv/
 .env
 src/flaskapp/build/
-swa-package/
 .DS_Store
