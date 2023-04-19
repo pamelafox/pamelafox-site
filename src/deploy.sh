@@ -6,5 +6,5 @@ python3 -m venv scripts/.venv
 echo 'Installing dependencies from "requirements.txt" into virtual environment'
 ./scripts/.venv/bin/python -m pip install -r requirements.txt
 
-echo 'Running "Python Freeze"'
-./scripts/.venv/bin/python ./freeze.py
+echo 'Running "Build static web app"'
+npx -y @azure/static-web-apps-cli@1.0.6 build
