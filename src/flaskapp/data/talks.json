@@ -1,5 +1,17 @@
-[
-    {
+[   
+  {
+    "title": "Writing Python Web Apps with VS Code",
+    "date": "2023-04-26T05:00:00.000Z",
+    "description": "A talk on customizing VS Code to work on Python web apps (Django specifically) - Dev Containers, Debugging, Testing, etc.",
+    "thumbnail": "https://i.ytimg.com/an_webp/AO9yHm8zKsk/mqdefault_6s.webp?du=3000&sqp=COqataIG&rs=AOn4CLC6kk3YQOIANBH-PbS2_fR6vPcetw",
+    "slides": "https://pamelafox.github.io/my-py-talks/python-apps-vscode/",
+    "video": "https://www.youtube.com/watch?v=AO9yHm8zKsk",
+    "tags": "python",
+    "location": "VS Code Day (virtual)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Deploying PostgreSQL servers to Azure with Bicep",
     "date": "2023-04-18T05:00:00.000Z",
     "description": "A talk on using Bicep (infrastructure-as-code) to deploy PostgreSQL servers.",
