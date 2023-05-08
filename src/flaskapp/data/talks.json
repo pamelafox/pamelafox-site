@@ -17,7 +17,7 @@
     "description": "A talk on using Bicep (infrastructure-as-code) to deploy PostgreSQL servers.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/postgres-bicep/cartoon_deploying.png",
     "slides": "https://pamelafox.github.io/my-py-talks/postgres-bicep/",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=dqyHjUZSAuc",
     "tags": "python",
     "location": "CitusCon (virtual)",
     "cospeakers": null,
