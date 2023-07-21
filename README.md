@@ -18,6 +18,21 @@ flask --debug --app src/app:app run --port 50505
 
 Then open the website at localhost:5000.
 
+## Running tests
+
+Run the unit tests:
+
+```shell
+python3 -m pytest
+```
+
+Run the accessibility tests:
+
+```shell
+playwright install --with-deps
+python3 -m pytest src/tests/axe_analysis.py
+```
+
 ## Deployment instructions
 
 This project is designed for deployment on Azure Static Web Apps.
