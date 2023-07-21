@@ -29,7 +29,7 @@
     "description": "A talk on using Bicep (infrastructure-as-code) and the Azure Developer CLI to deploy Python web apps.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/iac-deploys/screenshot_azdgallery.png",
     "slides": "https://pamelafox.github.io/my-py-talks/iac-deploys/",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=XeDwYnuuTWI",
     "tags": "python",
     "location": "Python Web Conf (virtual)",
     "cospeakers": null,
