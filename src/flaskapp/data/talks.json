@@ -1,5 +1,29 @@
 [   
   {
+    "title": "Building intelligent apps and microservices with Azure Container Apps",
+    "date": "2023-09-07T05:00:00.000Z",
+    "description": "A talk on deploying an Azure OpenAI + Cognitive Search app to Azure Container Apps, using ACA jobs for data indexing.",
+    "thumbnail": "https://files.speakerdeck.com/presentations/60a61dec9c334bc2a114d1db30cb2bf0/preview_slide_0.jpg?26978020",
+    "slides": "https://speakerdeck.com/pamelafox/building-intelligent-apps-and-microservices-with-azure-container-apps",
+    "video": "https://www.youtube.com/live/9xxpn-bJes0?si=ErZz8nzyrCjRktuh&t=14552",
+    "tags": "python",
+    "location": "Azure Python Day (virtual)",
+    "cospeakers": "Anthony Chu",
+    "include": "yes"
+  },
+  {
+    "title": "Automated accessibility audits",
+    "date": "2023-04-26T05:00:00.000Z",
+    "description": "A talk on using Pytest, axe-core, Playwright, and snapshot testing to automate accessibility checks of Python web apps.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/automate-a11y/screenshot_a11y_violations.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/automate-a11y/",
+    "video": "https://www.youtube.com/watch?v=J-4Qa6PSomM",
+    "tags": "python",
+    "location": "North Bay Python (Petaluma, CA)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Writing Python Web Apps with VS Code",
     "date": "2023-04-26T05:00:00.000Z",
     "description": "A talk on customizing VS Code to work on Python web apps (Django specifically) - Dev Containers, Debugging, Testing, etc.",
