@@ -1,5 +1,17 @@
 [   
   {
+    "title": "Configure VS Code for Productive Programming",
+    "date": "2023-09-20T05:00:00.000Z",
+    "description": "A talk discussing dev containers, profiles, extensions, and GitHub Copilot, with an emphasis on Python examples.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/configure-vscode/screenshot_copilot_complete.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/configure-vscode/",
+    "video": null,
+    "tags": "python",
+    "location": "O'Reilly SuperStream",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Building intelligent apps and microservices with Azure Container Apps",
     "date": "2023-09-07T05:00:00.000Z",
     "description": "A talk on deploying an Azure OpenAI + Cognitive Search app to Azure Container Apps, using ACA jobs for data indexing.",
