@@ -17,7 +17,7 @@
     "description": "A talk on deploying an Azure OpenAI + Cognitive Search app to Azure Container Apps, using ACA jobs for data indexing.",
     "thumbnail": "https://files.speakerdeck.com/presentations/60a61dec9c334bc2a114d1db30cb2bf0/preview_slide_0.jpg?26978020",
     "slides": "https://speakerdeck.com/pamelafox/building-intelligent-apps-and-microservices-with-azure-container-apps",
-    "video": "https://www.youtube.com/live/9xxpn-bJes0?si=ErZz8nzyrCjRktuh&t=14552",
+    "video": "https://www.youtube.com/watch?v=1tPIlVmkdkg&list=PLI7iePan8aH7rL1YhdvkX6XC_q55vX7mF&index=7&pp=iAQB",
     "tags": "python",
     "location": "Azure Python Day (virtual)",
     "cospeakers": "Anthony Chu",
