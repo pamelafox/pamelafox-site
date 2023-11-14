@@ -1,5 +1,17 @@
 [   
   {
+    "title": "Quickly build and deploy OpenAI apps on Azure, infused with your own data",
+    "date": "2023-11-08T05:00:00.000Z",
+    "description": "A walkthrough of a RAG chat app built with Azure OpenAI, Cognitive Search, Azure Developer CLI, and VS Code extensions.",
+    "thumbnail": "https://pbs.twimg.com/media/F-6ymI7aYAAHR75?format=jpg&name=small",
+    "slides": "https://github.com/Azure-Samples/azure-search-openai-demo/",
+    "video": "https://www.youtube.com/watch?v=j8i-OM5kwiY",
+    "tags": "python",
+    "location": "GitHub Universe",
+    "cospeakers": "Mandy Whaley, Savannah Ostrowski, Shayne Boyer",
+    "include": "yes"
+  },
+  {
     "title": "Configure VS Code for Productive Programming",
     "date": "2023-09-20T05:00:00.000Z",
     "description": "A talk discussing dev containers, profiles, extensions, and GitHub Copilot, with an emphasis on Python examples.",
