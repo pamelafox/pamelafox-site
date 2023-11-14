@@ -1,11 +1,35 @@
 [   
   {
+    "title": "Quickly build and deploy OpenAI apps on Azure, infused with your own data",
+    "date": "2023-11-08T05:00:00.000Z",
+    "description": "A walkthrough of a RAG chat app built with Azure OpenAI, Cognitive Search, Azure Developer CLI, and VS Code extensions.",
+    "thumbnail": "https://pbs.twimg.com/media/F-6ymI7aYAAHR75?format=jpg&name=small",
+    "slides": "https://github.com/Azure-Samples/azure-search-openai-demo/",
+    "video": "https://www.youtube.com/watch?v=j8i-OM5kwiY",
+    "tags": "python",
+    "location": "GitHub Universe",
+    "cospeakers": "Mandy Whaley, Savannah Ostrowski, Shayne Boyer",
+    "include": "yes"
+  },
+  {
+    "title": "Configure VS Code for Productive Programming",
+    "date": "2023-09-20T05:00:00.000Z",
+    "description": "A talk discussing dev containers, profiles, extensions, and GitHub Copilot, with an emphasis on Python examples.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/configure-vscode/screenshot_copilot_complete.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/configure-vscode/",
+    "video": null,
+    "tags": "python",
+    "location": "O'Reilly SuperStream",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Building intelligent apps and microservices with Azure Container Apps",
     "date": "2023-09-07T05:00:00.000Z",
     "description": "A talk on deploying an Azure OpenAI + Cognitive Search app to Azure Container Apps, using ACA jobs for data indexing.",
     "thumbnail": "https://files.speakerdeck.com/presentations/60a61dec9c334bc2a114d1db30cb2bf0/preview_slide_0.jpg?26978020",
     "slides": "https://speakerdeck.com/pamelafox/building-intelligent-apps-and-microservices-with-azure-container-apps",
-    "video": "https://www.youtube.com/live/9xxpn-bJes0?si=ErZz8nzyrCjRktuh&t=14552",
+    "video": "https://www.youtube.com/watch?v=1tPIlVmkdkg&list=PLI7iePan8aH7rL1YhdvkX6XC_q55vX7mF&index=7&pp=iAQB",
     "tags": "python",
     "location": "Azure Python Day (virtual)",
     "cospeakers": "Anthony Chu",
