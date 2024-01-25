@@ -1,4 +1,16 @@
-[   
+[
+  {
+    "title": "Vector search and state-of-the-art retrieval for generative AI apps​",
+    "date": "2024-01-11T05:00:00.000Z",
+    "description": "A talk about vector embeddings, vector search, and how to use vector search in Azure AI search for the most robust retrieval in RAG apps.",
+    "thumbnail": "https://i9.ytimg.com/vi/vuOA13Y_Qzk/mq2.jpg?sqp=CODSya0G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFUgYShlMA8=&rs=AOn4CLBjsS_HwkdI8UL08xPt60BnHW0j8Q",
+    "slides": "https://speakerdeck.com/pamelafox/vector-search-and-retrieval-for-generative-ai-app-microsoft-ai-tour-sf",
+    "video": "https://youtube.com/live/vuOA13Y_Qzk",
+    "tags": "python",
+    "location": "Microsoft AI Tour SF",
+    "cospeakers": null,
+    "include": "yes"
+  },
   {
     "title": "Quickly build and deploy OpenAI apps on Azure, infused with your own data",
     "date": "2023-11-08T05:00:00.000Z",
