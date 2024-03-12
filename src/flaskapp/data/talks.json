@@ -24,6 +24,18 @@
     "include": "yes"
   },
   {
+    "title": "Portrait of a Python Program",
+    "date": "2023-10-08T05:00:00.000Z",
+    "description": "How many ways can you visualize a Python program? As a puzzle? A stack? A pile of frames? A bunch of disassembled gobbledygook? Go on this journey with me as I explore PythonLand from multiple perspectives.",
+    "thumbnail": "https://repository-images.githubusercontent.com/334784631/ecc8396f-2497-4bb0-9f0e-3ab26999d37d",
+    "slides": null,
+    "video": "https://www.youtube.com/watch?v=18kiGemxyvA",
+    "tags": "python",
+    "location": "PyGotham TV 2023",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Configure VS Code for Productive Programming",
     "date": "2023-09-20T05:00:00.000Z",
     "description": "A talk discussing dev containers, profiles, extensions, and GitHub Copilot, with an emphasis on Python examples.",
