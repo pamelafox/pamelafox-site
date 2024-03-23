@@ -1,5 +1,29 @@
 [
   {
+    "title": "Using large language models with Python​",
+    "date": "2024-03-22T05:00:00.000Z",
+    "description": "A lecture about LLMs, focusing on GPT models from OpenAI, and how to use them with the OpenAI SDK in Python.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/llms-python/screenshot_openaistudio.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/llms-python/",
+    "video": null,
+    "tags": "python",
+    "location": "UC Berkeley",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Teaching modern web development with Python",
+    "date": "2024-03-21T05:00:00.000Z",
+    "description": "A talk about the components of backend web development in 2024 - dev environments, containerization, async frameworks, testing, tools, and coding assistants.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/teaching-python-web/screenshot_django_admin.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/teaching-python-web/",
+    "video": null,
+    "tags": "python",
+    "location": "SIGCSE 2024 (Portland)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Vector search and state-of-the-art retrieval for generative AI apps​",
     "date": "2024-01-11T05:00:00.000Z",
     "description": "A talk about vector embeddings, vector search, and how to use vector search in Azure AI search for the most robust retrieval in RAG apps.",
