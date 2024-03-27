@@ -5,7 +5,7 @@
     "description": "A lecture about LLMs, focusing on GPT models from OpenAI, and how to use them with the OpenAI SDK in Python.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/llms-python/screenshot_openaistudio.png",
     "slides": "https://pamelafox.github.io/my-py-talks/llms-python/",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=3ELVGNLTYzU",
     "tags": "python",
     "location": "UC Berkeley",
     "cospeakers": null,
