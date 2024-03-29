@@ -1,4 +1,16 @@
 [
+    {
+    "title": "Building a RAG app to chat with your data",
+    "date": "2024-03-28T05:00:00.000Z",
+    "description": "A talk on Retrieval Augmented Generation, how to build a RAG chat app using Azure technologies, and how to evaluate and observe the app.",
+    "thumbnail": "https://media.licdn.com/dms/image/sync/D4E27AQHSISoXp1mGLA/articleshare-shrink_800/0/1711669654636?e=1712275200&v=beta&t=ULhWaDyoFjqC_72cDNr00vjP5DYKVYBn25OWsQalUbo",
+    "slides": "https://speakerdeck.com/pamelafox/building-a-rag-app-to-chat-with-your-data-on-azure",
+    "video": null,
+    "tags": "python",
+    "location": "Boston Azure (online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
   {
     "title": "Using large language models with Python​",
     "date": "2024-03-22T05:00:00.000Z",
