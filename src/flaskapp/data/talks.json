@@ -1,5 +1,29 @@
 [
     {
+    "title": "Secure yourIntelligent Applicationswith Microsoft Entra",
+    "date": "2024-05-22T05:00:00.000Z",
+    "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service’s built-in authentication and filter output based on the authenticated user.",
+    "thumbnail": "https://i.ytimg.com/vi/3ctFWU492xk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWFJ8iU3TjvCXeymMnQ83DxEILJg",
+    "slides": "https://speakerdeck.com/pamelafox/secure-your-intelligent-applications-with-microsoft-entra",
+    "video": "https://speakerdeck.com/pamelafox/secure-your-intelligent-applications-with-microsoft-entra",
+    "tags": "python",
+    "location": "Microsoft Build (Seattle)",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+    },
+    {
+    "title": "Building a RAG-powered AI chat app with Python and VS Code",
+    "date": "2024-04-24T05:00:00.000Z",
+    "description": "Walkthrough of a Python web app that can chat on your own data using Retrieval-Augmented-Generation (RAG) and large language models like GPT-4. Plus, see how you can use VS Code Dev Containers plus Ollama for a fully local development experience.",
+    "thumbnail": "https://i.ytimg.com/vi/3ctFWU492xk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWFJ8iU3TjvCXeymMnQ83DxEILJg",
+    "slides": "https://speakerdeck.com/pamelafox/building-a-rag-powered-ai-chat-app-with-python-and-vs-code",
+    "video": "https://www.youtube.com/watch?v=3ctFWU492xk",
+    "tags": "python",
+    "location": "VS Code Day (online)",
+    "cospeakers": null,
+    "include": "yes"
+    },
+    {
     "title": "Building a RAG app to chat with your data",
     "date": "2024-03-28T05:00:00.000Z",
     "description": "A talk on Retrieval Augmented Generation, how to build a RAG chat app using Azure technologies, and how to evaluate and observe the app.",
