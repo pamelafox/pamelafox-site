@@ -1,6 +1,6 @@
 [
     {
-    "title": "Secure yourIntelligent Applications with Microsoft Entra",
+    "title": "Secure your Intelligent Applications with Microsoft Entra",
     "date": "2024-05-22T05:00:00.000Z",
     "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service’s built-in authentication and filter output based on the authenticated user.",
     "thumbnail": "https://i.ytimg.com/vi/3ctFWU492xk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWFJ8iU3TjvCXeymMnQ83DxEILJg",
