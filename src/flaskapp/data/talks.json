@@ -1,5 +1,17 @@
 [
     {
+    "title": "pgvector for Python developers",
+    "date": "2024-06-12T05:00:00.000Z",
+    "description": "Learn how to use pgvector, the Postgres extension for vector storage and querying, from Python scripts and web apps. I'll include demos with the most common drivers and ORMs, like psycopg, asyncpg, SQLAlchemy, SQLModel, and deploy a full FastAPI app using pgvector for a vector search API. I'll also talk about embedding model options and indexing strategies.",
+    "thumbnail": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkYCD0Ic41ZHziuBPBaOO9fGk_hA",
+    "slides": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg",
+    "video": "https://www.youtube.com/watch?v=MJHUVUXBRFE",
+    "tags": "python",
+    "location": "Posette (Virtual)",
+    "cospeakers": null,
+    "include": "yes"
+    },
+    {
     "title": "Secure your Intelligent Applications with Microsoft Entra",
     "date": "2024-05-22T05:00:00.000Z",
     "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service’s built-in authentication and filter output based on the authenticated user.",
