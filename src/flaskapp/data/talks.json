@@ -1,10 +1,22 @@
 [
     {
+    "title": "A visual exploration of vectors",
+    "date": "2024-06-28T05:00:00.000Z",
+    "description": "Vector embeddings are a way to encode a text or image as an array of floating point numbers, and they make it possible to perform similarity search on many kinds of content. Let's try to wrap our head around vector embeddings and similarity spaces by exploring them visually! We'll compare different embedding models, different quantization schemes, and different input modalities, using open source tools that produce graphs and charts. ",
+    "thumbnail": "https://i.ytimg.com/vi/Q_slEpNuhMc/hq720.jpg",
+    "slides": "https://github.com/pamelafox/visual-exploration-vectors/",
+    "video": "https://www.youtube.com/watch?v=Q_slEpNuhMc",
+    "tags": "python",
+    "location": "North Bay Python (Petaluma)",
+    "cospeakers": null,
+    "include": "yes"
+    },
+    {
     "title": "pgvector for Python developers",
     "date": "2024-06-12T05:00:00.000Z",
     "description": "Learn how to use pgvector, the Postgres extension for vector storage and querying, from Python scripts and web apps. I'll include demos with the most common drivers and ORMs, like psycopg, asyncpg, SQLAlchemy, SQLModel, and deploy a full FastAPI app using pgvector for a vector search API. I'll also talk about embedding model options and indexing strategies.",
-    "thumbnail": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkYCD0Ic41ZHziuBPBaOO9fGk_hA",
-    "slides": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/pgvector-python/",
     "video": "https://www.youtube.com/watch?v=MJHUVUXBRFE",
     "tags": "python",
     "location": "Posette (Virtual)",
@@ -17,7 +29,7 @@
     "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service’s built-in authentication and filter output based on the authenticated user.",
     "thumbnail": "https://i.ytimg.com/vi/3ctFWU492xk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWFJ8iU3TjvCXeymMnQ83DxEILJg",
     "slides": "https://speakerdeck.com/pamelafox/secure-your-intelligent-applications-with-microsoft-entra",
-    "video": "https://speakerdeck.com/pamelafox/secure-your-intelligent-applications-with-microsoft-entra",
+    "video": "https://www.youtube.com/watch?v=e5aR_52oeBY",
     "tags": "python",
     "location": "Microsoft Build (Seattle)",
     "cospeakers": "Matt Gotteiner",
