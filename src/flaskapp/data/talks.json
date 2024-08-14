@@ -1,5 +1,5 @@
-[   
-    {
+[
+  {
     "title": "Using GPT vision models in Python",
     "date": "2024-08-14T05:00:00.000Z",
     "description": "The latest GPT models like 4o and 4o-mini can take in image inputs, which opens up a massive spectrum of use cases. Let's see how we can send images to those models, how we can use them for a basic chat-on-images app, and then how to use them for a RAG (Retrieval-Augmented Generation) application.",
@@ -10,32 +10,68 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-    },
-    {
+  },
+  {
     "title": "Using LLMs in Python",
     "date": "2024-08-07T05:00:00.000Z",
     "description": "Know a bit of Python and want to start programming with language models, like OpenAI's GPT series? In this session, we'll talk about the world of LLMs, including SLMs (small language models), and show how we can use the OpenAI Python SDK to interact with many models. We'll do a bit of prompt engineering, play around with few-shot examples, and even implement basic RAG (Retrieval-Augmented Generation). We'll also demonstrate how to use the streaming responses and asynchronous client. If you'd like to follow along, make sure you've got a GitHub account and access to either the Azure OpenAI API or the OpenAI.com API.",
-    "thumbnail": "https://i.ytimg.com/vi/uT1WmUC_Aj8/hq720.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/uT1WmUC_Aj8/hqdefault.jpg",
     "slides": "https://pamelafox.github.io/my-py-talks/llms-python-stream/",
     "video": "https://www.youtube.com/watch?v=uT1WmUC_Aj8",
     "tags": "python",
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-    },
-    {
-    "title": "Using Keyless Auth with Azure AI Services",
+  },
+  {
+    "title": "Securing AI Apps: Data Access Control for AI RAG Apps on Azure",
+    "date": "2024-07-17T05:00:00.000Z",
+    "description": "If you're trying to get an LLM to accurately answer questions about your own documents, you need RAG: Retrieval Augmented Generation. With a RAG approach, the app first searches a knowledge base for relevant matches to a user's query, then sends the results to the LLM along with the original question. What if you have documents that should only be accessed by a subset of your users, like a group or a single user? Then you need data access controls to ensure that document visibility is respected during the RAG flow. In this session, we'll show an approach using Azure AI Search with data access controls to only search the documents that can be seen by the logged in user. We'll also demonstrate a feature for user-uploaded documents that uses data access controls along with Azure Data Lake Storage Gen2.",
+    "thumbnail": "https://i.ytimg.com/vi/4PKug91OSw8/hq720.jpg",
+    "slides": "https://speakerdeck.com/pamelafox/securing-ai-data-access-control-for-rag",
+    "video": "https://www.youtube.com/watch?v=4PKug91OSw8",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+  },
+  {
+    "title": "Securing AI Apps: Add User Login to AI Apps using MSAL SDK",
+    "date": "2024-07-09T05:00:00.000Z",
+    "description": "Need a user sign-in feature for your AI app? We'll show you how to setup an OAuth2 OIDC flow in Python using the the MSAL SDK with the open source identity package. You can use this approach to either enable employees to sign-in to a workforce tenant or, thanks to Entra External ID, let customers sign-in with a one-time passcode, username/password, or Google/Facebook login. Then your app can use user details from the Graph SDK, like their name and email. We'll also demonstrate how to automate the creation of Microsoft Entra applications using the Graph SDK.",
+    "thumbnail": "https://i.ytimg.com/vi/vMccS3u16WU/hq720.jpg",
+    "slides": "https://speakerdeck.com/pamelafox/securing-ai-apps-on-azure-add-user-login-to-ai-apps-using-msal-sdk",
+    "video": "https://www.youtube.com/watch?v=vMccS3u16WU",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Ray Luo",
+    "include": "yes"
+  },
+  {
+    "title": "Securing AI Apps: Add User Login to AI Apps using Built-in Auth",
+    "date": "2024-07-08T05:00:00.000Z",
+    "description": "Building an AI app on Azure and want to know the easiest way to let users sign-in? We'll show you how to setup built-in authentication on Azure App Service and Azure Container Apps. With built-in auth, employees can sign-in to either a workforce tenant or, thanks to Entra External ID, consumers can sign-in with a one-time passcode, username/password, or Google/Facebook login. Then your Azure app can display user details like their name, with minimal code changes. We'll demonstrate how to setup built-in auth to your apps using either the Graph SDK and the newly released Graph Bicep provider, and provide links to samples with full code provided.",
+    "thumbnail": "https://i.ytimg.com/vi/3K-ZpKJkUOg/hq720.jpg",
+    "slides": "https://speakerdeck.com/pamelafox/securing-ai-apps-on-azure-add-user-login-to-ai-apps-using-built-in-auth",
+    "video": "https://www.youtube.com/watch?v=3K-ZpKJkUOg",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "James Casey",
+    "include": "yes"
+  },
+  {
+    "title": "Securing AI Apps: Using Keyless Auth with Azure AI Services",
     "date": "2024-07-02T05:00:00.000Z",
-    "description": "Ready to go keyless and never worry about compromised keys again? All the Azure AI services support keyless authentication using role-based access control, making it possible for you to authenticate to the services with either your logged in local user identity or your deployed app's managed identity. We'll show you how to use keyless authentication with Azure OpenAI, demonstrating how to set up the access controls in the Portal, with the Azure CLI, or with infrastructure-as-code (Bicep). Then we'll connect to that Azure OpenAI service in our application code, using both the OpenAI SDK and the popular Langchain SDK. Our examples will be in Python, but you can use keyless auth with most modern OpenAI packages. Join us to go keyless today!",
-    "thumbnail": "https://i.ytimg.com/vi/uT1WmUC_Aj8/hq720.jpg",
-    "slides": "https://pamelafox.github.io/my-py-talks/llms-python-stream/",
-    "video": "https://www.youtube.com/watch?v=uT1WmUC_Aj8",
+    "description": "Ready to go keyless and never worry about compromised keys again? All the Azure AI services support keyless authentication using role-based access control, making it possible for you to authenticate to the services with either your logged in local user identity or your deployed app's managed identity. We'll show you how to use keyless authentication with Azure OpenAI, demonstrating how to set up the access controls in the Portal, with the Azure CLI, or with infrastructure-as-code (Bicep). Then we'll connect to that Azure OpenAI service in our application code, using both the OpenAI SDK and the popular Langchain SDK.",
+    "thumbnail": "https://i.ytimg.com/vi/IkDcQvKoQ8k/hqdefault.jpg",
+    "slides": "https://speakerdeck.com/pamelafox/securing-ai-apps-on-azure-using-keyless-auth-with-azure-ai-services",
+    "video": "https://www.youtube.com/watch?v=IkDcQvKoQ8k",
     "tags": "python",
     "location": "Microsoft Reactor (Online)",
-    "cospeakers": null,
+    "cospeakers": "Marlene Mhangami",
     "include": "yes"
-    },
-    {
+  },
+  {
     "title": "A visual exploration of vectors",
     "date": "2024-06-28T05:00:00.000Z",
     "description": "Vector embeddings are a way to encode a text or image as an array of floating point numbers, and they make it possible to perform similarity search on many kinds of content. Let's try to wrap our head around vector embeddings and similarity spaces by exploring them visually! We'll compare different embedding models, different quantization schemes, and different input modalities, using open source tools that produce graphs and charts. ",
@@ -46,8 +82,80 @@
     "location": "North Bay Python (Petaluma)",
     "cospeakers": null,
     "include": "yes"
-    },
-    {
+  },
+  {
+    "title": "Python Web Apps: Testing with Pytest and Playwright",
+    "date": "2024-06-20T05:00:00.000Z",
+    "description": "Learn the importance of testing your web apps and the many forms of testing: unit tests, integration tests, property-based tests. We focus on the popular pytest framework to write tests, plus Playwright for browser based testing. We also show how to set up a CI on GitHub actions to automate tests and test coverage checks.",
+    "thumbnail": "https://i.ytimg.com/vi/r37eZ9jkkr8/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/testing-web-apps-workshop/",
+    "video": "https://www.youtube.com/watch?v=r37eZ9jkkr8",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python Web Apps: Containerization with Docker",
+    "date": "2024-06-18T05:00:00.000Z",
+    "description": "An overview of Docker, a standard way to make your web application environments replicable and portable. We cover how to containerize Flask, Django, and FastAPI apps, and discuss how to deploy containerized apps to clouds like Azure.",
+    "thumbnail": "https://i.ytimg.com/vi/Kxr68x1PZTY/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/containers-workshop/",
+    "video": "https://www.youtube.com/watch?v=Kxr68x1PZTY",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python Web Apps: FastAPI",
+    "date": "2024-06-13T05:00:00.000Z",
+    "description": "Learn all about making HTTP APIs using FastAPI, the hottest new framework for Python web apps. Explore what makes FastAPI apps so 'fast' and see the amazing auto-generated documentation.",
+    "thumbnail": "https://i.ytimg.com/vi/95Qwsi5cs78/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/fastapi-workshop/",
+    "video": "https://www.youtube.com/watch?v=95Qwsi5cs78",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python Web Apps: Django",
+    "date": "2024-06-11T05:00:00.000Z",
+    "description": "We dive into the Django framework, a highly opinionated and very popular framework for Python web apps. We explore how the Django ORM and built-in admin makes it easy to build database-driven websites, using PostgreSQL as the database for our examples.",
+    "thumbnail": "https://i.ytimg.com/vi/5IhgcANAAFc/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/django-workshop/",
+    "video": "https://www.youtube.com/watch?v=5IhgcANAAFc",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python Web Apps: Databases & ORMs",
+    "date": "2024-06-06T05:00:00.000Z",
+    "description": "We focus on adding relational databases to a Python web app, using PostgreSQL and the popular SQLAlchemy ORM. We also show how to do migrations and use VS Code to explore the databases locally.",
+    "thumbnail": "https://i.ytimg.com/vi/wK8fUWFiHa0/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/db-web-apps-workshop/",
+    "video": "https://www.youtube.com/watch?v=wK8fUWFiHa0",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python Web Apps 101",
+    "date": "2024-06-04T05:00:00.000Z",
+    "description": "We introduce you to the world of backend web development. We cover the basics of HTTP and then demonstrate how to make a Flask web application with routes, parameters, and templating. We also show how to turn that Flask application into an asynchronous application with Quart, for better concurrency.",
+    "thumbnail": "https://i.ytimg.com/vi/V_69Q0ZiPAI/hq720.jpg",
+    "slides": "https://pamelafox.github.io/python-web-apps/flask-web-apps-workshop/",
+    "video": "https://www.youtube.com/watch?v=V_69Q0ZiPAI",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Renee Noble",
+    "include": "yes"
+  },
+  {
     "title": "pgvector for Python developers",
     "date": "2024-06-12T05:00:00.000Z",
     "description": "Learn how to use pgvector, the Postgres extension for vector storage and querying, from Python scripts and web apps. I'll include demos with the most common drivers and ORMs, like psycopg, asyncpg, SQLAlchemy, SQLModel, and deploy a full FastAPI app using pgvector for a vector search API. I'll also talk about embedding model options and indexing strategies.",
@@ -58,11 +166,11 @@
     "location": "Posette (Virtual)",
     "cospeakers": null,
     "include": "yes"
-    },
-    {
+  },
+  {
     "title": "Secure your Intelligent Applications with Microsoft Entra",
     "date": "2024-05-22T05:00:00.000Z",
-    "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service’s built-in authentication and filter output based on the authenticated user.",
+    "description": "Learn how to automatically setup authentication for AI apps, and how to add access control to your app and data. See how to register your AI apps via Microsoft Graph API or Bicep and discover best practices for token validation and refresh with MSAL libraries. We also walk through how to choose the right OAuth flows for server-side or Single-page applications, and use App Service\u2019s built-in authentication and filter output based on the authenticated user.",
     "thumbnail": "https://i.ytimg.com/vi/3ctFWU492xk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWFJ8iU3TjvCXeymMnQ83DxEILJg",
     "slides": "https://speakerdeck.com/pamelafox/secure-your-intelligent-applications-with-microsoft-entra",
     "video": "https://www.youtube.com/watch?v=e5aR_52oeBY",
@@ -70,8 +178,8 @@
     "location": "Microsoft Build (Seattle)",
     "cospeakers": "Matt Gotteiner",
     "include": "yes"
-    },
-    {
+  },
+  {
     "title": "Building a RAG-powered AI chat app with Python and VS Code",
     "date": "2024-04-24T05:00:00.000Z",
     "description": "Walkthrough of a Python web app that can chat on your own data using Retrieval-Augmented-Generation (RAG) and large language models like GPT-4. Plus, see how you can use VS Code Dev Containers plus Ollama for a fully local development experience.",
@@ -82,21 +190,21 @@
     "location": "VS Code Day (online)",
     "cospeakers": null,
     "include": "yes"
-    },
-    {
+  },
+  {
     "title": "Building a RAG app to chat with your data",
     "date": "2024-03-28T05:00:00.000Z",
     "description": "A talk on Retrieval Augmented Generation, how to build a RAG chat app using Azure technologies, and how to evaluate and observe the app.",
-    "thumbnail": "https://media.licdn.com/dms/image/sync/D4E27AQHSISoXp1mGLA/articleshare-shrink_800/0/1711669654636?e=1712275200&v=beta&t=ULhWaDyoFjqC_72cDNr00vjP5DYKVYBn25OWsQalUbo",
+    "thumbnail": "https://i.ytimg.com/vi/3Zh9MEuyTQo/hqdefault.jpg",
     "slides": "https://speakerdeck.com/pamelafox/building-a-rag-app-to-chat-with-your-data-on-azure",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=3Zh9MEuyTQo",
     "tags": "python",
     "location": "Boston Azure (online)",
     "cospeakers": null,
     "include": "yes"
   },
   {
-    "title": "Using large language models with Python​",
+    "title": "Using large language models with Python\u200b",
     "date": "2024-03-22T05:00:00.000Z",
     "description": "A lecture about LLMs, focusing on GPT models from OpenAI, and how to use them with the OpenAI SDK in Python.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/llms-python/screenshot_openaistudio.png",
@@ -132,7 +240,7 @@
     "include": "yes"
   },
   {
-    "title": "Vector search and state-of-the-art retrieval for generative AI apps​",
+    "title": "Vector search and state-of-the-art retrieval for generative AI apps\u200b",
     "date": "2024-01-11T05:00:00.000Z",
     "description": "A talk about vector embeddings, vector search, and how to use vector search in Azure AI search for the most robust retrieval in RAG apps.",
     "thumbnail": "https://i9.ytimg.com/vi/vuOA13Y_Qzk/mq2.jpg?sqp=CODSya0G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFUgYShlMA8=&rs=AOn4CLBjsS_HwkdI8UL08xPt60BnHW0j8Q",
