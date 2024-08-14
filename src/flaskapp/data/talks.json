@@ -1,4 +1,40 @@
-[
+[   
+    {
+    "title": "Using GPT vision models in Python",
+    "date": "2024-08-14T05:00:00.000Z",
+    "description": "The latest GPT models like 4o and 4o-mini can take in image inputs, which opens up a massive spectrum of use cases. Let's see how we can send images to those models, how we can use them for a basic chat-on-images app, and then how to use them for a RAG (Retrieval-Augmented Generation) application.",
+    "thumbnail": "https://i.ytimg.com/vi/toR644E--w8/hq720.jpg",
+    "slides": "https://www.linkedin.com/posts/pamela-fox-5668b1b4_using-gpt-vision-models-in-python-activity-7229573449197793280-nuLG",
+    "video": "https://www.youtube.com/watch?v=toR644E--w8",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+    },
+    {
+    "title": "Using LLMs in Python",
+    "date": "2024-08-07T05:00:00.000Z",
+    "description": "Know a bit of Python and want to start programming with language models, like OpenAI's GPT series? In this session, we'll talk about the world of LLMs, including SLMs (small language models), and show how we can use the OpenAI Python SDK to interact with many models. We'll do a bit of prompt engineering, play around with few-shot examples, and even implement basic RAG (Retrieval-Augmented Generation). We'll also demonstrate how to use the streaming responses and asynchronous client. If you'd like to follow along, make sure you've got a GitHub account and access to either the Azure OpenAI API or the OpenAI.com API.",
+    "thumbnail": "https://i.ytimg.com/vi/uT1WmUC_Aj8/hq720.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/llms-python-stream/",
+    "video": "https://www.youtube.com/watch?v=uT1WmUC_Aj8",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+    },
+    {
+    "title": "Using Keyless Auth with Azure AI Services",
+    "date": "2024-07-02T05:00:00.000Z",
+    "description": "Ready to go keyless and never worry about compromised keys again? All the Azure AI services support keyless authentication using role-based access control, making it possible for you to authenticate to the services with either your logged in local user identity or your deployed app's managed identity. We'll show you how to use keyless authentication with Azure OpenAI, demonstrating how to set up the access controls in the Portal, with the Azure CLI, or with infrastructure-as-code (Bicep). Then we'll connect to that Azure OpenAI service in our application code, using both the OpenAI SDK and the popular Langchain SDK. Our examples will be in Python, but you can use keyless auth with most modern OpenAI packages. Join us to go keyless today!",
+    "thumbnail": "https://i.ytimg.com/vi/uT1WmUC_Aj8/hq720.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/llms-python-stream/",
+    "video": "https://www.youtube.com/watch?v=uT1WmUC_Aj8",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+    },
     {
     "title": "A visual exploration of vectors",
     "date": "2024-06-28T05:00:00.000Z",
