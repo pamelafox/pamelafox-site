@@ -3,7 +3,7 @@
   "configurations": {
     "pamelafox-site": {
       "appLocation": ".",
-      "outputLocation": "build",
+      "outputLocation": "flaskapp/build",
       "appBuildCommand": "./deploy.sh",
       "appName": "pamelafox-site"
     }
