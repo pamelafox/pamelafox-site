@@ -7,8 +7,3 @@ services:
     dist: flaskapp/build
     language: python
     host: staticwebapp
-    hooks:
-      prepackage:
-        run: ./deploy.sh
-        interactive: true
-        continueOnError: false

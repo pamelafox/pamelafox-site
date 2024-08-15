@@ -4,7 +4,7 @@
     "pamelafox-site": {
       "appLocation": ".",
       "outputLocation": "build",
-      "appBuildCommand": "python3 freeze.py",
+      "appBuildCommand": "./deploy.sh",
       "appName": "pamelafox-site"
     }
   }
