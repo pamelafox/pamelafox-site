@@ -7,7 +7,19 @@
     "slides": "https://speakerdeck.com/pamelafox/oreilly-superstream-building-a-rag-app-to-chat-with-your-data",
     "video": null,
     "tags": "python",
-    "location": "O'Reilly Superstream",
+    "location": "O'Reilly Superstream (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+ {
+    "title": "Playing improv... with Python?",
+    "date": "2024-09-21T05:00:00.000Z",
+    "description": "I ❤️ playing group improv games, but I don't always have a group of humans available for playing. What if I could get a computer to play the games with me, by using a small language model? Let's give it a go in this interactive talk!",
+    "thumbnail": "https://pbs.twimg.com/media/GX868WcaIAATvhj?format=jpg&name=small",
+    "slides": "https://pamelafox.github.io/improv-with-python/",
+    "video": null,
+    "tags": "python",
+    "location": "PyBay 2024 (San Francisco)",
     "cospeakers": null,
     "include": "yes"
   },
