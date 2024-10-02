@@ -1,4 +1,16 @@
 [
+    {
+    "title": "Building a RAG app on your data",
+    "date": "2024-10-02T05:00:00.000Z",
+    "description": "One of the most popular use cases for generative AI is retrieval-augmented generation (RAG), a technique that feeds context to a large language model so that it can answer questions according to sources. Thousands of developers have deployed RAG applications to chat with their internal enterprise data (like HR or support) and external public data (like government or retail). Pamela Fox provides an overview and best practices for building a RAG app.",
+    "thumbnail": "https://pbs.twimg.com/media/GY6BY4cagAA1JwS?format=jpg&name=small",
+    "slides": "https://speakerdeck.com/pamelafox/oreilly-superstream-building-a-rag-app-to-chat-with-your-data",
+    "video": null,
+    "tags": "python",
+    "location": "O'Reilly Superstream",
+    "cospeakers": null,
+    "include": "yes"
+  },
   {
     "title": "Using GPT vision models in Python",
     "date": "2024-08-14T05:00:00.000Z",
