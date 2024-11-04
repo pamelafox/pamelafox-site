@@ -1,5 +1,29 @@
 [
-    {
+   {
+    "title": "Evaluating RAG apps using GitHub Actions",
+    "date": "2024-10-29T05:00:00.000Z",
+    "description": "We all know how to run unit tests on our apps in CI/CD workflows, but we're now in a new world of AI apps with non-deterministic output. How do we evaluate changes to AI apps to ensure that the LLM answer quality remains high? What tools can we use in our workflows, and how do we avoid unnecessary LLM costs? In this interactive session, Pamela Fox, cloud advocate in Python at Microsoft, will demonstrate automated tools for AI chat app evaluation and give you a chance to try out the workflows for yourself. You'll experience the difference between both a failed and successful evaluation.",
+    "thumbnail": "https://files.speakerdeck.com/presentations/c475c507471c4ea597ce6b3434d47e78/preview_slide_0.jpg?32397593",
+    "slides": "https://speakerdeck.com/pamelafox/github-universe-evaluating-rag-apps-in-github-actions",
+    "video": null,
+    "tags": "python",
+    "location": "GitHub Universe (SF)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "Fast-track your AI app development with GitHub and Azure",
+    "date": "2024-10-29T05:00:00.000Z",
+    "description": "In this session, Pamela Fox, cloud advocate in Python, and Kristen Womack, product manager at Microsoft, will demonstrate the power of starting with a GitHub repository from the Azure AI app template gallery. Participants will see the process unfold, beginning with GitHub Codespaces and a model from the GitHub Models catalog. Once the app is running smoothly locally, Pamela will guide you through deploying it to Azure using the Azure Developer CLI. Plus, see how GitHub Copilot for Azure can simplify every step of your deployment process, answering all your questions along the way.",
+    "thumbnail": "https://files.speakerdeck.com/presentations/cc50c6b46da3420d8748edd8482b69cc/preview_slide_0.jpg?32430115",
+    "slides": "https://speakerdeck.com/pamelafox/fast-track-your-ai-app-development-with-github-and-azure",
+    "video": "https://www.youtube.com/watch?v=dnYkOd6R_fU",
+    "tags": "python",
+    "location": "GitHub Universe (SF)",
+    "cospeakers": "Kristen Womack",
+    "include": "yes"
+  },
+  {
     "title": "Building a RAG app on your data",
     "date": "2024-10-02T05:00:00.000Z",
     "description": "One of the most popular use cases for generative AI is retrieval-augmented generation (RAG), a technique that feeds context to a large language model so that it can answer questions according to sources. Thousands of developers have deployed RAG applications to chat with their internal enterprise data (like HR or support) and external public data (like government or retail). Pamela Fox provides an overview and best practices for building a RAG app.",
@@ -10,7 +34,7 @@
     "location": "O'Reilly Superstream (Online)",
     "cospeakers": null,
     "include": "yes"
-  },
+ },
  {
     "title": "Playing improv... with Python?",
     "date": "2024-09-21T05:00:00.000Z",
