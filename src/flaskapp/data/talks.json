@@ -24,6 +24,18 @@
     "include": "yes"
    },
    {
+    "title": "Deploying AI Solutions with GitHub @azure and @workspace Agents",
+    "date": "2024-11-07T05:00:00.000Z",
+    "description": "An interactive demo of using GitHub Copilot agents to deploy an AI app to Azure using the Azure Developer CLI.",
+    "thumbnail": "https://i.ytimg.com/vi/aq_xVGlmRss/hqdefault.jpg",
+    "slides": null,
+    "video": "https://www.youtube.com/watch?v=aq_xVGlmRss",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Pui Chee Chan",
+    "include": "yes"
+   },
+   {
     "title": "Evaluating RAG apps using GitHub Actions",
     "date": "2024-10-29T05:00:00.000Z",
     "description": "We all know how to run unit tests on our apps in CI/CD workflows, but we're now in a new world of AI apps with non-deterministic output. How do we evaluate changes to AI apps to ensure that the LLM answer quality remains high? What tools can we use in our workflows, and how do we avoid unnecessary LLM costs? In this interactive session, Pamela Fox, cloud advocate in Python at Microsoft, will demonstrate automated tools for AI chat app evaluation and give you a chance to try out the workflows for yourself. You'll experience the difference between both a failed and successful evaluation.",
