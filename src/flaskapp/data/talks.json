@@ -1,5 +1,29 @@
 [
    {
+    "title": "Storing chat history for a RAG chat app",
+    "date": "2024-12-04T05:00:00.000Z",
+    "description": "Learn how we store chat history for our most popular RAG chat solution, using either IndexedDB for client-side storage or Azure Cosmos DB for persistent storage. We'll discuss the API architecture and data schema choices, doing both a live demo of the app and a walkthrough of the code.",
+    "thumbnail": "https://i.ytimg.com/vi/Uv4FVdWseio/hqdefault.jpg",
+    "slides": "https://onedrive.live.com/view.aspx?resid=B79CD1DB3ADA14C5%21168&authkey=!AAGBAoJMxUByWXA",
+    "video": "https://www.youtube.com/watch?v=Uv4FVdWseio",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "Entity extraction with Azure OpenAI",
+    "date": "2024-12-03T05:00:00.000Z",
+    "description": "With the new structured outputs capability from the OpenAI gpt-4o model, you can tell the model exactly how to format the response so that it adheres to your custom schema. Learn how to use structured outputs with the Python openai package and Pydantic models in order to do entity extraction on different input types: GitHub issues, webpages, blog posts, and even images.",
+    "thumbnail": "https://i.ytimg.com/vi/jjedmWkztNY/hqdefault.jpg",
+    "slides": "https://1drv.ms/p/s!AsUU2jrb0Zy3gSUXiPZdWicUaLiF?e=gwDLSh",
+    "video": "https://www.youtube.com/live/jjedmWkztNY",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Dariusz Kacban",
+    "include": "yes"
+   },
+   {
     "title": "Evaluating RAG apps using GitHub Actions",
     "date": "2024-10-29T05:00:00.000Z",
     "description": "We all know how to run unit tests on our apps in CI/CD workflows, but we're now in a new world of AI apps with non-deterministic output. How do we evaluate changes to AI apps to ensure that the LLM answer quality remains high? What tools can we use in our workflows, and how do we avoid unnecessary LLM costs? In this interactive session, Pamela Fox, cloud advocate in Python at Microsoft, will demonstrate automated tools for AI chat app evaluation and give you a chance to try out the workflows for yourself. You'll experience the difference between both a failed and successful evaluation.",
