@@ -1,5 +1,17 @@
 [
    {
+    "title": "Deploying Python apps with GitHub Copilot for @azure",
+    "date": "2024-12-05T05:00:00.000Z",
+    "description": "Let's deploy a Python web app to Azure using the new GitHub Copilot for @azure, an agent that can answer questions about Azure products, diagnose errors in our apps, query logs, search for resources, and more. We'll use the agent to help us through the whole process of deploying the app, and hear from the PM about how it's built.",
+    "thumbnail": "https://i.ytimg.com/vi/qGLqkwkxbfc/hqdefault.jpg",
+    "slides": null,
+    "video": "https://www.youtube.com/watch?v=qGLqkwkxbfc",
+    "tags": "python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": "Chris Harris",
+    "include": "yes"
+   },
+   {
     "title": "Storing chat history for a RAG chat app",
     "date": "2024-12-04T05:00:00.000Z",
     "description": "Learn how we store chat history for our most popular RAG chat solution, using either IndexedDB for client-side storage or Azure Cosmos DB for persistent storage. We'll discuss the API architecture and data schema choices, doing both a live demo of the app and a walkthrough of the code.",
