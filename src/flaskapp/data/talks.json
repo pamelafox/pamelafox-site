@@ -1,5 +1,17 @@
 [
    {
+    "title": "Postgresql pgvector for Pythonistas",
+    "date": "2025-04-09T05:00:00.000Z",
+    "description": "Intro to vector embeddings, pgvector extension for PostgreSQL, and how to use pgvector from Python drivers and ORMs.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/pgvector-python/python_elepant.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/pgvector-python/",
+    "video": null,
+    "tags": "python",
+    "location": "SF Python",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "Enterprise AI in 2025",
     "date": "2025-04-01T05:00:00.000Z",
     "description": "A quick talk about the evolution of generative AI from 2024 to 2025 and demo of an MCP server for RAG.",
