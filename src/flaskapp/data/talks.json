@@ -1,4 +1,27 @@
-[
+[  {
+    "title": "Deploying an end-to-end secure AI application",
+    "date": "2025-05-19T05:00:00.000Z",
+    "description": "Security can be challenging at the best of times, especially when it’s not your full-time job. In this session, we walk you through the end-to-end deployment of a secure AI application, all the way from identities, VNETS, NSGs, key vault through to prompt shields and data labelling. If you’ve ever felt overwhelmed by trying to do the right thing by security but didn’t know where to start, this session is for you!",
+    "thumbnail": "https://medius.microsoft.com/video/asset/Thumbnail/47bb566a-21d6-4fa0-9a43-3a826a34b2cf",
+    "slides": "https://medius.microsoft.com/video/asset/PPT/47bb566a-21d6-4fa0-9a43-3a826a34b2cf?referrer=Microsoft+Build-%2Fen-US%2Fsessions%2FBRK234&mhid=build",
+    "video": "https://build.microsoft.com/en-US/sessions/BRK234?source=/speakers/d5b5eb86-ed40-4047-88a7-4e5232734a70",
+    "tags": "security",
+    "location": "Microsoft Build 2025",
+    "cospeakers": "Sarah Young",
+    "include": "yes"
+   },
+   {
+    "title": "Agentic RAG: build a reasoning retrieval engine with Azure AI Search",
+    "date": "2025-05-21T05:00:00.000Z",
+    "description": "Transform flat, simple search into an independent, sophisticated engine with agentic retrieval. Learn how agentic retrieval engines use memory, query planning and reasoning models to help solve complex problems.",
+    "thumbnail": "https://medius.microsoft.com/video/asset/Thumbnail/86f1c05b-6456-42ca-b41c-907866420f40",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/ES2INLnIyctGuta3wn4CuB0BhQSS7ZBJly2tjpxt2LAPwg?resid=B79CD1DB3ADA14C5!sb934882dc9c846cbbad6b7c27e02b81d&ithint=file%2Cpptx&e=txZ6KJ&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VTMklOTG5JeWN0R3V0YTN3bjRDdUIwQmhRU1M3WkJKbHkydGpweHQyTEFQd2c_ZT10eFo2S0o",
+    "video": "https://build.microsoft.com/en-US/sessions/BRK142",
+    "tags": "python, rag",
+    "location": "Microsoft Build 2025",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+   },
    {
     "title": "Postgresql pgvector for Pythonistas",
     "date": "2025-04-09T05:00:00.000Z",
