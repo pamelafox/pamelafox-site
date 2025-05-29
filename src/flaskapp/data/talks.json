@@ -1,4 +1,16 @@
 [  {
+    "title": "Is your LLM-powered app safe? Evaluate it!",
+    "date": "2025-05-20T05:00:00.000Z",
+    "description": "Check out this live demo where we'll show you how to add safety evaluations to apps built on LLMs! Using the powerful Azure AI Evaluation SDK, we'll demonstrate how to make sure your app responses are safe and free from harmful content. We'll walk you through the process step-by-step—from setting up your Azure AI Project to automating a red-teaming scan with RedTeam and AttackStrategy's and reviewing the results in the Foundry.",
+    "thumbnail": "https://i.ytimg.com/vi/sZzcSX7BFVA/hqdefault_1000.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDn-HIC55GmYIMeKt1D51iRLnXa4A",
+    "slides": "https://learn.microsoft.com/azure/ai-foundry/how-to/develop/run-scans-ai-red-teaming-agent",
+    "video": "https://www.youtube.com/watch?v=sZzcSX7BFVA",
+    "tags": "python, rag",
+    "location": "Microsoft Build 2025",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "Deploying an end-to-end secure AI application",
     "date": "2025-05-19T05:00:00.000Z",
     "description": "Security can be challenging at the best of times, especially when it’s not your full-time job. In this session, we walk you through the end-to-end deployment of a secure AI application, all the way from identities, VNETS, NSGs, key vault through to prompt shields and data labelling. If you’ve ever felt overwhelmed by trying to do the right thing by security but didn’t know where to start, this session is for you!",
