@@ -19,6 +19,6 @@
       ]
     }
   },
-  "postCreateCommand": "python3 -m pip install -r requirements-dev.txt && pre-commit install && npm install -g @azure/static-web-apps-cli",
+  "postCreateCommand": "python3 -m pip install -r requirements-dev.txt && pre-commit install",
   "remoteUser": "vscode"
 }
