@@ -35,6 +35,30 @@
     "include": "yes"
    },
    {
+    "title": "Testing Flask and Quart Apps with Pytest and Playwright",
+    "date": "2025-05-16T05:00:00.000Z",
+    "description": "Flask and Quart are fantastic web frameworks for web applications that have both an API backend and a HTML frontend. But how do you test full-stack apps? I'll share my favorite approach: Use pytest for every kind of test: unit, integration, even E2E tests. For backend tests, save the results of each API route test using snapshot testing. For E2E tests, use the Playwright browser automation package, and mock network calls using the backend snapshots. I'll demo tests across multiple web apps, using Flask, FrozenFlask, and Quart, and dig into the trickiest parts of the test setup. All shared code will be open source and linked, so you can bring the same approach into your own apps.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright/software_testing_pyramid.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright/",
+    "video": null,
+    "tags": "python",
+    "location": "FlaskCon @ PyCon US 2025",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "Build modern Python apps on Azure",
+    "date": "2025-05-15T05:00:00.000Z",
+    "description": "For software engineers today, developing Python apps and getting them to the cloud can be a serious hassle. Join us to explore a streamlined end-to-end experience of developing cloud-ready Python applications with Microsoft technologies! We'll cover how to build and deploy applications to Azure that use modern async frameworks, generative AI, and open-source databases like PostgreSQL. By the end, you'll learn how save time and supercharge your development workflows with fan-favorite Python developer tools like VS Code, our Python extension, and GitHub Copilot - all without leaving your IDE",
+    "thumbnail": "http://i.ytimg.com/vi/k6Vm2hakkV4/hqdefault.jpg",
+    "slides": "https://docs.google.com/presentation/d/1fy4KHm55KQcmtWuHDfN2d9OavYAUMM6x/edit?usp=sharing&ouid=104906919451670502090&rtpof=true&sd=true",
+    "video": "https://www.youtube.com/watch?v=k6Vm2hakkV4",
+    "tags": "python, rag",
+    "location": "PyCon US 2025",
+    "cospeakers": "Rohit Ganguly",
+    "include": "yes"
+   },
+   {
     "title": "Postgresql pgvector for Pythonistas",
     "date": "2025-04-09T05:00:00.000Z",
     "description": "Intro to vector embeddings, pgvector extension for PostgreSQL, and how to use pgvector from Python drivers and ORMs.",
