@@ -1,4 +1,17 @@
-[  {
+[
+   {
+    "title": "Building modern Python web apps with PostgreSQL",
+    "date": "2025-06-11T05:00:00.000Z",
+    "description": "PostgreSQL is the most popular database amongst Pythonistas, according to the most recent Python developers survey. Many of those developers are using PostgreSQL to build web applications, which means they're deciding what web app framework to use (Flask? Django? FastAPI?), whether to use an ORM (SQLAlchemy? SQLModel?), whether to use asyncpg or psycopg. So many decisions! In this talk, we'll walk through an opinionated architecture—a FastAPI web app using asyncpg and SQLAlchemy—and talk about why we chose those options.",
+    "thumbnail": "https://i.ytimg.com/vi/wJ9ieWxA7lI/hqdefault_1000.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDn-HIC55GmYIMeKt1D51iRLnXa4A",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/EbI2tmidXqlDvj7lnUKduVQBlTNsK4ERSIwydXTatRrt9g?e=Nib6bc",
+    "video": "https://www.youtube.com/watch?v=wJ9ieWxA7lI",
+    "tags": "python",
+    "location": "Posette 2025",
+    "cospeakers": null,
+    "include": "yes"
+   },
+    {
     "title": "Is your LLM-powered app safe? Evaluate it!",
     "date": "2025-05-20T05:00:00.000Z",
     "description": "Check out this live demo where we'll show you how to add safety evaluations to apps built on LLMs! Using the powerful Azure AI Evaluation SDK, we'll demonstrate how to make sure your app responses are safe and free from harmful content. We'll walk you through the process step-by-step—from setting up your Azure AI Project to automating a red-teaming scan with RedTeam and AttackStrategy's and reviewing the results in the Foundry.",
