@@ -1,5 +1,17 @@
 [
    {
+    "title": "PostgreSQL extension for VS Code",
+    "date": "2025-05-18T05:00:00.000Z",
+    "description": "In this theater session from PyCon US 2025, Cloud Advocate Pamela Fox walks through the new PostgresSQL extension for Visual Studio Code. The PostgreSQL extension for Visual Studio Code is a feature-rich tool designed to simplify PostgreSQL database management and development. This extension empowers developers to connect to PostgreSQL databases, write and execute queries, and manage database objects without leaving the Visual Studio Code environment.",
+    "thumbnail": "https://i.ytimg.com/vi/DwTG_wUObE4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBxd6wSXO47tA4GdKzudZ6AhY1_SQ",
+    "slides": "https://github.com/Azure-Samples/postgresql-extension-playground",
+    "video": "https://www.youtube.com/watch?v=DwTG_wUObE4",
+    "tags": "python",
+    "location": "Pycon 2025 (Microsoft Booth)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "Building modern Python web apps with PostgreSQL",
     "date": "2025-06-11T05:00:00.000Z",
     "description": "PostgreSQL is the most popular database amongst Pythonistas, according to the most recent Python developers survey. Many of those developers are using PostgreSQL to build web applications, which means they're deciding what web app framework to use (Flask? Django? FastAPI?), whether to use an ORM (SQLAlchemy? SQLModel?), whether to use asyncpg or psycopg. So many decisions! In this talk, we'll walk through an opinionated architecture—a FastAPI web app using asyncpg and SQLAlchemy—and talk about why we chose those options.",
