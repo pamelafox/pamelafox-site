@@ -1,11 +1,11 @@
 [
   {
-    "title": "Translation Telephone",
-    "description": "A fun online version of the classic \"Telephone\" game - pass a message through 20 random languages and see what comes out. Note: May be NSFW.",
-    "homepage": "https://www.translationtelephone.com/",
-    "source": "https://github.com/pamelafox/translation-telephone",
-    "date": "2022-07-19T04:00:00.000Z",
-    "thumbnail": "http://www.pamelafox.org/static/thumbnail_translationtelephone.png",
+    "title": "Proficient Python",
+    "description": "An online interactive Python course including runnable code exercises and projects.",
+    "homepage": "https://proficientpython.com/",
+    "source": "https://github.com/pamelafox/proficient-python",
+    "date": "2025-06-15T04:00:00.000Z",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgncne-TPLNoq_FG3o6THp9JR5s8_4rgY7Ml6igl0XfUNKwWUINOXmmnhncTqBE-bHnAT3hDO4H3EUd5AFR9eQZexD_FJOgzgGyKHs_spRbKeGx0gTSTLVLpASGiBe-hTE0b44YjK5NDaNBB6sscMtNyxiJ20wlN592E-GIHLsWY7ua2hQsciMJSZK2wg/s1600/Screenshot%202025-06-23%20at%206.20.12%E2%80%AFAM.png",
     "include": "yes"
   },
   {
@@ -100,7 +100,7 @@
   },
   {
     "title": "The Girl and the Flamingo",
-    "description": "My partner made up a bedtime story for me; I illustrated it and turned it into a children's book. (A pricey one since it's self-published!)",
+    "description": "A former partner made up a bedtime story for me; I illustrated it and turned it into a children's book. (A pricey one since it's self-published!)",
     "homepage": "https://www.amazon.com/Girl-Flamingo-Jacob-Lyles/dp/1367561744/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1484078875&sr=1-1&keywords=girl+and+the+flamingo+jacob+lyles&linkCode=ll1&tag=amazonsimilar-20&linkId=56f6e3e3e308ebb211866858c9d20e88",
     "source": null,
     "date": "2015-12-25T05:00:00.000Z",
@@ -132,6 +132,15 @@
     "source": "https://github.com/pamelafox/developer-support-handbook",
     "date": "2015-02-09T05:00:00.000Z",
     "thumbnail": "http://www.pamelafox.org/static/thumbnail_handbook.jpg",
+    "include": "yes"
+  },
+  {
+    "title": "Translation Telephone",
+    "description": "(DEAD) A fun online version of the classic \"Telephone\" game - pass a message through 20 random languages and see what comes out. Note: May be NSFW.",
+    "homepage": "https://www.translationtelephone.com/",
+    "source": "https://github.com/pamelafox/translation-telephone",
+    "date": "2022-07-19T04:00:00.000Z",
+    "thumbnail": "http://www.pamelafox.org/static/thumbnail_translationtelephone.png",
     "include": "yes"
   },
   {
