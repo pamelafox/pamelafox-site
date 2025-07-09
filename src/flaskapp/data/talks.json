@@ -84,6 +84,30 @@
     "include": "yes"
    },
    {
+    "title": "Agentic RAG with reflection",
+    "date": "2025-04-23T05:00:00.000Z",
+    "description": "Retrieval Augmented Generation (RAG) is a popular technique to get LLMs to answer questions based off your own knowledge base. \"Agentic RAG\" adds planning, tool use, and reflection to a RAG flow.  In this session, we'll extend our most popular open-source RAG solution with a reflection step, prompting the LLM to realize whether it needs to repeat the retrieval in order to improve the answer quality.",
+    "thumbnail": "http://i.ytimg.com/vi/4QZNNJEpG-k/hqdefault.jpg",
+    "slides": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAI_Agents_Hackathon%2Frefs%2Fheads%2Fmain%2Fslides%2FAgenticRAGWithReflection.pptx&wdOrigin=BROWSELINK",
+    "video": "https://www.youtube.com/watch?v=4QZNNJEpG-k",
+    "tags": "python",
+    "location": "AI Agents Hackathon 2025",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+   },
+   {
+    "title": "Prototyping AI Agents with GitHub Models",
+    "date": "2025-04-15T05:00:00.000Z",
+    "description": "Thanks to GitHub Models, all you need to build your first AI Agent is a GitHub account! GitHub Models includes powerful models like OpenAI gpt-4o, DeepSeek-R1, Llama-3.1, and many more, ready to try out in the playground or in your code. In this session, we'll demonstrate how to connect to GitHub Models from Python, and then build agents using popular Python packages like PydanticAI, AutoGen, and Semantic Kernel.",
+    "thumbnail": "http://i.ytimg.com/vi/LflBM3ntUSY/hqdefault.jpg",
+    "slides": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAI_Agents_Hackathon%2Frefs%2Fheads%2Fmain%2Fslides%2FAI%2520Agents%2520Hack%2520-%2520GitHub%2520Models%2520-%2520For%2520Sharing.pptx&wdOrigin=BROWSELINK",
+    "video": "https://www.youtube.com/watch?v=LflBM3ntUSY",
+    "tags": "python",
+    "location": "AI Agents Hackathon 2025",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "Postgresql pgvector for Pythonistas",
     "date": "2025-04-09T05:00:00.000Z",
     "description": "Intro to vector embeddings, pgvector extension for PostgreSQL, and how to use pgvector from Python drivers and ORMs.",
