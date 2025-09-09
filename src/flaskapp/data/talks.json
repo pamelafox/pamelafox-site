@@ -1,5 +1,17 @@
 [
    {
+    "title": "Building AI Agents with Python",
+    "date": "2025-05-18T05:00:00.000Z",
+    "description": "A talk for a student group about building AI Agents with Python, Langchain v1, and GitHub Models.",
+    "thumbnail": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tsp6lfo25kjtulmjeafrqbkr/bafkreibrs54wjjzgydsd5pdokjrtazjpvyy7no6qwttztur6ot65ihfav4@jpeg",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/EdIzaUAf0oRPumEZRVmdo1kB0ACB2q1APgpYP3YH8LPqhA?resid=B79CD1DB3ADA14C5!s406933d2d21f4f84ba611945599da359&ithint=file%2Cpptx&e=zfcwuS&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VkSXphVUFmMG9SUHVtRVpSVm1kbzFrQjBBQ0IycTFBUGdwWVAzWUg4TFBxaEE_ZT16ZmN3dVM",
+    "video": null,
+    "tags": "python",
+    "location": "Virtual",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "PostgreSQL extension for VS Code",
     "date": "2025-05-18T05:00:00.000Z",
     "description": "In this theater session from PyCon US 2025, Cloud Advocate Pamela Fox walks through the new PostgresSQL extension for Visual Studio Code. The PostgreSQL extension for Visual Studio Code is a feature-rich tool designed to simplify PostgreSQL database management and development. This extension empowers developers to connect to PostgreSQL databases, write and execute queries, and manage database objects without leaving the Visual Studio Code environment.",
