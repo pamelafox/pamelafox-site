@@ -1,5 +1,41 @@
 [
    {
+    "title": "Advanced retrieval for AI apps and agents on Azure",
+    "date": "2025-09-25T05:00:00.000Z",
+    "description": "Learn how to build production-ready AI agents using Azure AI Search and PostgreSQL. This session covers agentic retrieval, graph-based retrieval, and advanced grounding techniques to power your enterprise AI apps.",
+    "thumbnail": "https://media.licdn.com/dms/image/v2/D5622AQHApS9FtQZNCA/feedshare-shrink_800/B56ZmDhIi7J0Ag-/0/1758848126843?e=1761782400&v=beta&t=9BLphJRA06GQdNPb87-kduTJv3T8JRN6UdvysoTwVW0",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/EdO3_o8-9gREvPm--wdJBW0Bc4BIHcZhDRLobShmZTUarQ",
+    "video": null,
+    "tags": "rag",
+    "location": "AI Tour (Chicago)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "From protocol to practice: Building your first MCP server",
+    "date": "2025-09-25T05:00:00.000Z",
+    "description": "A lightning talk on the Model Context Protocol, with demo of a basic Python MCP server",
+    "thumbnail": "https://mintcdn.com/mcp/4ZXF1PrDkEaJvXpn/images/mcp-simple-diagram.png?w=1650&fit=max&auto=format&n=4ZXF1PrDkEaJvXpn&q=85&s=37d50a5429a8f662c1beb564b4df8e65",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/EcgtWN4gEWxNqFjkqtSmQocBv-9eCFKixlnzYue5Q5oZHQ",
+    "video": null,
+    "tags": "python, mcp",
+    "location": "AI Tour (Chicago)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "Testing Python Web Apps with Playwright",
+    "date": "2025-07-16T05:00:00.000Z",
+    "description": "A talk on using pytest to write different kinds of tests of Python web apps, focusing on end-to-end tests with Playwright. I also show how to audit the accessibility of a website using Playwright with axe-core.",
+    "thumbnail": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright-sfpy/software_testing_pyramid.png",
+    "slides": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright-sfpy/",
+    "video": null,
+    "tags": "python, testing",
+    "location": "SF Python",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
     "title": "Building AI Agents with Python",
     "date": "2025-05-18T05:00:00.000Z",
     "description": "A talk for a student group about building AI Agents with Python, Langchain v1, and GitHub Models.",
@@ -77,7 +113,7 @@
     "description": "Flask and Quart are fantastic web frameworks for web applications that have both an API backend and a HTML frontend. But how do you test full-stack apps? I'll share my favorite approach: Use pytest for every kind of test: unit, integration, even E2E tests. For backend tests, save the results of each API route test using snapshot testing. For E2E tests, use the Playwright browser automation package, and mock network calls using the backend snapshots. I'll demo tests across multiple web apps, using Flask, FrozenFlask, and Quart, and dig into the trickiest parts of the test setup. All shared code will be open source and linked, so you can bring the same approach into your own apps.",
     "thumbnail": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright/software_testing_pyramid.png",
     "slides": "https://pamelafox.github.io/my-py-talks/testing-apps-playwright/",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=U3W9V4NWbOk",
     "tags": "python",
     "location": "FlaskCon @ PyCon US 2025",
     "cospeakers": null,
