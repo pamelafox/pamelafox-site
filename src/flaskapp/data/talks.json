@@ -1,6 +1,18 @@
 [
    {
     "title": "Advanced retrieval for AI apps and agents on Azure",
+    "date": "2025-09-30T05:00:00.000Z",
+    "description": "Maintaining an active GitHub repository takes time: issues pile up, dependencies go stale, and routine tasks compete with feature development. In this talk, we’ll explore how AI agents can lighten our maintenance load, from triaging issues to upgrading dependencies.  I'll start off by demonstrating low-code approaches using VS Code with GitHub Copilot. Then I'll dive into two open-source Python projects that use a combination of Azure OpenAI, GitHub APIs, and GitHub Copilot Coding Agent to automate common workflows. All of the automation workflows still keep a human-in-the-loop, which is still so important due to the imperfect output of LLMs.",
+    "thumbnail": "https://i.ytimg.com/an_webp/DqzG-XNjV3M/mqdefault_6s.webp?du=3000&sqp=CJSS8MYG&rs=AOn4CLAqyLikzNd4EMdXnkvGts_0ox-kSg",
+    "slides": "https://aka.ms/GHRepo930/reactor/slides",
+    "video": "https://www.youtube.com/watch?v=DqzG-XNjV3M",
+    "tags": "vscode, genai, python",
+    "location": "Microsoft Reactor (YouTube)",
+    "cospeakers": null,
+    "include": "yes"
+   },
+   {
+    "title": "Advanced retrieval for AI apps and agents on Azure",
     "date": "2025-09-25T05:00:00.000Z",
     "description": "Learn how to build production-ready AI agents using Azure AI Search and PostgreSQL. This session covers agentic retrieval, graph-based retrieval, and advanced grounding techniques to power your enterprise AI apps.",
     "thumbnail": "https://media.licdn.com/dms/image/v2/D5622AQHApS9FtQZNCA/feedshare-shrink_800/B56ZmDhIi7J0Ag-/0/1758848126843?e=1761782400&v=beta&t=9BLphJRA06GQdNPb87-kduTJv3T8JRN6UdvysoTwVW0",
