@@ -1,8 +1,20 @@
 [
-   {
+  {
+    "title": "Just because AI can write your tests... should it?",
+    "date": "2025-10-18T05:00:00.000Z",
+    "description": "AI-assisted coding tools are making programming more accessible, but we risk leaning on LLMs for everything\u2014including our tests\u2014and ignoring Python's testing toolbox. This talk digs into where AI-generated tests fall short, why hand-crafted tests deliver more meaningful coverage, and how to decide when to pair AI with specialized testing tools.",
+    "thumbnail": "https://pbs.twimg.com/media/G3gGCENXUAARkpe?format=png&name=small",
+    "slides": "https://pamelafox.github.io/my-py-talks/ai-assisted-testing-pybay/",
+    "video": null,
+    "tags": "python, testing",
+    "location": "PyBay 2025 (San Francisco)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Automating GitHub Repo Maintenance with AI Agents",
     "date": "2025-09-30T05:00:00.000Z",
-    "description": "Maintaining an active GitHub repository takes time: issues pile up, dependencies go stale, and routine tasks compete with feature development. In this talk, we’ll explore how AI agents can lighten our maintenance load, from triaging issues to upgrading dependencies.  I'll start off by demonstrating low-code approaches using VS Code with GitHub Copilot. Then I'll dive into two open-source Python projects that use a combination of Azure OpenAI, GitHub APIs, and GitHub Copilot Coding Agent to automate common workflows. All of the automation workflows still keep a human-in-the-loop, which is still so important due to the imperfect output of LLMs.",
+    "description": "Maintaining an active GitHub repository takes time: issues pile up, dependencies go stale, and routine tasks compete with feature development. In this talk, we\u2019ll explore how AI agents can lighten our maintenance load, from triaging issues to upgrading dependencies.  I'll start off by demonstrating low-code approaches using VS Code with GitHub Copilot. Then I'll dive into two open-source Python projects that use a combination of Azure OpenAI, GitHub APIs, and GitHub Copilot Coding Agent to automate common workflows. All of the automation workflows still keep a human-in-the-loop, which is still so important due to the imperfect output of LLMs.",
     "thumbnail": "https://i.ytimg.com/an_webp/DqzG-XNjV3M/mqdefault_6s.webp?du=3000&sqp=CPSqgMcG&rs=AOn4CLCgrn8B9Gof7W1VpJY1H4wk-ezJaA",
     "slides": "https://aka.ms/GHRepo930/reactor/slides",
     "video": "https://www.youtube.com/watch?v=DqzG-XNjV3M",
@@ -10,8 +22,8 @@
     "location": "Microsoft Reactor (YouTube)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Advanced retrieval for AI apps and agents on Azure",
     "date": "2025-09-25T05:00:00.000Z",
     "description": "Learn how to build production-ready AI agents using Azure AI Search and PostgreSQL. This session covers agentic retrieval, graph-based retrieval, and advanced grounding techniques to power your enterprise AI apps.",
@@ -22,8 +34,8 @@
     "location": "AI Tour (Chicago)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "From protocol to practice: Building your first MCP server",
     "date": "2025-09-25T05:00:00.000Z",
     "description": "A lightning talk on the Model Context Protocol, with demo of a basic Python MCP server",
@@ -34,8 +46,8 @@
     "location": "AI Tour (Chicago)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Testing Python Web Apps with Playwright",
     "date": "2025-07-16T05:00:00.000Z",
     "description": "A talk on using pytest to write different kinds of tests of Python web apps, focusing on end-to-end tests with Playwright. I also show how to audit the accessibility of a website using Playwright with axe-core.",
@@ -46,8 +58,8 @@
     "location": "SF Python",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Building AI Agents with Python",
     "date": "2025-05-18T05:00:00.000Z",
     "description": "A talk for a student group about building AI Agents with Python, Langchain v1, and GitHub Models.",
@@ -58,8 +70,8 @@
     "location": "Virtual",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "PostgreSQL extension for VS Code",
     "date": "2025-05-18T05:00:00.000Z",
     "description": "In this theater session from PyCon US 2025, Cloud Advocate Pamela Fox walks through the new PostgresSQL extension for Visual Studio Code. The PostgreSQL extension for Visual Studio Code is a feature-rich tool designed to simplify PostgreSQL database management and development. This extension empowers developers to connect to PostgreSQL databases, write and execute queries, and manage database objects without leaving the Visual Studio Code environment.",
@@ -70,11 +82,11 @@
     "location": "Pycon 2025 (Microsoft Booth)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Building modern Python web apps with PostgreSQL",
     "date": "2025-06-11T05:00:00.000Z",
-    "description": "PostgreSQL is the most popular database amongst Pythonistas, according to the most recent Python developers survey. Many of those developers are using PostgreSQL to build web applications, which means they're deciding what web app framework to use (Flask? Django? FastAPI?), whether to use an ORM (SQLAlchemy? SQLModel?), whether to use asyncpg or psycopg. So many decisions! In this talk, we'll walk through an opinionated architecture—a FastAPI web app using asyncpg and SQLAlchemy—and talk about why we chose those options.",
+    "description": "PostgreSQL is the most popular database amongst Pythonistas, according to the most recent Python developers survey. Many of those developers are using PostgreSQL to build web applications, which means they're deciding what web app framework to use (Flask? Django? FastAPI?), whether to use an ORM (SQLAlchemy? SQLModel?), whether to use asyncpg or psycopg. So many decisions! In this talk, we'll walk through an opinionated architecture\u2014a FastAPI web app using asyncpg and SQLAlchemy\u2014and talk about why we chose those options.",
     "thumbnail": "https://i.ytimg.com/vi/wJ9ieWxA7lI/hqdefault_1000.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDn-HIC55GmYIMeKt1D51iRLnXa4A",
     "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/EbI2tmidXqlDvj7lnUKduVQBlTNsK4ERSIwydXTatRrt9g?e=Nib6bc",
     "video": "https://www.youtube.com/watch?v=wJ9ieWxA7lI",
@@ -82,11 +94,11 @@
     "location": "Posette 2025",
     "cospeakers": null,
     "include": "yes"
-   },
-    {
+  },
+  {
     "title": "Is your LLM-powered app safe? Evaluate it!",
     "date": "2025-05-20T05:00:00.000Z",
-    "description": "Check out this live demo where we'll show you how to add safety evaluations to apps built on LLMs! Using the powerful Azure AI Evaluation SDK, we'll demonstrate how to make sure your app responses are safe and free from harmful content. We'll walk you through the process step-by-step—from setting up your Azure AI Project to automating a red-teaming scan with RedTeam and AttackStrategy's and reviewing the results in the Foundry.",
+    "description": "Check out this live demo where we'll show you how to add safety evaluations to apps built on LLMs! Using the powerful Azure AI Evaluation SDK, we'll demonstrate how to make sure your app responses are safe and free from harmful content. We'll walk you through the process step-by-step\u2014from setting up your Azure AI Project to automating a red-teaming scan with RedTeam and AttackStrategy's and reviewing the results in the Foundry.",
     "thumbnail": "https://i.ytimg.com/vi/sZzcSX7BFVA/hqdefault_1000.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDn-HIC55GmYIMeKt1D51iRLnXa4A",
     "slides": "https://learn.microsoft.com/azure/ai-foundry/how-to/develop/run-scans-ai-red-teaming-agent",
     "video": "https://www.youtube.com/watch?v=sZzcSX7BFVA",
@@ -94,11 +106,11 @@
     "location": "Microsoft Build 2025",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Deploying an end-to-end secure AI application",
     "date": "2025-05-19T05:00:00.000Z",
-    "description": "Security can be challenging at the best of times, especially when it’s not your full-time job. In this session, we walk you through the end-to-end deployment of a secure AI application, all the way from identities, VNETS, NSGs, key vault through to prompt shields and data labelling. If you’ve ever felt overwhelmed by trying to do the right thing by security but didn’t know where to start, this session is for you!",
+    "description": "Security can be challenging at the best of times, especially when it\u2019s not your full-time job. In this session, we walk you through the end-to-end deployment of a secure AI application, all the way from identities, VNETS, NSGs, key vault through to prompt shields and data labelling. If you\u2019ve ever felt overwhelmed by trying to do the right thing by security but didn\u2019t know where to start, this session is for you!",
     "thumbnail": "https://medius.microsoft.com/video/asset/Thumbnail/47bb566a-21d6-4fa0-9a43-3a826a34b2cf",
     "slides": "https://medius.microsoft.com/video/asset/PPT/47bb566a-21d6-4fa0-9a43-3a826a34b2cf?referrer=Microsoft+Build-%2Fen-US%2Fsessions%2FBRK234&mhid=build",
     "video": "https://build.microsoft.com/en-US/sessions/BRK234?source=/speakers/d5b5eb86-ed40-4047-88a7-4e5232734a70",
@@ -106,8 +118,8 @@
     "location": "Microsoft Build 2025",
     "cospeakers": "Sarah Young",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Agentic RAG: build a reasoning retrieval engine with Azure AI Search",
     "date": "2025-05-21T05:00:00.000Z",
     "description": "Transform flat, simple search into an independent, sophisticated engine with agentic retrieval. Learn how agentic retrieval engines use memory, query planning and reasoning models to help solve complex problems.",
@@ -118,8 +130,8 @@
     "location": "Microsoft Build 2025",
     "cospeakers": "Matt Gotteiner",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Testing Flask and Quart Apps with Pytest and Playwright",
     "date": "2025-05-16T05:00:00.000Z",
     "description": "Flask and Quart are fantastic web frameworks for web applications that have both an API backend and a HTML frontend. But how do you test full-stack apps? I'll share my favorite approach: Use pytest for every kind of test: unit, integration, even E2E tests. For backend tests, save the results of each API route test using snapshot testing. For E2E tests, use the Playwright browser automation package, and mock network calls using the backend snapshots. I'll demo tests across multiple web apps, using Flask, FrozenFlask, and Quart, and dig into the trickiest parts of the test setup. All shared code will be open source and linked, so you can bring the same approach into your own apps.",
@@ -130,8 +142,8 @@
     "location": "FlaskCon @ PyCon US 2025",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Build modern Python apps on Azure",
     "date": "2025-05-15T05:00:00.000Z",
     "description": "For software engineers today, developing Python apps and getting them to the cloud can be a serious hassle. Join us to explore a streamlined end-to-end experience of developing cloud-ready Python applications with Microsoft technologies! We'll cover how to build and deploy applications to Azure that use modern async frameworks, generative AI, and open-source databases like PostgreSQL. By the end, you'll learn how save time and supercharge your development workflows with fan-favorite Python developer tools like VS Code, our Python extension, and GitHub Copilot - all without leaving your IDE",
@@ -142,8 +154,8 @@
     "location": "PyCon US 2025",
     "cospeakers": "Rohit Ganguly",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Agentic RAG with reflection",
     "date": "2025-04-23T05:00:00.000Z",
     "description": "Retrieval Augmented Generation (RAG) is a popular technique to get LLMs to answer questions based off your own knowledge base. \"Agentic RAG\" adds planning, tool use, and reflection to a RAG flow.  In this session, we'll extend our most popular open-source RAG solution with a reflection step, prompting the LLM to realize whether it needs to repeat the retrieval in order to improve the answer quality.",
@@ -154,8 +166,8 @@
     "location": "AI Agents Hackathon 2025",
     "cospeakers": "Matt Gotteiner",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Prototyping AI Agents with GitHub Models",
     "date": "2025-04-15T05:00:00.000Z",
     "description": "Thanks to GitHub Models, all you need to build your first AI Agent is a GitHub account! GitHub Models includes powerful models like OpenAI gpt-4o, DeepSeek-R1, Llama-3.1, and many more, ready to try out in the playground or in your code. In this session, we'll demonstrate how to connect to GitHub Models from Python, and then build agents using popular Python packages like PydanticAI, AutoGen, and Semantic Kernel.",
@@ -166,8 +178,8 @@
     "location": "AI Agents Hackathon 2025",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Postgresql pgvector for Pythonistas",
     "date": "2025-04-09T05:00:00.000Z",
     "description": "Intro to vector embeddings, pgvector extension for PostgreSQL, and how to use pgvector from Python drivers and ORMs.",
@@ -178,8 +190,8 @@
     "location": "SF Python",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Enterprise AI in 2025",
     "date": "2025-04-01T05:00:00.000Z",
     "description": "A quick talk about the evolution of generative AI from 2024 to 2025 and demo of an MCP server for RAG.",
@@ -190,8 +202,8 @@
     "location": "Enterprise AI Agent Week SF",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Quality & Safety",
     "date": "2025-03-27T05:00:00.000Z",
     "description": "In our final session of the Python + AI series, we tackle a crucial topic: how to use AI safely, and how to evaluate the quality of AI outputs. There are multiple risk mitigation layers when working with LLMs: the model itself, a safety system on top, the prompting and context, and the application user experience. Our focus is on Azure tools that make it easier to put safe AI systems into production. We show how to configure the Azure AI Content Safety system when working with Azure AI models, and how to handle those errors in Python code. Then we use the Azure AI Evaluation SDK to evaluate the safety and quality of the output from our LLM. ",
@@ -202,8 +214,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "April Speight",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Function calling & structured outputs",
     "date": "2025-03-25T05:00:00.000Z",
     "description": "In our fifth stream of the Python + AI series, we explore the two main ways to get LLMs to output structured responses that adhere to a schema: function calling and structured outputs. We start with function calling, which is the most well supported way to get structured responses, and discuss its drawbacks. Then we focus on the new structured outputs mode available in OpenAI models, which can be used with Pydantic models and even used in combination with function calling. Our examples demonstrate the many ways you can use structured responses, like entity extraction, classification, and agentic workflows. ",
@@ -214,8 +226,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Vision models",
     "date": "2025-03-20T05:00:00.000Z",
     "description": "Our fourth stream in the Python + AI series is all about vision models! Vision models are LLMs that can accept both text and images, like GPT 4o and GPT 4o-mini. You can use those models for image captioning, data extraction, question-answering, classification, and more. In this session, we use Python to send images to vision models, build a basic chat app with image upload, search with multimodal embedding models, and even use vision models inside a RAG application. ",
@@ -226,8 +238,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Retrieval Augmented Generation",
     "date": "2025-03-18T05:00:00.000Z",
     "description": "In our third Python + AI session, we explore one of the most popular techniques used with LLMs: Retrieval Augmented Generation. RAG is an approach that sends context to the LLM so that it can provide well-grounded answers for a particular domain. The RAG approach can be used with many kinds of data sources like CSVs, webpages, documents, databases. In this session, we walk through RAG flows in Python, starting with a simple flow and culminating in a full-stack RAG application based on Azure AI Search.",
@@ -238,8 +250,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Vector Embeddings",
     "date": "2025-03-11T05:00:00.000Z",
     "description": "In our second session of the Python + AI series, we dive into a different kind of model: the vector embedding model. A vector embedding is a way to encode a text or image as an array of floating point numbers. Vector embeddings make it possible to perform similarity search on many kinds of content. In this session, we explore different vector embedding models, like the OpenAI text-embedding-3 series, with both visualizations and Python code. We also compare distance metrics, and use both quantization and truncation dimension to reduce vector size.",
@@ -250,8 +262,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Python + AI: Large Language Models",
     "date": "2025-03-11T05:00:00.000Z",
     "description": "In the first Python+AI session, we introduce Large Language Models (LLMs), the models that power ChatGPT and GitHub Copilot. We use Python to interact with LLMs using popular packages like the OpenAI SDK and Langchain. We experiment with prompt engineering and few-shot examples to improve our outputs. Finally, we show how to build a full stack app powered by LLMs, and explain the importance of concurrency and streaming for user-facing AI apps. ",
@@ -262,8 +274,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Extending RAG with function calling",
     "date": "2025-02-18T05:00:00.000Z",
     "description": "For this session, we explore how we can use OpenAI function calling to extend the functionality of the RAG application. We can use function calling to retrieve data from more sources (like additional GitHub API or Bing API), to handle different kind of user requests (like summarization instead of searching), and even to escalate conversations to a human. With function calling, our RAG can handle multiple data sources or even become agentic.",
@@ -274,8 +286,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Anthony Shaw",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Monitoring and tracing LLM calls",
     "date": "2025-02-12T05:00:00.000Z",
     "description": "When your RAG app is in production, observability is crucial. You need to know about performance issues, runtime errors, and LLM-specific issues like Content Safety filter violations. In this session, learn how to use Azure Monitor along with OpenTelemetry SDKs to monitor the RAG application.",
@@ -286,8 +298,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Anthony Shaw",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Evaluating RAG answer quality",
     "date": "2025-02-10T05:00:00.000Z",
     "description": "How can you be sure that the RAG chat app answers are accurate, clear, and well formatted? Evaluation! In this session, we show you how to generate synthetic data and run bulk evaluations on your RAG app, using the azure-ai-evaluation SDK. Learn about GPT metrics like groundedness and fluency, and custom metrics like citation matching. Plus, discover how you can run evaluations on CI/CD, to easily verify that new changes don't introduce quality regressions.",
@@ -298,8 +310,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Private deployment",
     "date": "2025-02-05T05:00:00.000Z",
     "description": "To ensure that the RAG app can only be accessed within your enterprise network, you can deploy it to an Azure virtual network with private endpoints for each Azure service used. In this session, we show how to deploy the app to a virtual network that includes AI Search, OpenAI, Document Intelligence, and Blob storage.",
@@ -310,8 +322,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Matt Gotteiner",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Adding speech input and output",
     "date": "2025-02-03T05:00:00.000Z",
     "description": "Our RAG solution includes optional features for speech input and output, powered either by the free browser SDKs or by the powerful Azure Speech API. We also offer a tight integration with the VoiceRAG solution, for those of you who want a real-time voice interface. Learn about all the ways you can add speech to your RAG chat in this session!",
@@ -322,8 +334,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Storing chat history",
     "date": "2025-01-26T05:00:00.000Z",
     "description": "Learn how we store chat history using either IndexedDB for client-side storage or Azure Cosmos DB for persistent storage. We discuss the API architecture and data schema choices, doing both a live demo of the app and a walkthrough of the code.",
@@ -334,8 +346,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: User login and data access control",
     "date": "2025-01-24T05:00:00.000Z",
     "description": "In our RAG flow, the app first searches a knowledge base for relevant matches to a user's query, then sends the results to the LLM along with the original question. What if you have documents that should only be accessed by a subset of your users, like a group or a single user? Then you need data access controls to ensure that document visibility is respected during the RAG flow. In this session, we show an approach using Azure AI Search with data access controls to only search the documents that can be seen by the logged in user. We also demonstrate a feature for user-uploaded documents that uses data access controls along with Azure Data Lake Storage Gen2.",
@@ -346,8 +358,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Multimedia data ingestion",
     "date": "2025-01-23T05:00:00.000Z",
     "description": "Do your documents contain images or charts? Our RAG solution has two different approaches to handling multimedia documents, and we dive into both approaches in this session. The first approach is purely during ingestion time, where it replaces media in the documents with LLM-generated descriptions. The second approach stores images of the media alongside vector embeddings of the images, and sends both text and images to a multimodal LLM for question answering. Learn about both approaches in this session so that you can decide what to use for your app.",
@@ -358,8 +370,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Optimal retrieval with Azure AI Search",
     "date": "2025-01-21T05:00:00.000Z",
     "description": "Our RAG solution uses Azure AI Search to find matching documents, using state-of-the-art retrieval mechanisms. In this session, we dive into the mechanics of vector embeddings, hybrid search with RRF, and semantic ranking. We also discuss the data ingestion process, highlighting the differences between manual ingestion and integrated vectorization",
@@ -370,8 +382,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Hannah Gonzales",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: Customizing our RAG solution",
     "date": "2025-01-15T05:00:00.000Z",
     "description": "In our second session, we show you how to customize the RAG solution for your own domain - adding your own data, modifying the prompts, and personalizing the UI. Plus, we give you tips for local development for faster feature iteration.",
@@ -382,8 +394,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "RAG Deep Dive: The RAG solution for Azure",
     "date": "2025-01-13T05:00:00.000Z",
     "description": "For our kickoff session of the RAG Deep Dive series, we walk through a live demo of the RAG solution and explain how it all works. Then we step through the RAG flow from Azure AI Search to Azure OpenAI, deploy the app to Azure, and discuss the Azure architecture.",
@@ -394,8 +406,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Deploying Python apps with GitHub Copilot for @azure",
     "date": "2024-12-05T05:00:00.000Z",
     "description": "Let's deploy a Python web app to Azure using the new GitHub Copilot for @azure, an agent that can answer questions about Azure products, diagnose errors in our apps, query logs, search for resources, and more. We'll use the agent to help us through the whole process of deploying the app, and hear from the PM about how it's built.",
@@ -406,8 +418,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Chris Harris",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Storing chat history for a RAG chat app",
     "date": "2024-12-04T05:00:00.000Z",
     "description": "Learn how we store chat history for our most popular RAG chat solution, using either IndexedDB for client-side storage or Azure Cosmos DB for persistent storage. We'll discuss the API architecture and data schema choices, doing both a live demo of the app and a walkthrough of the code.",
@@ -418,8 +430,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Entity extraction with Azure OpenAI",
     "date": "2024-12-03T05:00:00.000Z",
     "description": "With the new structured outputs capability from the OpenAI gpt-4o model, you can tell the model exactly how to format the response so that it adheres to your custom schema. Learn how to use structured outputs with the Python openai package and Pydantic models in order to do entity extraction on different input types: GitHub issues, webpages, blog posts, and even images.",
@@ -430,8 +442,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Dariusz Kacban",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Deploying AI Solutions with GitHub @azure and @workspace Agents",
     "date": "2024-11-07T05:00:00.000Z",
     "description": "An interactive demo of using GitHub Copilot agents to deploy an AI app to Azure using the Azure Developer CLI.",
@@ -442,8 +454,8 @@
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Pui Chee Chan",
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Evaluating RAG apps using GitHub Actions",
     "date": "2024-10-29T05:00:00.000Z",
     "description": "We all know how to run unit tests on our apps in CI/CD workflows, but we're now in a new world of AI apps with non-deterministic output. How do we evaluate changes to AI apps to ensure that the LLM answer quality remains high? What tools can we use in our workflows, and how do we avoid unnecessary LLM costs? In this interactive session, Pamela Fox, cloud advocate in Python at Microsoft, will demonstrate automated tools for AI chat app evaluation and give you a chance to try out the workflows for yourself. You'll experience the difference between both a failed and successful evaluation.",
@@ -454,8 +466,8 @@
     "location": "GitHub Universe (SF)",
     "cospeakers": null,
     "include": "yes"
-   },
-   {
+  },
+  {
     "title": "Fast-track your AI app development with GitHub and Azure",
     "date": "2024-10-29T05:00:00.000Z",
     "description": "In this session, Pamela Fox, cloud advocate in Python, and Kristen Womack, product manager at Microsoft, will demonstrate the power of starting with a GitHub repository from the Azure AI app template gallery. Participants will see the process unfold, beginning with GitHub Codespaces and a model from the GitHub Models catalog. Once the app is running smoothly locally, Pamela will guide you through deploying it to Azure using the Azure Developer CLI. Plus, see how GitHub Copilot for Azure can simplify every step of your deployment process, answering all your questions along the way.",
@@ -478,11 +490,11 @@
     "location": "O'Reilly Superstream (Online)",
     "cospeakers": null,
     "include": "yes"
- },
- {
+  },
+  {
     "title": "Playing improv... with Python?",
     "date": "2024-09-21T05:00:00.000Z",
-    "description": "I ❤️ playing group improv games, but I don't always have a group of humans available for playing. What if I could get a computer to play the games with me, by using a small language model? Let's give it a go in this interactive talk!",
+    "description": "I \u2764\ufe0f playing group improv games, but I don't always have a group of humans available for playing. What if I could get a computer to play the games with me, by using a small language model? Let's give it a go in this interactive talk!",
     "thumbnail": "https://pbs.twimg.com/media/GX868WcaIAATvhj?format=jpg&name=small",
     "slides": "https://pamelafox.github.io/improv-with-python/",
     "video": "https://www.youtube.com/watch?v=hMDOnLZUkMQ",
