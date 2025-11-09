@@ -5,7 +5,7 @@
     "description": "AI-assisted coding tools are making programming more accessible, but we risk leaning on LLMs for everything\u2014including our tests\u2014and ignoring Python's testing toolbox. This talk digs into where AI-generated tests fall short, why hand-crafted tests deliver more meaningful coverage, and how to decide when to pair AI with specialized testing tools.",
     "thumbnail": "https://pbs.twimg.com/media/G3gGCENXUAARkpe?format=png&name=small",
     "slides": "https://pamelafox.github.io/my-py-talks/ai-assisted-testing-pybay/",
-    "video": null,
+    "video": "https://youtu.be/Lha1741iEjE",
     "tags": "python, testing",
     "location": "PyBay 2025 (San Francisco)",
     "cospeakers": null,
