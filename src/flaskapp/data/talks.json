@@ -1,5 +1,41 @@
 [
   {
+    "title": "Building agents with Microsoft Agent Framework",
+    "date": "2025-12-05T05:00:00.000Z",
+    "description": "Learn how to build agents with the new Microsoft Agent Framework (successor to AutoGen and Semantic Kernel). Starting with a simple agent using tools, then moving to multi-agent workflows, memory, and planning for more powerful solutions. Code samples in Python, with concepts applicable to .NET.",
+    "thumbnail": "/static/thumbnail_agentframework.png",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQA_lPM6XtjwTZmci-tHYD5xAbzQQKQN_sGr1gRUy9jPFJ8?e=5tdudg",
+    "video": null,
+    "tags": "python, ai, agents",
+    "location": "Internal event (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Red-teaming for LLM-powered apps",
+    "date": "2025-12-05T05:00:00.000Z",
+    "description": "Learn how to red-team LLM-powered apps using the Python pyrit package to find vulnerabilities and improve safety.",
+    "thumbnail": "http://i.ytimg.com/vi/_ySyuaSH5y0/hqdefault.jpg",
+    "slides": "https://aka.ms/pyladies-redteam-slides",
+    "video": "https://www.youtube.com/watch?v=_ySyuaSH5y0",
+    "tags": "python, ai",
+    "location": "PyLadiesCon 2025 (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Build agents with knowledge, agentic RAG and Azure AI Search",
+    "date": "2025-11-20T05:00:00.000Z",
+    "description": "This session showcases the latest knowledge features from Azure AI Search. We demo how to connect your agentic retrieval engine to new knowledge sources like Sharepoint, web and blob, and walks through new controls available to improve your RAG performance, across query planning, retrieval and answer generation.",
+    "thumbnail": "http://i.ytimg.com/vi/lW47o2ss3Yg/hqdefault.jpg",
+    "slides": "https://medius.microsoft.com/video/asset/PPT/c08e0548-1f24-417f-8424-4dc1e89f1e2f?referrer=Microsoft+Ignite-%2Fen-US%2Fsessions%2FBRK193&mhid=ignite&loc=en-us",
+    "video": "https://www.youtube.com/watch?v=lW47o2ss3Yg",
+    "tags": "ai, rag, agents",
+    "location": "Microsoft Ignite 2025 (San Francisco)",
+    "cospeakers": "Matthew Gotteiner",
+    "include": "yes"
+  },
+  {
     "title": "Just because AI can write your tests... should it?",
     "date": "2025-10-18T05:00:00.000Z",
     "description": "AI-assisted coding tools are making programming more accessible, but we risk leaning on LLMs for everything\u2014including our tests\u2014and ignoring Python's testing toolbox. This talk digs into where AI-generated tests fall short, why hand-crafted tests deliver more meaningful coverage, and how to decide when to pair AI with specialized testing tools.",
