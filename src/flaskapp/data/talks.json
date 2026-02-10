@@ -1,5 +1,41 @@
 [
   {
+    "title": "Python + MCP: Authentication for MCP servers",
+    "date": "2025-12-18T05:00:00.000Z",
+    "description": "In our third session of the Python + MCP series, we explore the best ways to build authentication layers on top of your MCP servers. We start off simple, with an API key to gate access, and demonstrate a key-restricted FastMCP server deployed to Azure Functions. Then we move on to OAuth-based authentication for MCP servers that provide user-specific data. We dive deep into MCP authentication, which is built on top of OAuth2 but with additional requirements like PRM and DCR/CIMD, which can make it difficult to implement fully. We demonstrate the full MCP auth flow in the open-source identity provider KeyCloak, and show how to use an OAuth proxy pattern to implement MCP auth on top of Microsoft Entra.",
+    "thumbnail": "https://i.ytimg.com/vi/_Redi3ChzFA/hqdefault.jpg",
+    "slides": "https://aka.ms/pythonmcp/slides/auth",
+    "video": "https://www.youtube.com/watch?v=_Redi3ChzFA",
+    "tags": "python, mcp",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python + MCP: Deploying MCP servers to the cloud",
+    "date": "2025-12-17T05:00:00.000Z",
+    "description": "In our second session of the Python + MCP series, we deploy MCP servers to the cloud! We walk through the process of containerizing a FastMCP server with Docker and deploying to Azure Container Apps. Then we instrument the MCP server with OpenTelemetry and observe the tool calls using Azure Application Insights and Logfire. Finally, we explore private networking options for MCP servers, using virtual networks that restrict external access to internal MCP tools and agents.",
+    "thumbnail": "https://i.ytimg.com/vi/gL3WYfXAiWI/hqdefault.jpg",
+    "slides": "https://aka.ms/pythonmcp/slides/deploying",
+    "video": "https://www.youtube.com/watch?v=gL3WYfXAiWI",
+    "tags": "python, mcp",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Python + MCP: Building MCP servers with FastMCP",
+    "date": "2025-12-16T05:00:00.000Z",
+    "description": "In the intro session of our Python + MCP series, we dive into the hottest technology of 2025: MCP (Model Context Protocol). This open protocol makes it easy to extend AI agents and chatbots with custom functionality, making them more powerful and flexible. We demonstrate how to use the Python FastMCP SDK to build an MCP server running locally. Then we consume that server from chatbots like GitHub Copilot in VS Code, using its tools, resources, and prompts. Finally, we discover how easy it is to connect AI agent frameworks like Langchain and Microsoft agent-framework to the MCP server.",
+    "thumbnail": "https://i.ytimg.com/vi/_mUuhOwv9PY/hqdefault.jpg",
+    "slides": "https://aka.ms/pythonmcp/slides/servers",
+    "video": "https://www.youtube.com/watch?v=_mUuhOwv9PY",
+    "tags": "python, mcp",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Building agents with Microsoft Agent Framework",
     "date": "2025-12-05T05:00:00.000Z",
     "description": "Learn how to build agents with the new Microsoft Agent Framework (successor to AutoGen and Semantic Kernel). Starting with a simple agent using tools, then moving to multi-agent workflows, memory, and planning for more powerful solutions. Code samples in Python, with concepts applicable to .NET.",
