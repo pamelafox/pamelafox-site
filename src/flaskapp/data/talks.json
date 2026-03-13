@@ -1,5 +1,17 @@
 [
   {
+    "title": "Improving MCP tool schemas to increase agent reliability",
+    "date": "2026-03-10T05:00:00.000Z",
+    "description": "As agents increasingly stitch together tools from many MCP servers, schema quality has become a critical factor in whether tool calls succeed at all. Agents rely entirely on tool schemas\u2014not server code\u2014to choose tools, construct arguments, and interpret results, making clear, expressive schemas essential for reliability. In this talk, we build MCP servers with FastMCP and Pydantic, consume them with Pydantic AI agents, and instrument runs with Logfire to observe tool selection and parsing in detail. We then evaluate tool-calling reliability and output correctness across models at scale using the Pydantic AI evaluation framework.",
+    "thumbnail": "https://repository-images.githubusercontent.com/1143768202/c82f804a-d4ea-4b4c-8e15-0215b9040549",
+    "slides": "https://pamelafox.github.io/py-ai-mcp-tool-schemas/",
+    "video": null,
+    "tags": "python, mcp",
+    "location": "PyAI Conference (San Francisco)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Advanced Retrieval Augmented Generation (RAG) Deep Dive",
     "date": "2026-03-06T05:00:00.000Z",
     "description": "This session breaks down advanced RAG patterns, from chunking and embeddings to similarity metrics, vector storage, retrieval strategies, and LLM chain responses. We also explore streaming, chat history, and where GraphRAG fits in. Includes a guided project building a local serverless RAG chat app covering architecture, ingestion, storage, retrieval, and response generation.",
