@@ -11,6 +11,6 @@ multiprocessing.set_start_method("fork")
 @pytest.mark.parametrize("route", ["home_page", "projects", "talks", "interviews"])
 def test_a11y(app, live_server, page: Page, route: str):
     axe = Axe()
-    page.goto(url_for(route, _external=True))
+    page.goto(url_for(route, _external=True), wait_until="domcontentloaded")
     results = axe.run(page)
     assert results.violations_count == 0, results.generate_report()
