@@ -1,11 +1,25 @@
 [
   {
+    "title": "Scaling AI apps and agents with Microsoft",
+    "date": "2026-03-18T05:00:00.000Z",
+    "description": "A quick tour of building AI-ready applications on Azure and Microsoft, highlighting Foundry capabilities like models, Foundry IQ, agents, evaluations, and red-teaming; Azure databases including PostgreSQL and Cosmos DB; deployment options with Azure Container Apps and AKS; and OAuth2 with Microsoft Entra ID. Includes a Foundry agent demo.",
+    "thumbnail": "/static/thumbnail_foundryslide.png",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/IQCD72Z_oFODT7THvj8ydAZTAeTjeJ19eHJiTK1T5FZ8mmM?resid=B79CD1DB3ADA14C5!s7f66ef8353a04f83b4c7be3f32740653&ithint=file%2Cpptx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0lRQ0Q3Mlpfb0ZPRFQ3VEh2ajh5ZEFaVEFlVGplSjE5ZUhKaVRLMVQ1Rlo4bW1N",
+    "code": "https://github.com/pamelafox/python-foundryagent-demos",
+    "video": null,
+    "tags": "ai, agents, azure",
+    "location": "NVIDIA GTC 2026 (San Jose)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Improving MCP tool schemas to increase agent reliability",
     "date": "2026-03-10T05:00:00.000Z",
     "description": "As agents increasingly stitch together tools from many MCP servers, schema quality has become a critical factor in whether tool calls succeed at all. Agents rely entirely on tool schemas\u2014not server code\u2014to choose tools, construct arguments, and interpret results, making clear, expressive schemas essential for reliability. In this talk, we build MCP servers with FastMCP and Pydantic, consume them with Pydantic AI agents, and instrument runs with Logfire to observe tool selection and parsing in detail. We then evaluate tool-calling reliability and output correctness across models at scale using the Pydantic AI evaluation framework.",
     "thumbnail": "https://repository-images.githubusercontent.com/1143768202/c82f804a-d4ea-4b4c-8e15-0215b9040549",
     "slides": "https://pamelafox.github.io/py-ai-mcp-tool-schemas/",
-    "video": null,
+    "code": "https://github.com/pamelafox/py-ai-mcp-tool-schemas",
+    "video": "https://www.youtube.com/watch?v=l0McGgmngeU",
     "tags": "python, mcp",
     "location": "PyAI Conference (San Francisco)",
     "cospeakers": null,
