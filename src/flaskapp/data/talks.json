@@ -4,7 +4,7 @@
     "date": "2026-04-01T05:00:00.000Z",
     "description": "A discussion about RAG, agents, context engineering, retrieval stacks, and MCP.",
     "thumbnail": "https://i.ytimg.com/vi/wGpJdn8frYE/hqdefault.jpg",
-    "slides": null,
+    "slides": "https://www.youtube.com/watch?v=wGpJdn8frYE",
     "code": null,
     "video": "https://www.youtube.com/watch?v=wGpJdn8frYE",
     "tags": "ai, rag, mcp",
