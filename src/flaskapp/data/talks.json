@@ -1,5 +1,31 @@
 [
   {
+    "title": "Is context engineering the new RAG?",
+    "date": "2026-04-01T05:00:00.000Z",
+    "description": "A discussion about RAG, agents, context engineering, retrieval stacks, and MCP.",
+    "thumbnail": "https://i.ytimg.com/vi/wGpJdn8frYE/hqdefault.jpg",
+    "slides": null,
+    "code": null,
+    "video": "https://www.youtube.com/watch?v=wGpJdn8frYE",
+    "tags": "ai, rag, mcp",
+    "location": "The Shift Podcast (Online)",
+    "cospeakers": "Matt Gotteiner, Allison Sparrow",
+    "include": "yes"
+  },
+  {
+    "title": "Foundry IQ: Querying the Multi-Source AI Knowledge Bases",
+    "date": "2026-04-01T05:00:00.000Z",
+    "description": "We walk through Azure AI Search Knowledge Bases and demonstrate a multi-source query path, showing how Foundry IQ moves from isolated data pipelines to reusable, queryable knowledge.",
+    "thumbnail": "https://i.ytimg.com/vi/BU59cYcz4WU/hqdefault.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQAd-Zw2SXoKRr0_7UdXJ9CTAbGuvW4z0jE2Q11onoJvTjQ?e=2UkHUM",
+    "code": "https://github.com/Azure-Samples/azure-search-openai-demo/",
+    "video": "https://www.youtube.com/watch?v=BU59cYcz4WU",
+    "tags": "ai, azure",
+    "location": "Foundry IQ series (Online)",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+  },
+  {
     "title": "Scaling AI apps and agents with Microsoft",
     "date": "2026-03-18T05:00:00.000Z",
     "description": "A quick tour of building AI-ready applications on Azure and Microsoft, highlighting Foundry capabilities like models, Foundry IQ, agents, evaluations, and red-teaming; Azure databases including PostgreSQL and Cosmos DB; deployment options with Azure Container Apps and AKS; and OAuth2 with Microsoft Entra ID. Includes a Foundry agent demo.",
