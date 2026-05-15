@@ -1,5 +1,18 @@
 [
   {
+    "title": "Your Slides, But Faster: Building an AI-powered presentation workflow",
+    "date": "2026-05-14T05:00:00.000Z",
+    "description": "A walkthrough of an AI-powered presentation workflow, from planning and generating a RevealJS deck to iterating on content and style, auditing slides against source material, and turning the finished talk into shareable follow-up artifacts.",
+    "thumbnail": "https://pbs.twimg.com/media/HITTXYrbEAAkQJd.jpg",
+    "slides": "https://pamelafox.github.io/ai-powered-presentation-workflow/",
+    "code": "https://github.com/pamelafox/ai-powered-presentation-workflow",
+    "video": null,
+    "tags": "ai, agents",
+    "location": "EduSummit @ PyCon US 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Is context engineering the new RAG?",
     "date": "2026-04-01T05:00:00.000Z",
     "description": "A discussion about RAG, agents, context engineering, retrieval stacks, and MCP.",
