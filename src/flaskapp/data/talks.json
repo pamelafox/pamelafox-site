@@ -8,7 +8,7 @@
     "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
     "video": "https://www.youtube.com/watch?v=GiJQhMl0mWc",
     "tags": "python, agents, azure",
-    "location": "Host your agents on Foundry series (Online)",
+    "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
   },
@@ -21,7 +21,7 @@
     "code": "https://github.com/Azure-Samples/foundry-hosted-langchain-demos",
     "video": "https://www.youtube.com/watch?v=mFZHq5mTt0A",
     "tags": "python, agents, azure",
-    "location": "Host your agents on Foundry series (Online)",
+    "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
   },
@@ -34,7 +34,7 @@
     "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
     "video": "https://www.youtube.com/watch?v=8N7q0Ucr3rw",
     "tags": "python, agents, azure",
-    "location": "Host your agents on Foundry series (Online)",
+    "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
   },
