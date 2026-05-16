@@ -1,5 +1,44 @@
 [
   {
+    "title": "Host your agents on Foundry: Quality & safety evaluations",
+    "date": "2026-04-30T05:00:00.000Z",
+    "description": "In the third session of this three-part series, we focused on ensuring that AI agents produce high-quality outputs and operate safely and responsibly. We covered built-in evaluators, custom evaluators, batch and scheduled evaluations, continuous evaluation on live traces, guardrails, and automated red-teaming scans for hosted agents on Microsoft Foundry.",
+    "thumbnail": "https://i.ytimg.com/vi/GiJQhMl0mWc/hqdefault.jpg",
+    "slides": "http://aka.ms/foundryhosted/slides/qualitysafety",
+    "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
+    "video": "https://www.youtube.com/watch?v=GiJQhMl0mWc",
+    "tags": "python, agents, azure",
+    "location": "Host your agents on Foundry series (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Host your agents on Foundry: LangChain + LangGraph",
+    "date": "2026-04-29T05:00:00.000Z",
+    "description": "In the second session of this three-part series, we deployed agents built with the open-source libraries LangChain and LangGraph. Starting with a simple agent, we added Foundry tools like Bing Web Search, grounded the agent in Foundry IQ, and then deployed more complex agents and workflows on Microsoft Foundry.",
+    "thumbnail": "https://i.ytimg.com/vi/mFZHq5mTt0A/hqdefault.jpg",
+    "slides": "https://aka.ms/foundryhosted/slides/langchain",
+    "code": "https://github.com/Azure-Samples/foundry-hosted-langchain-demos",
+    "video": "https://www.youtube.com/watch?v=mFZHq5mTt0A",
+    "tags": "python, agents, azure",
+    "location": "Host your agents on Foundry series (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Host your agents on Foundry: Microsoft Agent Framework",
+    "date": "2026-04-27T05:00:00.000Z",
+    "description": "In the first session of this three-part series, we deployed agents built with Microsoft Agent Framework, starting with a simple agent, adding Foundry tools like Code Interpreter, grounding the agent in enterprise data with Foundry IQ, and finally deploying multi-agent workflows on Microsoft Foundry.",
+    "thumbnail": "https://i.ytimg.com/vi/8N7q0Ucr3rw/hqdefault.jpg",
+    "slides": "https://aka.ms/foundryhosted/slides/agentframework",
+    "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
+    "video": "https://www.youtube.com/watch?v=8N7q0Ucr3rw",
+    "tags": "python, agents, azure",
+    "location": "Host your agents on Foundry series (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Know your user: Identity-aware MCP servers with Cosmos DB",
     "date": "2026-04-28T05:00:00.000Z",
     "description": "A look at building identity-aware MCP servers with FastMCP, Microsoft Entra ID, Microsoft Graph, and Azure Cosmos DB to authenticate users, store per-user data, and enable admin-only tools.",
