@@ -1,5 +1,18 @@
 [
   {
+    "title": "Know your user: Identity-aware MCP servers with Cosmos DB",
+    "date": "2026-04-28T05:00:00.000Z",
+    "description": "A look at building identity-aware MCP servers with FastMCP, Microsoft Entra ID, Microsoft Graph, and Azure Cosmos DB to authenticate users, store per-user data, and enable admin-only tools.",
+    "thumbnail": "https://i.ytimg.com/vi/YsYzykMRvgA/hqdefault.jpg",
+    "slides": "https://pamelafox.github.io/azure-cosmosdb-identity-aware-mcp-server/",
+    "code": "https://github.com/pamelafox/azure-cosmosdb-identity-aware-mcp-server",
+    "video": "https://www.youtube.com/watch?v=YsYzykMRvgA",
+    "tags": "python, mcp, azure",
+    "location": "Azure Cosmos DB Conference 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Build your first MCP server in Python",
     "date": "2026-05-13T05:00:00.000Z",
     "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python with FastMCP.",
