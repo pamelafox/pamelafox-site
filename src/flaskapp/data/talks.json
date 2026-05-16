@@ -2,7 +2,7 @@
   {
     "title": "Build your first MCP server in Python",
     "date": "2026-05-13T05:00:00.000Z",
-    "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python.",
+    "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python with FastMCP.",
     "thumbnail": "https://pbs.twimg.com/media/HIOf0WEaEAAK6tB.jpg",
     "slides": "https://pamelafox.github.io/pycon2026-mcp-tutorial/",
     "code": "https://github.com/pamelafox/pycon2026-mcp-tutorial",
