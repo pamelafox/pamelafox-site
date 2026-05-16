@@ -1,5 +1,18 @@
 [
   {
+    "title": "Build your first MCP server in Python",
+    "date": "2026-05-13T05:00:00.000Z",
+    "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python with FastMCP.",
+    "thumbnail": "https://pbs.twimg.com/media/HIOf0WEaEAAK6tB.jpg",
+    "slides": "https://pamelafox.github.io/pycon2026-mcp-tutorial/",
+    "code": "https://github.com/pamelafox/pycon2026-mcp-tutorial",
+    "video": null,
+    "tags": "python, mcp",
+    "location": "PyCon US 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Your Slides, But Faster: Building an AI-powered presentation workflow",
     "date": "2026-05-14T05:00:00.000Z",
     "description": "A walkthrough of an AI-powered presentation workflow, from planning and generating a RevealJS deck to iterating on content and style, auditing slides against source material, and turning the finished talk into shareable follow-up artifacts.",
