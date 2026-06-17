@@ -16,6 +16,7 @@
    </div>
    <div class="links">
   {% if talk.code %}<a href="{{ talk.code }}"><img src="/static/source_icon.png" alt="">View Code</a> {% endif %}
+   {% if talk.writeup %}<a href="{{ talk.writeup }}">Read Write-up</a> {% endif %}
    {% if talk.video %}<a href="{{ talk.video }}"><img src="/static/video_icon.png" alt="">Watch Video</a> {% endif %}
    </div>
   {% endfor %}
