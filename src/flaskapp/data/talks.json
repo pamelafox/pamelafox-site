@@ -1,5 +1,18 @@
 [
   {
+    "title": "An MCP for your Postgres DB",
+    "date": "2026-06-16T20:50:47.000Z",
+    "description": "An exploration of MCP server design for PostgreSQL databases using Python and FastMCP, comparing free-form SQL, read-only SQL, and fully typed tools, with elicitation and tool selection strategies for safer, more reliable database agents.",
+    "thumbnail": "https://i.ytimg.com/vi/3_JPHuXgDyQ/hqdefault.jpg",
+    "slides": "https://pamelafox.github.io/mcp-for-postgres-db-demo/",
+    "code": "https://github.com/pamelafox/mcp-for-postgres-db-demo",
+    "video": "https://www.youtube.com/watch?v=3_JPHuXgDyQ",
+    "tags": "python, mcp, postgres",
+    "location": "POSETTE 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Host your agents on Foundry: Quality & safety evaluations",
     "date": "2026-04-30T05:00:00.000Z",
     "description": "In the third session of this three-part series, we focused on ensuring that AI agents produce high-quality outputs and operate safely and responsibly. We covered built-in evaluators, custom evaluators, batch and scheduled evaluations, continuous evaluation on live traces, guardrails, and automated red-teaming scans for hosted agents on Microsoft Foundry.",
