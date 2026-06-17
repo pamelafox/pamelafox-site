@@ -14,6 +14,32 @@
     "include": "yes"
   },
   {
+    "title": "Your Slides, But Faster: Building an AI-powered presentation workflow",
+    "date": "2026-05-14T05:00:00.000Z",
+    "description": "A walkthrough of an AI-powered presentation workflow, from planning and generating a RevealJS deck to iterating on content and style, auditing slides against source material, and turning the finished talk into shareable follow-up artifacts.",
+    "thumbnail": "https://pbs.twimg.com/media/HITTXYrbEAAkQJd.jpg",
+    "slides": "https://pamelafox.github.io/ai-powered-presentation-workflow/",
+    "code": "https://github.com/pamelafox/ai-powered-presentation-workflow",
+    "video": null,
+    "tags": "ai, agents",
+    "location": "EduSummit @ PyCon US 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Build your first MCP server in Python",
+    "date": "2026-05-13T05:00:00.000Z",
+    "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python with FastMCP.",
+    "thumbnail": "https://pbs.twimg.com/media/HIOf0WEaEAAK6tB.jpg",
+    "slides": "https://pamelafox.github.io/pycon2026-mcp-tutorial/",
+    "code": "https://github.com/pamelafox/pycon2026-mcp-tutorial",
+    "video": null,
+    "tags": "python, mcp",
+    "location": "PyCon US 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Host your agents on Foundry: Quality & safety evaluations",
     "date": "2026-04-30T05:00:00.000Z",
     "description": "In the third session of this three-part series, we focused on ensuring that AI agents produce high-quality outputs and operate safely and responsibly. We covered built-in evaluators, custom evaluators, batch and scheduled evaluations, continuous evaluation on live traces, guardrails, and automated red-teaming scans for hosted agents on Microsoft Foundry.",
@@ -42,20 +68,6 @@
     "include": "yes"
   },
   {
-    "title": "Host your agents on Foundry: Microsoft Agent Framework",
-    "date": "2026-04-27T05:00:00.000Z",
-    "description": "In the first session of this three-part series, we deployed agents built with Microsoft Agent Framework, starting with a simple agent, adding Foundry tools like Code Interpreter, grounding the agent in enterprise data with Foundry IQ, and finally deploying multi-agent workflows on Microsoft Foundry.",
-    "thumbnail": "https://i.ytimg.com/vi/8N7q0Ucr3rw/hqdefault.jpg",
-    "slides": "https://aka.ms/foundryhosted/slides/agentframework",
-    "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
-    "video": "https://www.youtube.com/watch?v=8N7q0Ucr3rw",
-    "writeup": "https://github.com/pamelafox/presentation-writeups/blob/main/presentations/foundry-agents-agentframework/outputs/writeup.md",
-    "tags": "python, agents, azure",
-    "location": "Microsoft Reactor (Online)",
-    "cospeakers": null,
-    "include": "yes"
-  },
-  {
     "title": "Know your user: Identity-aware MCP servers with Cosmos DB",
     "date": "2026-04-28T05:00:00.000Z",
     "description": "A look at building identity-aware MCP servers with FastMCP, Microsoft Entra ID, Microsoft Graph, and Azure Cosmos DB to authenticate users, store per-user data, and enable admin-only tools.",
@@ -69,28 +81,16 @@
     "include": "yes"
   },
   {
-    "title": "Build your first MCP server in Python",
-    "date": "2026-05-13T05:00:00.000Z",
-    "description": "A hands-on tutorial covering MCP fundamentals, the agentic loop, how clients and servers interact, and how to build, extend, and authenticate your own MCP server in Python with FastMCP.",
-    "thumbnail": "https://pbs.twimg.com/media/HIOf0WEaEAAK6tB.jpg",
-    "slides": "https://pamelafox.github.io/pycon2026-mcp-tutorial/",
-    "code": "https://github.com/pamelafox/pycon2026-mcp-tutorial",
-    "video": null,
-    "tags": "python, mcp",
-    "location": "PyCon US 2026",
-    "cospeakers": null,
-    "include": "yes"
-  },
-  {
-    "title": "Your Slides, But Faster: Building an AI-powered presentation workflow",
-    "date": "2026-05-14T05:00:00.000Z",
-    "description": "A walkthrough of an AI-powered presentation workflow, from planning and generating a RevealJS deck to iterating on content and style, auditing slides against source material, and turning the finished talk into shareable follow-up artifacts.",
-    "thumbnail": "https://pbs.twimg.com/media/HITTXYrbEAAkQJd.jpg",
-    "slides": "https://pamelafox.github.io/ai-powered-presentation-workflow/",
-    "code": "https://github.com/pamelafox/ai-powered-presentation-workflow",
-    "video": null,
-    "tags": "ai, agents",
-    "location": "EduSummit @ PyCon US 2026",
+    "title": "Host your agents on Foundry: Microsoft Agent Framework",
+    "date": "2026-04-27T05:00:00.000Z",
+    "description": "In the first session of this three-part series, we deployed agents built with Microsoft Agent Framework, starting with a simple agent, adding Foundry tools like Code Interpreter, grounding the agent in enterprise data with Foundry IQ, and finally deploying multi-agent workflows on Microsoft Foundry.",
+    "thumbnail": "https://i.ytimg.com/vi/8N7q0Ucr3rw/hqdefault.jpg",
+    "slides": "https://aka.ms/foundryhosted/slides/agentframework",
+    "code": "https://github.com/Azure-Samples/foundry-hosted-agentframework-demos",
+    "video": "https://www.youtube.com/watch?v=8N7q0Ucr3rw",
+    "writeup": "https://github.com/pamelafox/presentation-writeups/blob/main/presentations/foundry-agents-agentframework/outputs/writeup.md",
+    "tags": "python, agents, azure",
+    "location": "Microsoft Reactor (Online)",
     "cospeakers": null,
     "include": "yes"
   },
@@ -312,18 +312,6 @@
     "include": "yes"
   },
   {
-    "title": "Just because AI can write your tests... should it?",
-    "date": "2025-10-18T05:00:00.000Z",
-    "description": "AI-assisted coding tools are making programming more accessible, but we risk leaning on LLMs for everything\u2014including our tests\u2014and ignoring Python's testing toolbox. This talk digs into where AI-generated tests fall short, why hand-crafted tests deliver more meaningful coverage, and how to decide when to pair AI with specialized testing tools.",
-    "thumbnail": "https://pbs.twimg.com/media/G3gGCENXUAARkpe?format=png&name=small",
-    "slides": "https://pamelafox.github.io/my-py-talks/ai-assisted-testing-pybay/",
-    "video": "https://youtu.be/Lha1741iEjE",
-    "tags": "python, testing",
-    "location": "PyBay 2025 (San Francisco)",
-    "cospeakers": null,
-    "include": "yes"
-  },
-  {
     "title": "Python + AI: Model Context Protocol",
     "date": "2025-10-23T05:00:00.000Z",
     "description": "We dive into the Model Context Protocol (MCP), an open protocol that makes it easy to extend AI agents and chatbots with custom functionality. We use the Python FastMCP SDK to build an MCP server, consume it from chatbots like GitHub Copilot, build our own MCP client, and explore how agent frameworks integrate with MCP while discussing security considerations.",
@@ -356,6 +344,18 @@
     "video": "https://www.youtube.com/watch?v=KDDRQ9SS5Gg",
     "tags": "python, ai",
     "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Just because AI can write your tests... should it?",
+    "date": "2025-10-18T05:00:00.000Z",
+    "description": "AI-assisted coding tools are making programming more accessible, but we risk leaning on LLMs for everything\u2014including our tests\u2014and ignoring Python's testing toolbox. This talk digs into where AI-generated tests fall short, why hand-crafted tests deliver more meaningful coverage, and how to decide when to pair AI with specialized testing tools.",
+    "thumbnail": "https://pbs.twimg.com/media/G3gGCENXUAARkpe?format=png&name=small",
+    "slides": "https://pamelafox.github.io/my-py-talks/ai-assisted-testing-pybay/",
+    "video": "https://youtu.be/Lha1741iEjE",
+    "tags": "python, testing",
+    "location": "PyBay 2025 (San Francisco)",
     "cospeakers": null,
     "include": "yes"
   },
@@ -480,30 +480,6 @@
     "include": "yes"
   },
   {
-    "title": "Building AI Agents with Python",
-    "date": "2025-05-18T05:00:00.000Z",
-    "description": "A talk for a student group about building AI Agents with Python, Langchain v1, and GitHub Models.",
-    "thumbnail": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tsp6lfo25kjtulmjeafrqbkr/bafkreibrs54wjjzgydsd5pdokjrtazjpvyy7no6qwttztur6ot65ihfav4@jpeg",
-    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/EdIzaUAf0oRPumEZRVmdo1kB0ACB2q1APgpYP3YH8LPqhA?resid=B79CD1DB3ADA14C5!s406933d2d21f4f84ba611945599da359&ithint=file%2Cpptx&e=zfcwuS&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VkSXphVUFmMG9SUHVtRVpSVm1kbzFrQjBBQ0IycTFBUGdwWVAzWUg4TFBxaEE_ZT16ZmN3dVM",
-    "video": null,
-    "tags": "python",
-    "location": "Virtual",
-    "cospeakers": null,
-    "include": "yes"
-  },
-  {
-    "title": "PostgreSQL extension for VS Code",
-    "date": "2025-05-18T05:00:00.000Z",
-    "description": "In this theater session from PyCon US 2025, Cloud Advocate Pamela Fox walks through the new PostgresSQL extension for Visual Studio Code. The PostgreSQL extension for Visual Studio Code is a feature-rich tool designed to simplify PostgreSQL database management and development. This extension empowers developers to connect to PostgreSQL databases, write and execute queries, and manage database objects without leaving the Visual Studio Code environment.",
-    "thumbnail": "https://i.ytimg.com/vi/DwTG_wUObE4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBxd6wSXO47tA4GdKzudZ6AhY1_SQ",
-    "slides": "https://github.com/Azure-Samples/postgresql-extension-playground",
-    "video": "https://www.youtube.com/watch?v=DwTG_wUObE4",
-    "tags": "python",
-    "location": "Pycon 2025 (Microsoft Booth)",
-    "cospeakers": null,
-    "include": "yes"
-  },
-  {
     "title": "Building modern Python web apps with PostgreSQL",
     "date": "2025-06-11T05:00:00.000Z",
     "description": "PostgreSQL is the most popular database amongst Pythonistas, according to the most recent Python developers survey. Many of those developers are using PostgreSQL to build web applications, which means they're deciding what web app framework to use (Flask? Django? FastAPI?), whether to use an ORM (SQLAlchemy? SQLModel?), whether to use asyncpg or psycopg. So many decisions! In this talk, we'll walk through an opinionated architecture\u2014a FastAPI web app using asyncpg and SQLAlchemy\u2014and talk about why we chose those options.",
@@ -513,6 +489,18 @@
     "tags": "python",
     "location": "Posette 2025",
     "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Agentic RAG: build a reasoning retrieval engine with Azure AI Search",
+    "date": "2025-05-21T05:00:00.000Z",
+    "description": "Transform flat, simple search into an independent, sophisticated engine with agentic retrieval. Learn how agentic retrieval engines use memory, query planning and reasoning models to help solve complex problems.",
+    "thumbnail": "https://medius.microsoft.com/video/asset/Thumbnail/86f1c05b-6456-42ca-b41c-907866420f40",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/ES2INLnIyctGuta3wn4CuB0BhQSS7ZBJly2tjpxt2LAPwg?resid=B79CD1DB3ADA14C5!sb934882dc9c846cbbad6b7c27e02b81d&ithint=file%2Cpptx&e=txZ6KJ&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VTMklOTG5JeWN0R3V0YTN3bjRDdUIwQmhRU1M3WkJKbHkydGpweHQyTEFQd2c_ZT10eFo2S0o",
+    "video": "https://build.microsoft.com/en-US/sessions/BRK142",
+    "tags": "python, rag",
+    "location": "Microsoft Build 2025",
+    "cospeakers": "Matt Gotteiner",
     "include": "yes"
   },
   {
@@ -540,15 +528,27 @@
     "include": "yes"
   },
   {
-    "title": "Agentic RAG: build a reasoning retrieval engine with Azure AI Search",
-    "date": "2025-05-21T05:00:00.000Z",
-    "description": "Transform flat, simple search into an independent, sophisticated engine with agentic retrieval. Learn how agentic retrieval engines use memory, query planning and reasoning models to help solve complex problems.",
-    "thumbnail": "https://medius.microsoft.com/video/asset/Thumbnail/86f1c05b-6456-42ca-b41c-907866420f40",
-    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/ES2INLnIyctGuta3wn4CuB0BhQSS7ZBJly2tjpxt2LAPwg?resid=B79CD1DB3ADA14C5!sb934882dc9c846cbbad6b7c27e02b81d&ithint=file%2Cpptx&e=txZ6KJ&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VTMklOTG5JeWN0R3V0YTN3bjRDdUIwQmhRU1M3WkJKbHkydGpweHQyTEFQd2c_ZT10eFo2S0o",
-    "video": "https://build.microsoft.com/en-US/sessions/BRK142",
-    "tags": "python, rag",
-    "location": "Microsoft Build 2025",
-    "cospeakers": "Matt Gotteiner",
+    "title": "Building AI Agents with Python",
+    "date": "2025-05-18T05:00:00.000Z",
+    "description": "A talk for a student group about building AI Agents with Python, Langchain v1, and GitHub Models.",
+    "thumbnail": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:tsp6lfo25kjtulmjeafrqbkr/bafkreibrs54wjjzgydsd5pdokjrtazjpvyy7no6qwttztur6ot65ihfav4@jpeg",
+    "slides": "https://onedrive.live.com/:p:/g/personal/B79CD1DB3ADA14C5/EdIzaUAf0oRPumEZRVmdo1kB0ACB2q1APgpYP3YH8LPqhA?resid=B79CD1DB3ADA14C5!s406933d2d21f4f84ba611945599da359&ithint=file%2Cpptx&e=zfcwuS&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9iNzljZDFkYjNhZGExNGM1L0VkSXphVUFmMG9SUHVtRVpSVm1kbzFrQjBBQ0IycTFBUGdwWVAzWUg4TFBxaEE_ZT16ZmN3dVM",
+    "video": null,
+    "tags": "python",
+    "location": "Virtual",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "PostgreSQL extension for VS Code",
+    "date": "2025-05-18T05:00:00.000Z",
+    "description": "In this theater session from PyCon US 2025, Cloud Advocate Pamela Fox walks through the new PostgresSQL extension for Visual Studio Code. The PostgreSQL extension for Visual Studio Code is a feature-rich tool designed to simplify PostgreSQL database management and development. This extension empowers developers to connect to PostgreSQL databases, write and execute queries, and manage database objects without leaving the Visual Studio Code environment.",
+    "thumbnail": "https://i.ytimg.com/vi/DwTG_wUObE4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBxd6wSXO47tA4GdKzudZ6AhY1_SQ",
+    "slides": "https://github.com/Azure-Samples/postgresql-extension-playground",
+    "video": "https://www.youtube.com/watch?v=DwTG_wUObE4",
+    "tags": "python",
+    "location": "Pycon 2025 (Microsoft Booth)",
+    "cospeakers": null,
     "include": "yes"
   },
   {
@@ -1044,6 +1044,18 @@
     "include": "yes"
   },
   {
+    "title": "pgvector for Python developers",
+    "date": "2024-06-12T05:00:00.000Z",
+    "description": "Learn how to use pgvector, the Postgres extension for vector storage and querying, from Python scripts and web apps. I'll include demos with the most common drivers and ORMs, like psycopg, asyncpg, SQLAlchemy, SQLModel, and deploy a full FastAPI app using pgvector for a vector search API. I'll also talk about embedding model options and indexing strategies.",
+    "thumbnail": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/pgvector-python/",
+    "video": "https://www.youtube.com/watch?v=MJHUVUXBRFE",
+    "tags": "python",
+    "location": "Posette (Virtual)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Python Web Apps: Django",
     "date": "2024-06-11T05:00:00.000Z",
     "description": "We dive into the Django framework, a highly opinionated and very popular framework for Python web apps. We explore how the Django ORM and built-in admin makes it easy to build database-driven websites, using PostgreSQL as the database for our examples.",
@@ -1077,18 +1089,6 @@
     "tags": "python",
     "location": "Microsoft Reactor (Online)",
     "cospeakers": "Renee Noble",
-    "include": "yes"
-  },
-  {
-    "title": "pgvector for Python developers",
-    "date": "2024-06-12T05:00:00.000Z",
-    "description": "Learn how to use pgvector, the Postgres extension for vector storage and querying, from Python scripts and web apps. I'll include demos with the most common drivers and ORMs, like psycopg, asyncpg, SQLAlchemy, SQLModel, and deploy a full FastAPI app using pgvector for a vector search API. I'll also talk about embedding model options and indexing strategies.",
-    "thumbnail": "https://i.ytimg.com/vi/MJHUVUXBRFE/hq720.jpg",
-    "slides": "https://pamelafox.github.io/my-py-talks/pgvector-python/",
-    "video": "https://www.youtube.com/watch?v=MJHUVUXBRFE",
-    "tags": "python",
-    "location": "Posette (Virtual)",
-    "cospeakers": null,
     "include": "yes"
   },
   {
