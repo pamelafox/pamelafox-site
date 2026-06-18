@@ -2,7 +2,7 @@
   {
     "title": "Using and building MCP servers with GitHub Copilot",
     "date": "2026-06-18T05:00:00.000Z",
-    "description": "A 4-hour internal workshop at Microsoft covering how to use and build MCP servers. Participants connected GitHub Copilot (VS Code/CLI/App) to both public and authenticated MCP servers, built a basic server with Python and FastMCP, and finished up with MCP apps and elicitations.",
+    "description": "A 2-hour workshop, with slides, covering how to use and build MCP servers. Participants connected GitHub Copilot (VS Code/CLI/App) to both public and authenticated MCP servers, built a basic server with Python and FastMCP, and finished up with MCP apps and elicitations.",
     "thumbnail": null,
     "slides": "https://pamelafox.github.io/github-copilot-mcp-tutorial/",
     "code": "https://github.com/pamelafox/github-copilot-mcp-tutorial",
