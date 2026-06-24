@@ -1,5 +1,18 @@
 [
   {
+    "title": "From data to context: Agent-ready knowledge with Foundry IQ",
+    "date": "2026-06-02T05:00:00.000Z",
+    "description": "What if your coding agent could reason over enterprise knowledge—across files, data, and work signals—without leaving your developer workflow? In this hands-on lab, you'll build a reusable knowledge base in Foundry IQ using the Microsoft Foundry portal, expose it as an MCP server, and connect it to GitHub Copilot CLI—no custom RAG plumbing required. Experience how Foundry IQ and Copilot CLI work together to turn enterprise knowledge into live context, right where developers build and debug.",
+    "thumbnail": null,
+    "slides": "https://aka.ms/build2026-LAB532-slides",
+    "code": "https://github.com/microsoft/Build26-LAB532-from-data-to-context-agent-ready-knowledge-with-foundry-iq",
+    "video": null,
+    "tags": "mcp, foundry, github copilot",
+    "location": "Microsoft Build 2026",
+    "cospeakers": "Ayça Bas, Matt Gotteiner",
+    "include": "yes"
+  },
+  {
     "title": "Using and building MCP servers with GitHub Copilot",
     "date": "2026-06-18T05:00:00.000Z",
     "description": "A 2-hour workshop, with slides, covering how to use and build MCP servers. Participants connected GitHub Copilot (VS Code/CLI/App) to both public and authenticated MCP servers, built a basic server with Python and FastMCP, and finished up with MCP apps and elicitations.",
