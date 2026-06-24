@@ -6,7 +6,7 @@
   <ul>
   {% for talk in talks %}
   <li style="clear:right">
-   <img class="thumbnail" src="{{ talk.thumbnail }}" alt="Thumbnail image for talk titled {{ talk.title }}">
+   {% if talk.thumbnail %}<img class="thumbnail" src="{{ talk.thumbnail }}" alt="Thumbnail image for talk titled {{ talk.title }}">{% endif %}
    <span class="title"><a href="{{ talk.slides }}">{{ talk.title }}</a></span>
    <div class="description">
    {{ talk.description }}
