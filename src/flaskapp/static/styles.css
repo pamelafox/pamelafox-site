@@ -105,8 +105,8 @@ ul {
   font-size: smaller;
 }
 
-.links img {
+.links .emoji-icon {
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  margin-right: 2px;
 }
