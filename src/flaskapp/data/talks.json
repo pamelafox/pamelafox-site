@@ -1,5 +1,31 @@
 [
   {
+    "title": "Microsoft IQ Deep Dive with Python: Fabric IQ",
+    "date": "2026-07-30T05:00:00.000Z",
+    "description": "An exploration of how Fabric IQ connects AI experiences to structured business data in Microsoft Fabric's OneLake. We covered ontologies, graphs, semantic models, and data agents, demonstrated the Ontology and Data Agent MCP servers, and added Fabric IQ sources to Foundry IQ knowledge bases for multi-source retrieval.",
+    "thumbnail": "https://i.ytimg.com/vi/MC97CXno8FI/hqdefault.jpg",
+    "slides": "https://aka.ms/iqdeepdive/slides/fabriciq",
+    "code": "https://github.com/microsoft/iqdeepdive",
+    "video": "https://www.youtube.com/watch?v=MC97CXno8FI",
+    "tags": "python, ai, rag, mcp, azure",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Microsoft IQ Deep Dive with Python: Foundry IQ",
+    "date": "2026-07-28T05:00:00.000Z",
+    "description": "An exploration of how Foundry IQ helps agents and applications work with curated knowledge and organizational context. We built knowledge bases with multiple sources, performed multi-source agentic retrieval, and grounded Microsoft Agent Framework agents using a custom tool, MCP, and the Foundry Toolbox before deploying them as hosted agents.",
+    "thumbnail": "https://i.ytimg.com/vi/cbvM3-Xhx90/hqdefault.jpg",
+    "slides": "https://aka.ms/iqdeepdive/slides/foundryiq",
+    "code": "https://github.com/microsoft/iqdeepdive",
+    "video": "https://www.youtube.com/watch?v=cbvM3-Xhx90",
+    "tags": "python, ai, rag, mcp, azure",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Tracing and debugging agents across systems with OpenTelemetry",
     "date": "2026-07-02T05:00:00.000Z",
     "description": "Understand what your agents are doing. Learn how to trace workflows across systems, debug issues, and uncover optimization opportunities using OpenTelemetry.",
