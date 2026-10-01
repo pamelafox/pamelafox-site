@@ -1,5 +1,57 @@
 [
   {
+    "title": "Inside Microsoft IQ: The Intelligence Platform Behind Agents",
+    "date": "2026-09-30T05:00:00.000Z",
+    "description": "A tour of the Microsoft IQ family (Foundry IQ, Work IQ, Fabric IQ, and Web IQ) and how they ground agents in organizational knowledge, workplace context, business data, and the web. Presented as part of the Copilot Dev Camp Summit livestream.",
+    "thumbnail": "https://i.ytimg.com/vi/B5ywcwSkvBA/hqdefault.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQCPAj7KLibDQqBUuEjiz1F1AUIlaOwlVXkHYZYtMF8arPc?e=JAv7RA",
+    "code": "https://aka.ms/iqdeepdive",
+    "video": "https://www.youtube.com/watch?v=B5ywcwSkvBA&t=10076s",
+    "tags": "ai, agents, rag, azure",
+    "location": "Copilot Dev Camp Summit (Online)",
+    "cospeakers": "Ayca Bas",
+    "include": "yes"
+  },
+  {
+    "title": "When One Agent Isn't Enough: Orchestrating Secure Parallel Agent Swarms",
+    "date": "2026-09-30T05:00:00.000Z",
+    "description": "AI agents need to run code, call APIs, and fan out in parallel, but doing that safely at scale is hard. We built agentic workloads on Azure Container Apps sandboxes: hardware-isolated microVMs with sub-second start, locked-down egress, and secure credential injection, and demonstrated a research-agent swarm that provisions a fleet of sandboxes in parallel.",
+    "thumbnail": "https://i.ytimg.com/vi/Nd3036clOCY/hqdefault.jpg",
+    "slides": "https://pamelafox.github.io/aca-sandboxes-multi-agent/",
+    "code": "https://github.com/pamelafox/aca-sandboxes-multi-agent",
+    "video": "https://www.youtube.com/watch?v=Nd3036clOCY",
+    "tags": "ai, agents, azure, python",
+    "location": "Microsoft Reactor (Online)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Exploring MCP Servers with GitHub Copilot (Workshop)",
+    "date": "2026-09-24T05:00:00.000Z",
+    "description": "A hands-on 2-hour workshop connecting GitHub Copilot (App, CLI, and VS Code) to public and authenticated MCP servers, exploring the tools they expose, and putting them to work researching topics, troubleshooting issues, and contributing to a codebase. We also combined MCP servers with agent skills for more powerful, personalized developer workflows.",
+    "thumbnail": "/static/thumbnail_wad_mcp_workshop.png",
+    "slides": "https://pamelafox.github.io/github-copilot-mcp-skills-workshop/",
+    "code": null,
+    "video": null,
+    "tags": "github copilot, mcp, ai",
+    "location": "WeAreDevelopers World Congress North America 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Parallelize Your Development with GitHub Copilot",
+    "date": "2026-09-23T05:00:00.000Z",
+    "description": "How to split work across multiple surfaces: VS Code when you need to be most hands-on, the GitHub Copilot app for tasks that need light supervision, and cloud agents for routine maintenance. Tips on worktrees, agent isolation, environment variable management, subagents, and automations that run while you sleep.",
+    "thumbnail": "/static/thumbnail_wad_parallelize.png",
+    "slides": "https://pamelafox.github.io/parallelize-development-github-copilot/",
+    "code": null,
+    "video": null,
+    "tags": "github copilot, ai",
+    "location": "WeAreDevelopers World Congress North America 2026",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Microsoft IQ Deep Dive with Python: Fabric IQ",
     "date": "2026-07-30T05:00:00.000Z",
     "description": "An exploration of how Fabric IQ connects AI experiences to structured business data in Microsoft Fabric's OneLake. We covered ontologies, graphs, semantic models, and data agents, demonstrated the Ontology and Data Agent MCP servers, and added Fabric IQ sources to Foundry IQ knowledge bases for multi-source retrieval.",
