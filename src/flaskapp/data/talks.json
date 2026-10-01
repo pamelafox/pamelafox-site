@@ -31,7 +31,7 @@
     "description": "A hands-on 2-hour workshop connecting GitHub Copilot (App, CLI, and VS Code) to public and authenticated MCP servers, exploring the tools they expose, and putting them to work researching topics, troubleshooting issues, and contributing to a codebase. We also combined MCP servers with agent skills for more powerful, personalized developer workflows.",
     "thumbnail": "/static/thumbnail_wad_mcp_workshop.png",
     "slides": "https://pamelafox.github.io/github-copilot-mcp-skills-workshop/",
-    "code": null,
+    "code": "https://github.com/pamelafox/github-copilot-mcp-skills-workshop",
     "video": null,
     "tags": "github copilot, mcp, ai",
     "location": "WeAreDevelopers World Congress North America 2026",
