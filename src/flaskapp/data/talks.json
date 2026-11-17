@@ -1,5 +1,18 @@
 [
   {
+    "title": "Talk Python To Me #569: Connecting Agents to Data via MCP, CLI, and More",
+    "date": "2026-11-16T05:00:00.000Z",
+    "description": "A podcast conversation with Michael Kennedy about MCP: when agents should use MCP vs. CLIs vs. APIs, MCP mashups, my favorite MCP servers for automating AI news research, when not to use MCP, why overly prescriptive agent skills can make agents less capable, and building safer, more focused MCP servers in Python with FastMCP.",
+    "thumbnail": "https://i.ytimg.com/vi/F5-DtOl-9oM/hqdefault.jpg",
+    "slides": null,
+    "code": null,
+    "video": "https://talkpython.fm/episodes/show/569/connecting-agents-to-data-via-mcp-cli-and-more",
+    "tags": "ai, agents, mcp, python",
+    "location": "Talk Python To Me Podcast (Online)",
+    "cospeakers": "Michael Kennedy",
+    "include": "yes"
+  },
+  {
     "title": "Build with Microsoft IQ: A hands-on workshop for context-aware AI",
     "date": "2026-11-16T05:00:00.000Z",
     "description": "A 4-hour hands-on lab on grounding agents in context from the Microsoft IQs: Web IQ for fresh web results, Fabric IQ for business data via ontologies, graphs, and data agents, Work IQ for Microsoft 365 emails and calendars, and Foundry IQ for bringing them together as knowledge sources in an agentic retrieval knowledge base. We called each IQ from Python notebooks, chatted with them as MCP servers in the GitHub Copilot app, and finished with hosted Foundry agents built with Microsoft Agent Framework.",
