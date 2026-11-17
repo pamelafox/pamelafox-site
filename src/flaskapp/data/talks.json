@@ -4,7 +4,7 @@
     "date": "2026-11-16T05:00:00.000Z",
     "description": "A 4-hour hands-on lab on grounding agents in context from the Microsoft IQs: Web IQ for fresh web results, Fabric IQ for business data via ontologies, graphs, and data agents, Work IQ for Microsoft 365 emails and calendars, and Foundry IQ for bringing them together as knowledge sources in an agentic retrieval knowledge base. We called each IQ from Python notebooks, chatted with them as MCP servers in the GitHub Copilot app, and finished with hosted Foundry agents built with Microsoft Agent Framework.",
     "thumbnail": "/static/thumbnail_ignite26_prel42.jpg",
-    "slides": "https://aka.ms/ignite2026-PREL42",
+    "slides": "https://aka.ms/prel42-slides",
     "code": "https://github.com/microsoft/ignite26-PREL42",
     "video": null,
     "tags": "ai, agents, rag, azure, python, mcp",
