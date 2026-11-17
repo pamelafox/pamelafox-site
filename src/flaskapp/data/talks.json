@@ -13,6 +13,32 @@
     "include": "yes"
   },
   {
+    "title": "The Impact of AI on CS Curriculum",
+    "date": "2026-11-04T05:00:00.000Z",
+    "description": "A follow-up conversation with local CS teachers about what AI means for teaching CS from K-12 through college. The software lifecycle still needs humans, verification is the skill we're not teaching enough, and a curriculum diff: change what we grade (decisions, not just code) and who students build for (real users, not the autograder), add how AI works, specs, verification, user testing, product judgment, and agentic coding, and drop syntax drills, memorizing APIs, and teaching multiple languages.",
+    "thumbnail": "/static/thumbnail_csta_ai_cs_curriculum.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/impact-of-ai-on-cs-ed/",
+    "code": null,
+    "video": null,
+    "tags": "ai, education",
+    "location": "CSTA Berkeley (Berkeley, CA)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "The Impact of AI on Software Engineering",
+    "date": "2026-10-07T05:00:00.000Z",
+    "description": "A talk for local CS teachers about how AI is changing software engineering: a whirlwind tour of AI engineering (LLMs, RAG, structured outputs, tool calling, agents, evals), the rise of agentic coding, the shift from software engineering to product engineering, the era of personal software, and implications for teaching CS.",
+    "thumbnail": "/static/thumbnail_csta_ai_swe.jpg",
+    "slides": "https://pamelafox.github.io/my-py-talks/impact-of-ai-on-cs/",
+    "code": "https://github.com/pamelafox/my-py-talks/tree/main/impact-of-ai-on-cs",
+    "video": null,
+    "tags": "ai, education, python",
+    "location": "CSTA Berkeley (Berkeley, CA)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "Inside Microsoft IQ: The Intelligence Platform Behind Agents",
     "date": "2026-09-30T05:00:00.000Z",
     "description": "A tour of the Microsoft IQ family (Foundry IQ, Work IQ, Fabric IQ, and Web IQ) and how they ground agents in organizational knowledge, workplace context, business data, and the web. Presented as part of the Copilot Dev Camp Summit livestream.",
