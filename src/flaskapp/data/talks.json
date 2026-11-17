@@ -26,6 +26,45 @@
     "include": "yes"
   },
   {
+    "title": "Building a developer knowledge base for GitHub Copilot (Workshop)",
+    "date": "2026-10-28T05:00:00.000Z",
+    "description": "A hands-on workshop connecting GitHub Copilot to the context developers need: the local codebase, live GitHub issues, pull requests, and discussions via the GitHub MCP server, and organizational specs, policies, and architecture docs via a Foundry IQ knowledge base MCP server.",
+    "thumbnail": "/static/thumbnail_ghu26_developer_kb.jpg",
+    "slides": "https://pamelafox.github.io/developer-kb-for-github-copilot/",
+    "code": "https://github.com/pamelafox/developer-kb-for-github-copilot",
+    "video": null,
+    "tags": "github copilot, mcp, ai, rag",
+    "location": "GitHub Universe 2026 (San Francisco)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Stack It Yourself: Open Infrastructure for AI Agents, from Compose to Cluster (Workshop)",
+    "date": "2026-10-23T05:00:00.000Z",
+    "description": "A hands-on workshop building an AI agent on fully open infrastructure: local LLM inference through OpenAI-compatible servers like Ollama, a Pydantic AI agent with MCP tools from FastMCP, durable chat history in Redis, and OpenTelemetry traces, metrics, and logs in a Grafana LGTM stack, all running in Docker Compose and then moved to Kubernetes with no code changes. No GPU, cloud account, or proprietary API key required.",
+    "thumbnail": "/static/thumbnail_agntcon26_stack_it_yourself.jpg",
+    "slides": null,
+    "code": "https://github.com/bbenz/stack-it-yourself-workshop",
+    "video": null,
+    "tags": "ai, agents, mcp, python, docker",
+    "location": "AGNTCon + MCPCon North America 2026 (San Jose)",
+    "cospeakers": "Brian Benz",
+    "include": "yes"
+  },
+  {
+    "title": "Model Mastery Workshop with Microsoft and Anthropic",
+    "date": "2026-10-08T05:00:00.000Z",
+    "description": "A hands-on workshop with Anthropic on building agents with Claude in Microsoft Foundry. In the first lab, attendees built a cupcake shop agent using tools, tool search, a Foundry IQ knowledge base, vision, and structured outputs. In the second lab, Claude took on more of the work: a self-verifying build loop with web search, an agent built with the Claude Agent SDK, tracing, a hosted agent in Foundry, and evaluations judged by Claude.",
+    "thumbnail": "/static/thumbnail_model_mastery_anthropic.jpg",
+    "slides": null,
+    "code": "https://github.com/microsoft-foundry/model-mastery/tree/main/anthropic",
+    "video": null,
+    "tags": "ai, azure",
+    "location": "SF Tech Week (San Francisco)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
     "title": "The Impact of AI on Software Engineering",
     "date": "2026-10-07T05:00:00.000Z",
     "description": "A talk for local CS teachers about how AI is changing software engineering: a whirlwind tour of AI engineering (LLMs, RAG, structured outputs, tool calling, agents, evals), the rise of agentic coding, the shift from software engineering to product engineering, the era of personal software, and implications for teaching CS.",
@@ -35,6 +74,19 @@
     "video": null,
     "tags": "ai, education, python",
     "location": "CSTA Berkeley (Berkeley, CA)",
+    "cospeakers": null,
+    "include": "yes"
+  },
+  {
+    "title": "Convergence in vector space",
+    "date": "2026-10-03T05:00:00.000Z",
+    "description": "Vector embeddings power modern search, but they aren't always easy to understand. Instead of starting with math, we built intuition through the improv word game Convergence: first played live with audience volunteers, then recreated with Python, embedding models, and cosine similarity, pitting models against each other to see which converge quickly, which get stuck, and which make surprisingly weird choices.",
+    "thumbnail": "/static/thumbnail_pybay26_convergence.jpg",
+    "slides": "https://pamelafox.github.io/convergence-with-vectors/",
+    "code": "https://github.com/pamelafox/convergence-with-vectors",
+    "video": null,
+    "tags": "python, ai, embeddings",
+    "location": "PyBay 2026 (San Francisco)",
     "cospeakers": null,
     "include": "yes"
   },
