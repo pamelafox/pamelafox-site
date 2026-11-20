@@ -1,5 +1,18 @@
 [
   {
+    "title": "Building agentic retrieval: from DIY to Foundry IQ",
+    "date": "2026-11-19T05:00:00.000Z",
+    "description": "A breakout session with Matthew Gotteiner comparing two approaches to agentic retrieval on top of Foundry IQ (Azure AI Search). I showed a DIY approach with Python orchestration: a decision model for query complexity classification, an LLM for query planning, a parallel fan-out of hybrid search calls, and an LLM for reflection. Matt showed Foundry IQ's built-in knowledge bases, which now use a fine-tuned model (microsoft-retriever-1) for query planning and reflection, plus an Auto mode that only escalates to models when needed. The knowledge bases were faster and cheaper for most question types, but always evaluate on your own data and queries.",
+    "thumbnail": "/static/thumbnail_ignite26_brk300.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQC6DMnVhUvERJLSh9Izdk7QARuDwBBKYP3KkBCeVHYn408?e=4F3yxb",
+    "code": "https://github.com/microsoft/ignite26-BRK300-building-agentic-retrieval-from-diy-to-foundry-iq",
+    "video": "https://ignite.microsoft.com/en-US/sessions/1787856618592001EPDX-1791588235919001CbbF",
+    "tags": "ai, agents, rag, azure, python",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Matthew Gotteiner",
+    "include": "yes"
+  },
+  {
     "title": "Talk Python To Me #569: Connecting Agents to Data via MCP, CLI, and More",
     "date": "2026-11-16T05:00:00.000Z",
     "description": "A podcast conversation with Michael Kennedy about MCP: when agents should use MCP vs. CLIs vs. APIs, MCP mashups, my favorite MCP servers for automating AI news research, when not to use MCP, why overly prescriptive agent skills can make agents less capable, and building safer, more focused MCP servers in Python with FastMCP.",
