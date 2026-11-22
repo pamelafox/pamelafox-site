@@ -1,5 +1,44 @@
 [
   {
+    "title": "Foundry IQ: Hands-on with knowledge graphs and agentic retrieval (Lab)",
+    "date": "2026-11-20T05:00:00.000Z",
+    "description": "Use Foundry IQ to build a graph-enhanced knowledge base for agentic retrieval. Use the graph toolkit to propose and review an ontology, then extract entities and relationships from your documents to create an enterprise knowledge graph. Build an agent that combines graph retrieval with hybrid search to answer multi-hop questions, uncover connections across documents, and ground its responses in source evidence.",
+    "thumbnail": "/static/thumbnail_ignite26_lab673.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQAB9YLV-Lw8R7TBA0esgd7oAWAjSZIuVsQ2t9WURZWDRPo?e=xoRz6q",
+    "code": "https://github.com/microsoft/ignite26-LAB673",
+    "video": null,
+    "tags": "ai, agents, rag, azure, python",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Ayca Bas, Matt Gotteiner",
+    "include": "yes"
+  },
+  {
+    "title": "Building agentic retrieval: From DIY to Foundry IQ",
+    "date": "2026-11-19T05:00:00.000Z",
+    "description": "Why does agentic retrieval matter, and what does it take to build it yourself? In this session, we will first code an agent loop that decomposes a question, runs parallel searches, inspects evidence, and decides whether to search again. Then we'll see how Foundry IQ can replace that plumbing with a managed agentic knowledge base. Learn how we made the managed service cheaper, faster, and better, thanks to serverless execution, compression, fine-tuned task-specific models, and built-in ranking.",
+    "thumbnail": "/static/thumbnail_ignite26_brk300.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQC6DMnVhUvERJLSh9Izdk7QARuDwBBKYP3KkBCeVHYn408?e=4F3yxb",
+    "code": "https://github.com/microsoft/ignite26-BRK300-building-agentic-retrieval-from-diy-to-foundry-iq",
+    "video": "https://ignite.microsoft.com/en-US/sessions/1787856618592001EPDX-1791588235919001CbbF",
+    "tags": "ai, agents, rag, azure, python",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+  },
+  {
+    "title": "Identity-aware knowledge retrieval with Foundry IQ",
+    "date": "2026-11-19T05:00:00.000Z",
+    "description": "AI agents rely on retrieved knowledge to answer questions, but not every user should have access to every document. This lightning talk shows how Foundry IQ enables identity-aware knowledge retrieval using document-level access controls, Microsoft Entra ID user and group filtering, and permission-aware retrieval. Learn how permissions from SharePoint, Azure Data Lake Storage Gen2, and other enterprise content sources are enforced so agents retrieve only authorized content.",
+    "thumbnail": "/static/thumbnail_ignite26_ltg1218.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQDvHrTJXDijSoTI4uOb9JIUAUL5kRzgE0HNBm_gcwLteiw?e=G0fOfj",
+    "code": "https://github.com/Azure-Samples/azure-search-openai-demo",
+    "video": null,
+    "tags": "ai, agents, rag, azure, security",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+  },
+  {
     "title": "Talk Python To Me #569: Connecting Agents to Data via MCP, CLI, and More",
     "date": "2026-11-16T05:00:00.000Z",
     "description": "A podcast conversation with Michael Kennedy about MCP: when agents should use MCP vs. CLIs vs. APIs, MCP mashups, my favorite MCP servers for automating AI news research, when not to use MCP, why overly prescriptive agent skills can make agents less capable, and building safer, more focused MCP servers in Python with FastMCP.",
