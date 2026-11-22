@@ -17,7 +17,7 @@
     "date": "2026-11-19T05:00:00.000Z",
     "description": "Why does agentic retrieval matter, and what does it take to build it yourself? In this session, we will first code an agent loop that decomposes a question, runs parallel searches, inspects evidence, and decides whether to search again. Then we'll see how Foundry IQ can replace that plumbing with a managed agentic knowledge base. Learn how we made the managed service cheaper, faster, and better, thanks to serverless execution, compression, fine-tuned task-specific models, and built-in ranking.",
     "thumbnail": "/static/thumbnail_ignite26_brk300.jpg",
-    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQC6DMnVhUvERJLSh9Izdk7QARuDwBBKYP3KkBCeVHYn408?e=4F3yxb",
+    "slides": "https://medius.microsoft.com/video/asset/PPT/b575c273-cf0d-44d5-b578-3d7e52783cfb",
     "code": "https://github.com/microsoft/ignite26-BRK300-building-agentic-retrieval-from-diy-to-foundry-iq",
     "video": "https://ignite.microsoft.com/en-US/sessions/1787856618592001EPDX-1791588235919001CbbF",
     "tags": "ai, agents, rag, azure, python",
