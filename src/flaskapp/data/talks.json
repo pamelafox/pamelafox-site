@@ -1,5 +1,18 @@
 [
   {
+    "title": "Foundry IQ: Hands-on with knowledge graphs and agentic retrieval (Lab)",
+    "date": "2026-11-20T05:00:00.000Z",
+    "description": "Use Foundry IQ to build a graph-enhanced knowledge base for agentic retrieval. Use the graph toolkit to propose and review an ontology, then extract entities and relationships from your documents to create an enterprise knowledge graph. Build an agent that combines graph retrieval with hybrid search to answer multi-hop questions, uncover connections across documents, and ground its responses in source evidence.",
+    "thumbnail": "/static/thumbnail_ignite26_lab673.jpg",
+    "slides": "https://1drv.ms/p/c/b79cd1db3ada14c5/IQAB9YLV-Lw8R7TBA0esgd7oAWAjSZIuVsQ2t9WURZWDRPo?e=xoRz6q",
+    "code": "https://github.com/microsoft/ignite26-LAB673",
+    "video": null,
+    "tags": "ai, agents, rag, azure, python",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Ayca Bas",
+    "include": "yes"
+  },
+  {
     "title": "Building agentic retrieval: From DIY to Foundry IQ",
     "date": "2026-11-19T05:00:00.000Z",
     "description": "Why does agentic retrieval matter, and what does it take to build it yourself? In this session, we will first code an agent loop that decomposes a question, runs parallel searches, inspects evidence, and decides whether to search again. Then we'll see how Foundry IQ can replace that plumbing with a managed agentic knowledge base. Learn how we made the managed service cheaper, faster, and better, thanks to serverless execution, compression, fine-tuned task-specific models, and built-in ranking.",
@@ -9,7 +22,20 @@
     "video": "https://ignite.microsoft.com/en-US/sessions/1787856618592001EPDX-1791588235919001CbbF",
     "tags": "ai, agents, rag, azure, python",
     "location": "Microsoft Ignite 2026 (San Francisco)",
-    "cospeakers": "Matthew Gotteiner",
+    "cospeakers": "Matt Gotteiner",
+    "include": "yes"
+  },
+  {
+    "title": "Identity-aware knowledge retrieval with Foundry IQ",
+    "date": "2026-11-19T05:00:00.000Z",
+    "description": "AI agents rely on retrieved knowledge to answer questions, but not every user should have access to every document. This lightning talk shows how Foundry IQ enables identity-aware knowledge retrieval using document-level access controls, Microsoft Entra ID user and group filtering, and permission-aware retrieval. Learn how permissions from SharePoint, Azure Data Lake Storage Gen2, and other enterprise content sources are enforced so agents retrieve only authorized content.",
+    "thumbnail": "/static/thumbnail_ignite26_ltg1218.jpg",
+    "slides": null,
+    "code": null,
+    "video": null,
+    "tags": "ai, agents, rag, azure, security",
+    "location": "Microsoft Ignite 2026 (San Francisco)",
+    "cospeakers": "Matt Gotteiner",
     "include": "yes"
   },
   {
